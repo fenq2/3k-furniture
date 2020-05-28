@@ -11,10 +11,10 @@ $(document).ready(function () {
     $(this).append('<span class="basket-prev__btn--bezier"></span><span class="basket-prev__btn--bezier"></span>');
   });
 });
-$('li#js-submenu-catalog').hover(function () {
+$('li.js-submenu-catalog').hover(function () {
   $('.submenu-catalog').toggleClass('submenu-catalog--width');
 });
-$('.main-nav__item--catalog').hover(function () {
+$('.js-submenu-catalog').hover(function () {
   $('.overlay').toggleClass('overlay--active');
   $('.header__top').toggleClass('header__top--active');
 });
