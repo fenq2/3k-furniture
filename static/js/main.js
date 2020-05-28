@@ -11,6 +11,9 @@ $(document).ready(function () {
     $(this).append('<span class="basket-prev__btn--bezier"></span><span class="basket-prev__btn--bezier"></span>');
   });
 });
+$('.basket-prev').hover(function () {
+  $('.overlay').toggleClass('overlay--active');
+});
 $('li.js-submenu-catalog').hover(function () {
   $('.submenu-catalog').toggleClass('submenu-catalog--width');
 });
@@ -22,9 +25,11 @@ $('.js-submenu-catalog').hover(function () {
 var searchModal = function searchModal() {
   $('.search__link').click(function () {
     $('.search-modal').addClass('opend');
+    $('.overlay').addClass('overlay--active');
   });
   $('.search-modal__close').click(function () {
     $('.search-modal').removeClass('opend');
+    $('.overlay').removeClass('overlay--active');
   });
 };
 
@@ -54,7 +59,16 @@ var sandwich = function sandwich() {
   });
 };
 
-sandwich(); // Полифилы
+sandwich();
+var newest = new Swiper('.newest-container', {
+  slidesPerView: 4,
+  spaceBetween: 41,
+  loop: true,
+  navigation: {
+    nextEl: '.newest-button-next',
+    prevEl: '.newest-button-prev'
+  }
+}); // Полифилы
 // forEach IE 11
 
 if ('NodeList' in window && !NodeList.prototype.forEach) {
