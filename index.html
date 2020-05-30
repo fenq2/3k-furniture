@@ -80,7 +80,7 @@
                     <div class="basket-dropdown__footer">
                       <div class="basket-total">
                         <div class="basket-total__row"><span class="basket-total__title">Итого</span><span class="basket-total__num">12 <span class="basket-total__num--font">товаров</span></span></div>
-                        <div class="basket-total__row"><span class="basket-total__title">На сумму</span><span class="basket-total__num">22056 <span class="basket-total__num--font">руб</span></span></div><a class="basket-total__checkout" href="#">Оформить заказ</a><a class="basket-prev__btn basket-item__more" href="#">Очистить</a>
+                        <div class="basket-total__row"><span class="basket-total__title">На сумму</span><span class="basket-total__num">22056 <span class="basket-total__num--font">руб</span></span></div><a class="newest-item__price basket-total__checkout" href="#"> <span class="newest-item__price-text">Оформить заказ</span></a><a class="basket-prev__btn basket-item__more" href="#">Очистить</a>
                       </div>
                     </div>
                   </div>
@@ -246,7 +246,7 @@
               <svg class="svg-sprite-icon icon-mail mail-mobile__icon">
                 <use xlink:href="static/images/svg/symbol/sprite.svg#mail"></use>
               </svg></a>
-            <div class="header-info"><a class="header-info__title" href="tel:+74951234567">+7 ( 495 ) 123-45-67</a><span class="header-info__description">Пн-Пт 8:00-18:00</span></div><a class="btn callback-btn" href="#">Заказать звонок</a>
+            <div class="header-info"><a class="header-info__title" href="tel:+74951234567">+7 ( 495 ) 123-45-67</a><span class="header-info__description">Пн-Пт 8:00-18:00</span></div><a class="btn callback-btn modal-href" href="javascript:void(0);" show-modal="modal-callback">Заказать звонок</a>
             <div class="header-info header-info--order"><a class="header-info__title" href="mailto:email@3kmebel.ru">email@3kmebel.ru</a><span class="header-info__description">Прием заказов круглосуточно</span></div>
             <div class="basket-mobile"><a class="basket-prev__link" href="#">
                 <svg class="svg-sprite-icon icon-basket basket-prev__icon">
@@ -417,24 +417,6 @@
         </div>
       </header>
       <div class="content">
-        <div class="modal modal-reviews reviews-1"><a class="modal-close" href="javascript:void(0);">
-            <svg class="svg-sprite-icon icon-close modal-close__icon">
-              <use xlink:href="static/images/svg/symbol/sprite.svg#close"></use>
-            </svg></a>
-          <div class="youtube" id="RK1K2bCg4J8" style="width: 500px; height: 281px;"></div>
-        </div>
-        <div class="modal modal-reviews reviews-2"><a class="modal-close" href="javascript:void(0);">
-            <svg class="svg-sprite-icon icon-close modal-close__icon">
-              <use xlink:href="static/images/svg/symbol/sprite.svg#close"></use>
-            </svg></a>
-          <div class="youtube" id="MB80ZuIJATI" style="width: 500px; height: 281px;"></div>
-        </div>
-        <div class="modal modal-reviews reviews-3"><a class="modal-close" href="javascript:void(0);">
-            <svg class="svg-sprite-icon icon-close modal-close__icon">
-              <use xlink:href="static/images/svg/symbol/sprite.svg#close"></use>
-            </svg></a>
-          <div class="youtube" id="rN6nlNC9WQA" style="width: 500px; height: 281px;"></div>
-        </div>
         <div class="main-banner">
           <div class="main-banner__item">
             <div class="main-banner__left"></div>
@@ -648,12 +630,14 @@
                       </svg></a></div>
                 </div>
               </div>
-              <div class="newest-navigation">
+              <div class="newest-button__wrap newest-button__wrap--next">
                 <div class="newest-button newest-button-next btn-animation">
                   <svg class="svg-sprite-icon icon-arrow-top newest-button__arrow">
                     <use xlink:href="static/images/svg/symbol/sprite.svg#arrow-top"></use>
                   </svg>
                 </div>
+              </div>
+              <div class="newest-button__wrap newest-button__wrap--prev">
                 <div class="newest-button newest-button-prev btn-animation">
                   <svg class="svg-sprite-icon icon-arrow-top newest-button__arrow">
                     <use xlink:href="static/images/svg/symbol/sprite.svg#arrow-top"></use>
@@ -810,12 +794,14 @@
                   <div class="photo-item__img"><img class="photo-item__picture" src="static/images/content/photo-img4.jpg" alt=""></div><span class="photo-item__title">Кресло Хукер</span>
                 </div>
               </div>
-              <div class="newest-navigation">
+              <div class="newest-button__wrap newest-button__wrap--next">
                 <div class="newest-button newest-button-next photo-button-next btn-animation">
                   <svg class="svg-sprite-icon icon-arrow-top newest-button__arrow">
                     <use xlink:href="static/images/svg/symbol/sprite.svg#arrow-top"></use>
                   </svg>
                 </div>
+              </div>
+              <div class="newest-button__wrap newest-button__wrap--prev">
                 <div class="newest-button newest-button-prev photo-button-prev btn-animation">
                   <svg class="svg-sprite-icon icon-arrow-top newest-button__arrow">
                     <use xlink:href="static/images/svg/symbol/sprite.svg#arrow-top"></use>
@@ -825,8 +811,159 @@
             </div>
           </div>
         </div>
+        <div class="partners">
+          <div class="container">
+            <h3 class="section-title partners__title">Нас рекомендуют</h3>
+            <div class="partners-container swiper-container">
+              <div class="partners-wrapper swiper-wrapper">
+                <div class="partners-item partners-item--bg1 swiper-slide"></div>
+                <div class="partners-item partners-item--bg2 swiper-slide"></div>
+                <div class="partners-item partners-item--bg3 swiper-slide"></div>
+                <div class="partners-item partners-item--bg4 swiper-slide"></div>
+                <div class="partners-item partners-item--bg5 swiper-slide"></div>
+              </div>
+              <div class="newest-button__wrap newest-button__wrap--next">
+                <div class="newest-button newest-button-next partners-button-next btn-animation">
+                  <svg class="svg-sprite-icon icon-arrow-top newest-button__arrow">
+                    <use xlink:href="static/images/svg/symbol/sprite.svg#arrow-top"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="newest-button__wrap newest-button__wrap--prev">
+                <div class="newest-button newest-button-prev partners-button-prev btn-animation">
+                  <svg class="svg-sprite-icon icon-arrow-top newest-button__arrow">
+                    <use xlink:href="static/images/svg/symbol/sprite.svg#arrow-top"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="subscribe">
+          <div class="container">
+            <div class="subscribe__block">
+              <div class="subscribe__content">
+                <h3 class="section-title subscribe__title">Подпишитесь на рассылку</h3>
+                <div class="subscribe__info"><span class="subscribe__desc">Узнавайте первыми о скидках и вкциях, получайте советы и  новости сферы HoReCa</span>
+                  <form class="subscribe-form" method="POST" action="#">
+                    <input class="subscribe-form__field" type="text" placeholder="Введите e-mail">
+                    <button class="newest-item__price subscribe-form__send"><span class="newest-item__price-text">Подписаться</span></button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal modal-reviews reviews-1"><a class="modal-close" href="javascript:void(0);">
+            <svg class="svg-sprite-icon icon-close modal-close__icon">
+              <use xlink:href="static/images/svg/symbol/sprite.svg#close"></use>
+            </svg></a>
+          <div class="youtube" id="RK1K2bCg4J8" style="width: 500px; height: 281px;"></div>
+        </div>
+        <div class="modal modal-reviews reviews-2"><a class="modal-close" href="javascript:void(0);">
+            <svg class="svg-sprite-icon icon-close modal-close__icon">
+              <use xlink:href="static/images/svg/symbol/sprite.svg#close"></use>
+            </svg></a>
+          <div class="youtube" id="MB80ZuIJATI" style="width: 500px; height: 281px;"></div>
+        </div>
+        <div class="modal modal-reviews reviews-3"><a class="modal-close" href="javascript:void(0);">
+            <svg class="svg-sprite-icon icon-close modal-close__icon">
+              <use xlink:href="static/images/svg/symbol/sprite.svg#close"></use>
+            </svg></a>
+          <div class="youtube" id="rN6nlNC9WQA" style="width: 500px; height: 281px;"></div>
+        </div>
+        <div class="modal modal-callback"><a class="modal-close modal-callback__close" href="javascript:void(0);">
+            <svg class="svg-sprite-icon icon-close modal-close__icon">
+              <use xlink:href="static/images/svg/symbol/sprite.svg#close"></use>
+            </svg></a>
+          <div class="modal-callback__content"><span class="modal-callback__title">Заказать звонок</span>
+            <form class="modal-callback__form" action="#" method="POST">
+              <input class="modal-callback__field" type="text" placeholder="Ваше имя">
+              <input class="modal-callback__field" type="text" placeholder="Ваше имя">
+              <button class="newest-item__price modal-callback__send"><span class="newest-item__price-text">Перезвоните мне</span></button>
+            </form>
+          </div>
+        </div>
       </div>
-      <footer class="footer"></footer>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__top">
+            <div class="footer__side footer__side--logo"><a class="logo footer-logo" href="#">
+                <svg class="svg-sprite-icon icon-logo logo__img footer-logo__img">
+                  <use xlink:href="static/images/svg/symbol/sprite.svg#logo"></use>
+                </svg><span class="logo__title">Мебель</span></a>
+              <div class="footer-social"><a class="footer-social__link" href="#">
+                  <svg class="svg-sprite-icon icon-facebook footer-social__icon footer-social__icon--fb">
+                    <use xlink:href="static/images/svg/symbol/sprite.svg#facebook"></use>
+                  </svg></a><a class="footer-social__link" href="#">
+                  <svg class="svg-sprite-icon icon-vk footer-social__icon footer-social__icon--vk">
+                    <use xlink:href="static/images/svg/symbol/sprite.svg#vk"></use>
+                  </svg></a><a class="footer-social__link" href="#">
+                  <svg class="svg-sprite-icon icon-inst footer-social__icon">
+                    <use xlink:href="static/images/svg/symbol/sprite.svg#inst"></use>
+                  </svg></a></div>
+            </div>
+            <div class="footer__side"><span class="footer__side-title">О компании</span>
+              <nav class="footer-nav">
+                <ul class="footer-nav__list">
+                  <li class="footer-nav__item"><a class="footer-nav__link" href="#">Вакансии</a></li>
+                  <li class="footer-nav__item"><a class="footer-nav__link" href="#">Новости</a></li>
+                  <li class="footer-nav__item"><a class="footer-nav__link" href="#">Договор</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="footer__side footer__side--width"><span class="footer__side-title">Разделы каталога</span>
+              <nav class="footer-nav">
+                <ul class="footer-nav__list footer-nav__list--pr">
+                  <li class="footer-nav__item"><a class="footer-nav__link" href="#">Столы</a></li>
+                  <li class="footer-nav__item"><a class="footer-nav__link" href="#">Стулья</a></li>
+                  <li class="footer-nav__item"><a class="footer-nav__link" href="#">Подстолья</a></li>
+                  <li class="footer-nav__item"><a class="footer-nav__link" href="#">Столешницы</a></li>
+                  <li class="footer-nav__item"><a class="footer-nav__link" href="#">Стойки</a></li>
+                  <li class="footer-nav__item"><a class="footer-nav__link" href="#">Складная мебель</a></li>
+                </ul>
+                <ul class="footer-nav__list">
+                  <li class="footer-nav__item"><a class="footer-nav__link" href="#">Столешницы</a></li>
+                  <li class="footer-nav__item"><a class="footer-nav__link" href="#">Мягкая мебель</a></li>
+                  <li class="footer-nav__item"><a class="footer-nav__link" href="#">Стойки</a></li>
+                  <li class="footer-nav__item"><a class="footer-nav__link" href="#">Складная мебель</a></li>
+                  <li class="footer-nav__item"><a class="footer-nav__link" href="#">Мягкая мебель</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="footer__side"><span class="footer__side-title">ООО «3КМЕБЕЛЬ»</span>
+              <div class="footer-contacts">
+                <div class="footer-contacts__item">
+                  <svg class="svg-sprite-icon icon-location footer-contacts__icon">
+                    <use xlink:href="static/images/svg/symbol/sprite.svg#location"></use>
+                  </svg><span class="footer-contacts__text">111111, Москва, ул. Новорязанское шоссе 42</span>
+                </div>
+                <div class="footer-contacts__item">
+                  <svg class="svg-sprite-icon icon-tel footer-contacts__icon">
+                    <use xlink:href="static/images/svg/symbol/sprite.svg#tel"></use>
+                  </svg><span class="footer-contacts__text">Тел.: <a href="tel:+74951234567" class="footer-contacts__link">+7 (495) 123-45-67</a></span>
+                </div>
+                <div class="footer-contacts__item">
+                  <svg class="svg-sprite-icon icon-e-mail footer-contacts__icon footer-contacts__icon--email">
+                    <use xlink:href="static/images/svg/symbol/sprite.svg#e-mail"></use>
+                  </svg><span class="footer-contacts__text"><a href="mailto:sale@3k-mebel.ru" class="footer-contacts__link">sale@3k-mebel.ru</a></span>
+                </div>
+                <div class="footer-contacts__item">
+                  <svg class="svg-sprite-icon icon-time footer-contacts__icon">
+                    <use xlink:href="static/images/svg/symbol/sprite.svg#time"></use>
+                  </svg><span class="footer-contacts__text">Понедельник - Пятница <br>с 9:00 до 19:00</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer__bottom">
+            <div class="footer__side footer__text"><span class="footer__copy">&#169; Все права защищены. 2020</span><a class="footer__map" href="#">Карта сайта</a><span class="footer__design">Дизайн сайта Буяльская Татьяна</span></div>
+            <p class="footer__text">Компания «3Кмебель» не несёт ответственности за услуги, предоставляемые сторонними организациями</p>
+            <p class="footer__text">Изображения изделий в каталоге и на сайте, в том числе цвет, рисунок на мебели и другие элементы, могут отличаться, компания ___ оставляет за собой право изменять комплектацию</p>
+            <p class="footer__text">Находясь на сайте, вы принимаете <a href="#" class="footer__politic">Политику конфиденциальности</a></p>
+          </div>
+        </div>
+      </footer>
     </div>
     <script src="static/js/jquery-3.3.1.min.js"></script>
     <script src="static/js/libs.min.js"></script>

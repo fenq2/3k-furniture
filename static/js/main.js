@@ -208,6 +208,29 @@ var photo = new Swiper('.photo-container', {
     nextEl: '.photo-button-next',
     prevEl: '.photo-button-prev'
   }
+});
+var partners = new Swiper('.partners-container', {
+  slidesPerView: 1,
+  spaceBetween: 40,
+  loop: true,
+  breakpoints: {
+    520: {
+      slidesPerView: 2,
+      spaceBetween: 20
+    },
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 20
+    },
+    1020: {
+      slidesPerView: 5,
+      spaceBetween: 10
+    }
+  },
+  navigation: {
+    nextEl: '.partners-button-next',
+    prevEl: '.partners-button-prev'
+  }
 }); // Полифилы
 // forEach IE 11
 
