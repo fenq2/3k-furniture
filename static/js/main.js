@@ -148,6 +148,14 @@ if ($(window).width() < '768') {
   });
 }
 
+$(window).scroll(function () {
+  if ($(window).scrollTop() > 130) {
+    $('.header__bottom').addClass('header__bottom--fixed');
+  } else {
+    $('.header__bottom').removeClass('header__bottom--fixed');
+  }
+});
+
 var select = function select() {
   var selectCurrent = document.querySelectorAll('.catalog-select__header'),
       selectItem = document.querySelectorAll('.catalog-select__item');
