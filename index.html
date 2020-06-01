@@ -1,0 +1,990 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8">
+    <title>Главная страница</title><!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" type="text/css" href="static/css/styles.min.css"><!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script><![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="overlay"></div>
+      <header class="header">
+        <div class="header__top">
+          <div class="container">
+            <nav class="top-nav">
+              <ul class="top-nav__list">
+                <li class="top-nav__item top-nav__item--submenu"><a class="top-nav__link top-nav__link" href="#">О компании</a>
+                  <div class="submenu-top">
+                    <ul class="top-nav__submenu submenu-top__list">
+                      <li class="submenu-top__item"><a class="submenu-top__link" href="#">Договор - оферта</a></li>
+                      <li class="submenu-top__item"><a class="submenu-top__link" href="#">Новости</a></li>
+                      <li class="submenu-top__item"><a class="submenu-top__link" href="#">Правила эксплуатации мебели</a></li>
+                      <li class="submenu-top__item"><a class="submenu-top__link" href="#">Вакансии</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="top-nav__item"><a class="top-nav__link" href="#">Портфолио</a></li>
+                <li class="top-nav__item"><a class="top-nav__link" href="#">Дизайн-проекты</a></li>
+                <li class="top-nav__item"><a class="top-nav__link" href="#">Доставка</a></li>
+                <li class="top-nav__item"><a class="top-nav__link" href="#">Контакты</a></li>
+              </ul>
+              <div class="top-nav__right">
+                <div class="top-nav__email"><a class="top-nav__email-link" href="#">
+                    <svg class="svg-sprite-icon icon-mail-header top-nav__email-icon">
+                      <use xlink:href="static/images/svg/symbol/sprite.svg#mail-header"></use>
+                    </svg></a></div>
+                <div class="search"><a class="search__link" href="#">
+                    <svg class="svg-sprite-icon icon-search search__icon">
+                      <use xlink:href="static/images/svg/symbol/sprite.svg#search"></use>
+                    </svg></a>
+                  <div class="search-modal">
+                    <div class="container">
+                      <div class="search-modal__wrap">
+                        <div class="search-modal__header"><a class="search-modal__close" href="#">
+                            <svg class="svg-sprite-icon icon-close search-modal__icon">
+                              <use xlink:href="static/images/svg/symbol/sprite.svg#close"></use>
+                            </svg></a></div>
+                        <div class="search-modal__content">
+                          <form class="search-modal__form" action="">
+                            <input class="search-modal__field" type="text" placeholder="Введите слово">
+                            <button class="search-modal__submit">Искать</button>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="basket-prev"><a class="basket-prev__link" href="#">
+                    <svg class="svg-sprite-icon icon-basket basket-prev__icon">
+                      <use xlink:href="static/images/svg/symbol/sprite.svg#basket"></use>
+                    </svg><span class="basket-prev__num">22</span></a>
+                  <div class="basket-prev__dropdown basket-dropdown">
+                    <div class="basket-dropdown__header">
+                      <svg class="svg-sprite-icon icon-basket basket-dropdown__icon">
+                        <use xlink:href="static/images/svg/symbol/sprite.svg#basket"></use>
+                      </svg><span class="basket-dropdown__title">Корзина</span>
+                    </div>
+                    <div class="basket-dropdown__content"><a class="basket-dropdown__item basket-item" href="#">
+                        <div class="basket-item__img"><img src="static/images/content/basket-prev1.png" alt=""></div>
+                        <div class="basket-item__content"><span class="basket-item__title">Стол обеденный</span><span class="basket-item__code">021-097</span>
+                          <div class="basket-item__row"><span class="basket-item__num">1 шт -</span><span class="basket-item__price">3456 <span class="basket-item__price--font">руб</span></span></div>
+                        </div></a><a class="basket-dropdown__item basket-item" href="#">
+                        <div class="basket-item__img"><img src="static/images/content/basket-prev2.png" alt=""></div>
+                        <div class="basket-item__content"><span class="basket-item__title">Стул банкетный</span><span class="basket-item__code">091-434</span>
+                          <div class="basket-item__row"><span class="basket-item__num">6 шт -</span><span class="basket-item__price">5956 <span class="basket-item__price--font">руб</span></span></div>
+                        </div></a><a class="basket-dropdown__item basket-item" href="#">
+                        <div class="basket-item__img"><img src="static/images/content/basket-prev3.png" alt=""></div>
+                        <div class="basket-item__content"><span class="basket-item__title">Кресло волшебное</span><span class="basket-item__code">033-900</span>
+                          <div class="basket-item__row"><span class="basket-item__num">2 шт -</span><span class="basket-item__price">12956 <span class="basket-item__price--font">руб</span></span></div>
+                        </div></a><a class="basket-prev__btn basket-item__more" href="#">Показать все</a></div>
+                    <div class="basket-dropdown__footer">
+                      <div class="basket-total">
+                        <div class="basket-total__row"><span class="basket-total__title">Итого</span><span class="basket-total__num">12 <span class="basket-total__num--font">товаров</span></span></div>
+                        <div class="basket-total__row"><span class="basket-total__title">На сумму</span><span class="basket-total__num">22056 <span class="basket-total__num--font">руб</span></span></div><a class="newest-item__price basket-total__checkout" href="#"> <span class="newest-item__price-text">Оформить заказ</span></a><a class="basket-prev__btn basket-item__more" href="#">Очистить</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+        <div class="header__main">
+          <div class="container">
+            <div class="sandwich"><a class="sandwich__open-btn" href="javascript:void(0);"></a>
+              <div class="menu-layer"></div>
+              <div class="menu">
+                <div class="menu__header"><a class="menu-close" href="javascript:void(0);">
+                    <svg class="svg-sprite-icon icon-close menu-close__icon">
+                      <use xlink:href="static/images/svg/symbol/sprite.svg#close"></use>
+                    </svg></a>
+                  <div class="menu-logo">
+                    <div class="menu-logo__wrap">
+                      <svg class="svg-sprite-icon icon-logo menu-logo__icon">
+                        <use xlink:href="static/images/svg/symbol/sprite.svg#logo"></use>
+                      </svg><span class="logo__title">Мебель</span>
+                    </div><span class="menu-logo__desc">для кафе, гостиниц и ТЦ</span>
+                  </div>
+                  <div class="menu-search">
+                    <input class="menu-search__field" type="text" placeholder="Введите слово"><a class="menu-search__link" href="#">
+                      <svg class="svg-sprite-icon icon-search menu-search__icon">
+                        <use xlink:href="static/images/svg/symbol/sprite.svg#search"></use>
+                      </svg></a>
+                  </div>
+                </div>
+                <nav class="menu-catalog">
+                  <ul class="menu-catalog__list">
+                    <li class="menu-catalog__item menu-catalog__item--dropdown">
+                      <svg class="svg-sprite-icon icon-table menu-catalog__icon">
+                        <use xlink:href="static/images/svg/symbol/sprite.svg#table"></use>
+                      </svg><a class="menu-catalog__link" href="#">Столы</a>
+                      <div class="menu-outer">
+                        <div class="menu-outer__header"><a class="menu-outer__back" href="#">Назад</a><a class="menu-close" href="#">
+                            <svg class="svg-sprite-icon icon-close menu-close__icon">
+                              <use xlink:href="static/images/svg/symbol/sprite.svg#close"></use>
+                            </svg></a></div><a class="menu-outer__title" href="#">Столы</a>
+                        <div class="menu-outer__content">
+                          <div class="menu-outer__list"><span class="menu-outer__subtitle">Материал</span><a class="menu-outer__link" href="#">Пластиковые столы</a><a class="menu-outer__link" href="#">Деревянные столы</a><a class="menu-outer__link" href="#">Стеклянные столы</a><a class="menu-outer__link" href="#">Плетенные столы</a><a class="menu-outer__link" href="#">Столы на металлокаркасе</a></div>
+                          <div class="menu-outer__list"><span class="menu-outer__subtitle">Назначение</span><a class="menu-outer__link" href="#">Столы для фудкорта</a><a class="menu-outer__link" href="#">Столы для кафе и ресторанов</a><a class="menu-outer__link" href="#">Столы для гостиниц</a><a class="menu-outer__link" href="#">Столы для летних кафе</a></div>
+                          <div class="menu-outer__list"><span class="menu-outer__subtitle">Стиль</span><a class="menu-outer__link" href="#">Столы в стиле Лофт</a><a class="menu-outer__link" href="#">Столы дизайнерские</a><a class="menu-outer__link" href="#">Столы под старину</a></div>
+                          <div class="menu-outer__list"><span class="menu-outer__subtitle">Вид</span><a class="menu-outer__link" href="#">Складные столы</a><a class="menu-outer__link" href="#">Столы на одной ножке</a><a class="menu-outer__link" href="#">Барные столы</a><a class="menu-outer__link" href="#">Банкетные столы</a><a class="menu-outer__link" href="#">Конференц-столы</a><a class="menu-outer__link" href="#">Коктейльные столы</a></div>
+                          <div class="menu-outer__list"><span class="menu-outer__subtitle">Форма</span><a class="menu-outer__link" href="#">Круглые столы</a><a class="menu-outer__link" href="#">Квадратные столы</a><a class="menu-outer__link" href="#">Прямоугольные столы</a></div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="menu-catalog__item">
+                      <svg class="svg-sprite-icon icon-chair menu-catalog__icon">
+                        <use xlink:href="static/images/svg/symbol/sprite.svg#chair"></use>
+                      </svg><a class="menu-catalog__link" href="#">Стулья</a>
+                    </li>
+                    <li class="menu-catalog__item">
+                      <svg class="svg-sprite-icon icon-tabletop menu-catalog__icon">
+                        <use xlink:href="static/images/svg/symbol/sprite.svg#tabletop"></use>
+                      </svg><a class="menu-catalog__link" href="#">Столешницы</a>
+                    </li>
+                    <li class="menu-catalog__item">
+                      <svg class="svg-sprite-icon icon-soft-furniture menu-catalog__icon">
+                        <use xlink:href="static/images/svg/symbol/sprite.svg#soft-furniture"></use>
+                      </svg><a class="menu-catalog__link" href="#">Мягкая мебель</a>
+                    </li>
+                    <li class="menu-catalog__item">
+                      <svg class="svg-sprite-icon icon-underframes menu-catalog__icon">
+                        <use xlink:href="static/images/svg/symbol/sprite.svg#underframes"></use>
+                      </svg><a class="menu-catalog__link" href="#">Подстолья</a>
+                    </li>
+                    <li class="menu-catalog__item">
+                      <svg class="svg-sprite-icon icon-folding-furniture menu-catalog__icon">
+                        <use xlink:href="static/images/svg/symbol/sprite.svg#folding-furniture"></use>
+                      </svg><a class="menu-catalog__link" href="#">Складная мебель</a>
+                    </li>
+                    <li class="menu-catalog__item">
+                      <svg class="svg-sprite-icon icon-racks menu-catalog__icon">
+                        <use xlink:href="static/images/svg/symbol/sprite.svg#racks"></use>
+                      </svg><a class="menu-catalog__link" href="#">Стойки</a>
+                    </li>
+                    <li class="menu-catalog__item">
+                      <svg class="svg-sprite-icon icon-outdoor-furniture menu-catalog__icon">
+                        <use xlink:href="static/images/svg/symbol/sprite.svg#outdoor-furniture"></use>
+                      </svg><a class="menu-catalog__link" href="#">Мебель для улицы</a>
+                    </li>
+                    <li class="menu-catalog__item">
+                      <svg class="svg-sprite-icon icon-banquet-furniture menu-catalog__icon">
+                        <use xlink:href="static/images/svg/symbol/sprite.svg#banquet-furniture"></use>
+                      </svg><a class="menu-catalog__link" href="#">Банкетная мебель</a>
+                    </li>
+                    <li class="menu-catalog__item">
+                      <svg class="svg-sprite-icon icon-gardening menu-catalog__icon">
+                        <use xlink:href="static/images/svg/symbol/sprite.svg#gardening"></use>
+                      </svg><a class="menu-catalog__link" href="#">Мафы и озеленение</a>
+                    </li>
+                  </ul>
+                </nav>
+                <nav class="menu-clients"><span class="menu-clients__title">По назначению</span>
+                  <ul class="menu-clients__list">
+                    <li class="menu-catalog__item menu-clients__item menu-catalog__item--dropdown"><a class="menu-catalog__link menu-clients__link" href="#">Рестораны и кафе</a>
+                      <div class="menu-outer">
+                        <div class="menu-outer__header"><a class="menu-outer__back" href="#">Назад</a><a class="menu-close" href="#">
+                            <svg class="svg-sprite-icon icon-close menu-close__icon">
+                              <use xlink:href="static/images/svg/symbol/sprite.svg#close"></use>
+                            </svg></a></div><a class="menu-outer__title" href="#">Рестораны и кафе</a>
+                        <div class="menu-outer__content">
+                          <ul class="menu-catalog__list">
+                            <li class="menu-catalog__item menu-outer__item"><a class="menu-catalog__link menu-outer__link" href="#">Столы</a></li>
+                            <li class="menu-catalog__item menu-outer__item"><a class="menu-catalog__link menu-outer__link" href="#">Стулья</a></li>
+                            <li class="menu-catalog__item menu-outer__item"><a class="menu-catalog__link menu-outer__link" href="#">Столешницы</a></li>
+                            <li class="menu-catalog__item menu-outer__item"><a class="menu-catalog__link menu-outer__link" href="#">Мягкая мебель</a></li>
+                            <li class="menu-catalog__item menu-outer__item"><a class="menu-catalog__link menu-outer__link" href="#">Подстолья</a></li>
+                            <li class="menu-catalog__item menu-outer__item"><a class="menu-catalog__link menu-outer__link" href="#">Складная мебель</a></li>
+                            <li class="menu-catalog__item menu-outer__item"><a class="menu-catalog__link menu-outer__link" href="#">Стойки</a></li>
+                            <li class="menu-catalog__item menu-outer__item"><a class="menu-catalog__link menu-outer__link" href="#">Мебель для улицы</a></li>
+                            <li class="menu-catalog__item menu-outer__item"><a class="menu-catalog__link menu-outer__link" href="#">Банкетная мебель</a></li>
+                            <li class="menu-catalog__item menu-outer__item"><a class="menu-catalog__link menu-outer__link" href="#">Мафы и озеленение</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="menu-catalog__item menu-clients__item"><a class="menu-catalog__link menu-clients__link" href="#">Фудкорт</a></li>
+                    <li class="menu-catalog__item menu-clients__item"><a class="menu-catalog__link menu-clients__link" href="#">Летние кафе</a></li>
+                    <li class="menu-catalog__item menu-clients__item"><a class="menu-catalog__link menu-clients__link" href="#">Банкетные залы</a></li>
+                    <li class="menu-catalog__item menu-clients__item"><a class="menu-catalog__link menu-clients__link" href="#">Конференц залы</a></li>
+                    <li class="menu-catalog__item menu-clients__item"><a class="menu-catalog__link menu-clients__link" href="#">Гостиницы</a></li>
+                    <li class="menu-catalog__item menu-clients__item"><a class="menu-catalog__link menu-clients__link" href="#">ТЦ и озеленение</a></li>
+                  </ul>
+                </nav>
+                <nav class="menu-about"><span class="menu-clients__title menu-about__title">Информация</span>
+                  <ul class="menu-about__list menu-clients__list">
+                    <li class="menu-catalog__item menu-about__item menu-catalog__item--dropdown"><a class="menu-catalog__link menu-about__link" href="#">О компании</a>
+                      <div class="menu-outer">
+                        <div class="menu-outer__header"><a class="menu-outer__back" href="#">Назад</a><a class="menu-close" href="#">
+                            <svg class="svg-sprite-icon icon-close menu-close__icon">
+                              <use xlink:href="static/images/svg/symbol/sprite.svg#close"></use>
+                            </svg></a></div><a class="menu-outer__title" href="#">Рестораны и кафе</a>
+                        <div class="menu-outer__content">
+                          <ul class="menu-catalog__list">
+                            <li class="menu-catalog__item menu-outer__item"><a class="menu-catalog__link menu-outer__link" href="#">Договор-оферта</a></li>
+                            <li class="menu-catalog__item menu-outer__item"><a class="menu-catalog__link menu-outer__link" href="#">Новости</a></li>
+                            <li class="menu-catalog__item menu-outer__item"><a class="menu-catalog__link menu-outer__link" href="#">Правила эксплуатации мебели</a></li>
+                            <li class="menu-catalog__item menu-outer__item"><a class="menu-catalog__link menu-outer__link" href="#">Вакансии</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="menu-catalog__item menu-about__item"><a class="menu-catalog__link menu-about__link" href="#">Портфолио</a></li>
+                    <li class="menu-catalog__item menu-about__item"><a class="menu-catalog__link menu-about__link" href="#">Дизайн-проекты</a></li>
+                    <li class="menu-catalog__item menu-about__item"><a class="menu-catalog__link menu-about__link" href="#">Доставка</a></li>
+                    <li class="menu-catalog__item menu-about__item"><a class="menu-catalog__link menu-about__link" href="#">Контакты</a></li>
+                  </ul>
+                </nav>
+              </div>
+            </div><a class="phone-mobile" href="tel:tel:+74951234567">
+              <svg class="svg-sprite-icon icon-phone phone-mobile__icon">
+                <use xlink:href="static/images/svg/symbol/sprite.svg#phone"></use>
+              </svg></a><a class="logo" href="#">
+              <svg class="svg-sprite-icon icon-logo logo__img">
+                <use xlink:href="static/images/svg/symbol/sprite.svg#logo"></use>
+              </svg><span class="logo__title">Мебель</span><span class="logo__description">для кафе, гостиниц и ТЦ</span></a><a class="mail-mobile" href="mailto:email@3kmebel.ru">
+              <svg class="svg-sprite-icon icon-mail mail-mobile__icon">
+                <use xlink:href="static/images/svg/symbol/sprite.svg#mail"></use>
+              </svg></a>
+            <div class="header-info"><a class="header-info__title" href="tel:+74951234567">+7 ( 495 ) 123-45-67</a><span class="header-info__description">Пн-Пт 8:00-18:00</span></div><a class="btn callback-btn modal-href" href="javascript:void(0);" show-modal="modal-callback">Заказать звонок</a>
+            <div class="header-info header-info--order"><a class="btn offer-btn modal-href" href="javascript:void(0);" show-modal="modal-offer">Сделать заявку</a></div>
+            <div class="basket-mobile"><a class="basket-prev__link" href="#">
+                <svg class="svg-sprite-icon icon-basket basket-prev__icon">
+                  <use xlink:href="static/images/svg/symbol/sprite.svg#basket"></use>
+                </svg><span class="basket-prev__num">22</span></a></div>
+          </div>
+          <div class="header__bottom">
+            <div class="container">
+              <div class="main-nav">
+                <ul class="main-nav__list">
+                  <li class="main-nav__item main-nav__item--catalog"><a class="main-nav__catalog" href="#"><span class="main-nav__text">Весь каталог</span>
+                      <svg class="svg-sprite-icon icon-arrow-top main-nav__icon">
+                        <use xlink:href="static/images/svg/symbol/sprite.svg#arrow-top"></use>
+                      </svg></a>
+                    <div class="submenu-catalog">
+                      <nav class="submenu-catalog__nav"> 
+                        <ul class="submenu-catalog__list">
+                          <li class="submenu-catalog__item submenu-catalog__item--position submenu-catalog__item--content js-submenu-catalog"><a class="submenu-catalog__link" href="#">
+                              <div class="submenu-catalog__img">
+                                <svg class="svg-sprite-icon icon-table submenu-catalog__icon">
+                                  <use xlink:href="static/images/svg/symbol/sprite.svg#table"></use>
+                                </svg>
+                              </div><span class="submenu-catalog__text">Столы</span>
+                              <svg class="svg-sprite-icon icon-arrow-top submenu-catalog__arrow">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#arrow-top"></use>
+                              </svg></a>
+                            <div class="submenu-catalog__content">
+                              <div class="submenu-content">
+                                <div class="submenu-content__side">
+                                  <div class="submenu-content__block"><span class="submenu-content__name">Материал</span><a class="submenu-content__link" href="#">Пластиковые столы</a><a class="submenu-content__link" href="#">Деревянные столы</a><a class="submenu-content__link" href="#">Стеклянные столы</a><a class="submenu-content__link" href="#">Плетенные столы</a><a class="submenu-content__link" href="#">Столы на металлокаркасе</a></div>
+                                  <div class="submenu-content__block"><span class="submenu-content__name">Назначение</span><a class="submenu-content__link" href="#">Столы для фудкорта</a><a class="submenu-content__link" href="#">Столы для кафе и ресторанов</a><a class="submenu-content__link" href="#">Столы для гостиниц</a><a class="submenu-content__link" href="#">Столы для летних кафе</a></div>
+                                </div>
+                                <div class="submenu-content__side">
+                                  <div class="submenu-content__block"><span class="submenu-content__name">Стиль</span><a class="submenu-content__link" href="#">Столы в стиле Лофт</a><a class="submenu-content__link" href="#">Столы дизайнерские</a><a class="submenu-content__link" href="#">Столы под старину</a></div>
+                                  <div class="submenu-content__block"><span class="submenu-content__name">Вид</span><a class="submenu-content__link" href="#">Складные столы</a><a class="submenu-content__link" href="#">Столы на одной ножке</a><a class="submenu-content__link" href="#">Барные столы</a><a class="submenu-content__link" href="#">Банкетные столы</a><a class="submenu-content__link" href="#">Конференц-столы</a><a class="submenu-content__link" href="#">Коктейльные столы</a></div>
+                                </div>
+                                <div class="submenu-content__side">
+                                  <div class="submenu-content__block"><span class="submenu-content__name">Форма</span><a class="submenu-content__link" href="#">Круглые столы</a><a class="submenu-content__link" href="#">Квадратные столы</a><a class="submenu-content__link" href="#">Прямоугольные столы</a></div>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="submenu-catalog__item"><a class="submenu-catalog__link" href="#">
+                              <div class="submenu-catalog__img">
+                                <svg class="svg-sprite-icon icon-chair submenu-catalog__icon">
+                                  <use xlink:href="static/images/svg/symbol/sprite.svg#chair"></use>
+                                </svg>
+                              </div><span class="submenu-catalog__text">Стулья</span></a></li>
+                          <li class="submenu-catalog__item"><a class="submenu-catalog__link" href="#">
+                              <div class="submenu-catalog__img">
+                                <svg class="svg-sprite-icon icon-tabletop submenu-catalog__icon">
+                                  <use xlink:href="static/images/svg/symbol/sprite.svg#tabletop"></use>
+                                </svg>
+                              </div><span class="submenu-catalog__text">Столешницы</span></a></li>
+                          <li class="submenu-catalog__item submenu-catalog__item--position"><a class="submenu-catalog__link" href="#">
+                              <div class="submenu-catalog__img">
+                                <svg class="svg-sprite-icon icon-soft-furniture submenu-catalog__icon">
+                                  <use xlink:href="static/images/svg/symbol/sprite.svg#soft-furniture"></use>
+                                </svg>
+                              </div><span class="submenu-catalog__text">Мягкая мебель</span></a>
+                            <div class="submenu-catalog__subnav">
+                              <ul class="submenu-catalog__sublist">
+                                <li class="submenu-catalog__subitem submenu-catalog__item--position submenu-catalog__item--content js-submenu-catalog"><a class="submenu-catalog__sublink" href="#">Диваны</a>
+                                  <div class="submenu-catalog__content">
+                                    <div class="submenu-content">
+                                      <div class="submenu-content__side">
+                                        <div class="submenu-content__block"><span class="submenu-content__name">Материал</span><a class="submenu-content__link" href="#">Пластиковые столы</a><a class="submenu-content__link" href="#">Деревянные столы</a><a class="submenu-content__link" href="#">Стеклянные столы</a><a class="submenu-content__link" href="#">Плетенные столы</a><a class="submenu-content__link" href="#">Столы на металлокаркасе</a></div>
+                                        <div class="submenu-content__block"><span class="submenu-content__name">Назначение</span><a class="submenu-content__link" href="#">Столы на фудкорта</a><a class="submenu-content__link" href="#">Столы для кафе и ресторанов</a><a class="submenu-content__link" href="#">Столы для гостиниц</a><a class="submenu-content__link" href="#">Столы для летних кафе</a></div>
+                                      </div>
+                                      <div class="submenu-content__side">
+                                        <div class="submenu-content__block"><span class="submenu-content__name">Стиль</span><a class="submenu-content__link" href="#">Столы в стиле Лофт</a><a class="submenu-content__link" href="#">Столы дизайнерские</a><a class="submenu-content__link" href="#">Столы под старину</a></div>
+                                        <div class="submenu-content__block"><span class="submenu-content__name">Вид</span><a class="submenu-content__link" href="#">Складные столы</a><a class="submenu-content__link" href="#">Столы на одной ножке</a><a class="submenu-content__link" href="#">Барные столы</a><a class="submenu-content__link" href="#">Банкетные столы</a><a class="submenu-content__link" href="#">Конференц-столы</a><a class="submenu-content__link" href="#">Коктейльные столы</a></div>
+                                      </div>
+                                      <div class="submenu-content__side">
+                                        <div class="submenu-content__block"><span class="submenu-content__name">Форма</span><a class="submenu-content__link" href="#">Круглые столы</a><a class="submenu-content__link" href="#">Квадратные столы</a><a class="submenu-content__link" href="#">Прямоугольные столы</a></div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li class="submenu-catalog__subitem submenu-catalog__item--position submenu-catalog__item--content js-submenu-catalog"><a class="submenu-catalog__sublink" href="#">Кресла</a>
+                                  <div class="submenu-catalog__content">
+                                    <div class="submenu-content">
+                                      <div class="submenu-content__side">
+                                        <div class="submenu-content__block"><span class="submenu-content__name">Материал</span><a class="submenu-content__link" href="#">Пластиковые столы</a><a class="submenu-content__link" href="#">Деревянные столы</a><a class="submenu-content__link" href="#">Стеклянные столы</a><a class="submenu-content__link" href="#">Плетенные столы</a><a class="submenu-content__link" href="#">Столы на металлокаркасе</a></div>
+                                        <div class="submenu-content__block"><span class="submenu-content__name">Назначение</span><a class="submenu-content__link" href="#">Столы на фудкорта</a><a class="submenu-content__link" href="#">Столы для кафе и ресторанов</a><a class="submenu-content__link" href="#">Столы для гостиниц</a><a class="submenu-content__link" href="#">Столы для летних кафе</a></div>
+                                      </div>
+                                      <div class="submenu-content__side">
+                                        <div class="submenu-content__block"><span class="submenu-content__name">Стиль</span><a class="submenu-content__link" href="#">Столы в стиле Лофт</a><a class="submenu-content__link" href="#">Столы дизайнерские</a><a class="submenu-content__link" href="#">Столы под старину</a></div>
+                                        <div class="submenu-content__block"><span class="submenu-content__name">Вид</span><a class="submenu-content__link" href="#">Складные столы</a><a class="submenu-content__link" href="#">Столы на одной ножке</a><a class="submenu-content__link" href="#">Барные столы</a><a class="submenu-content__link" href="#">Банкетные столы</a><a class="submenu-content__link" href="#">Конференц-столы</a><a class="submenu-content__link" href="#">Коктейльные столы</a></div>
+                                      </div>
+                                      <div class="submenu-content__side">
+                                        <div class="submenu-content__block"><span class="submenu-content__name">Форма</span><a class="submenu-content__link" href="#">Круглые столы</a><a class="submenu-content__link" href="#">Квадратные столы</a><a class="submenu-content__link" href="#">Прямоугольные столы</a></div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li class="submenu-catalog__subitem"><a class="submenu-catalog__sublink" href="#">Полукресла/мягкие стулья</a></li>
+                                <li class="submenu-catalog__subitem"><a class="submenu-catalog__sublink" href="#">Пуфы и банкетки</a></li>
+                              </ul>
+                            </div>
+                          </li>
+                          <li class="submenu-catalog__item"><a class="submenu-catalog__link" href="#">
+                              <div class="submenu-catalog__img">
+                                <svg class="svg-sprite-icon icon-underframes submenu-catalog__icon">
+                                  <use xlink:href="static/images/svg/symbol/sprite.svg#underframes"></use>
+                                </svg>
+                              </div><span class="submenu-catalog__text">Подстолья</span></a></li>
+                          <li class="submenu-catalog__item"><a class="submenu-catalog__link" href="#">
+                              <div class="submenu-catalog__img">
+                                <svg class="svg-sprite-icon icon-folding-furniture submenu-catalog__icon">
+                                  <use xlink:href="static/images/svg/symbol/sprite.svg#folding-furniture"></use>
+                                </svg>
+                              </div><span class="submenu-catalog__text">Складная мебель</span></a></li>
+                          <li class="submenu-catalog__item"><a class="submenu-catalog__link" href="#">
+                              <div class="submenu-catalog__img">
+                                <svg class="svg-sprite-icon icon-racks submenu-catalog__icon">
+                                  <use xlink:href="static/images/svg/symbol/sprite.svg#racks"></use>
+                                </svg>
+                              </div><span class="submenu-catalog__text">Стойки</span></a></li>
+                          <li class="submenu-catalog__item"><a class="submenu-catalog__link" href="#">
+                              <div class="submenu-catalog__img">
+                                <svg class="svg-sprite-icon icon-outdoor-furniture submenu-catalog__icon">
+                                  <use xlink:href="static/images/svg/symbol/sprite.svg#outdoor-furniture"></use>
+                                </svg>
+                              </div><span class="submenu-catalog__text">Мебель для улицы</span></a></li>
+                          <li class="submenu-catalog__item"><a class="submenu-catalog__link" href="#">
+                              <div class="submenu-catalog__img">
+                                <svg class="svg-sprite-icon icon-banquet-furniture submenu-catalog__icon">
+                                  <use xlink:href="static/images/svg/symbol/sprite.svg#banquet-furniture"></use>
+                                </svg>
+                              </div><span class="submenu-catalog__text">Банкетная мебель</span></a></li>
+                          <li class="submenu-catalog__item"><a class="submenu-catalog__link" href="#">
+                              <div class="submenu-catalog__img">
+                                <svg class="svg-sprite-icon icon-gardening submenu-catalog__icon">
+                                  <use xlink:href="static/images/svg/symbol/sprite.svg#gardening"></use>
+                                </svg>
+                              </div><span class="submenu-catalog__text">Мафы и озеленение</span></a></li>
+                        </ul>
+                      </nav>
+                    </div>
+                  </li>
+                  <li class="main-nav__item main-nav__item--submenu"><a class="main-nav__link main-nav__link--submenu" href="#">Рестораны и кафе</a>
+                    <div class="main-nav__submenu submenu-main">
+                      <ul class="submenu-main__list">
+                        <li class="submenu-main__item"><a class="submenu-main__link" href="#">Столы</a></li>
+                        <li class="submenu-main__item"><a class="submenu-main__link" href="#">Стулья </a></li>
+                        <li class="submenu-main__item"><a class="submenu-main__link" href="#">Столешницы</a></li>
+                        <li class="submenu-main__item"><a class="submenu-main__link" href="#">Мягкая мебель</a></li>
+                        <li class="submenu-main__item"><a class="submenu-main__link" href="#">Подстолья</a></li>
+                        <li class="submenu-main__item"><a class="submenu-main__link" href="#">Складная мебель</a></li>
+                        <li class="submenu-main__item"><a class="submenu-main__link" href="#">Стойки</a></li>
+                        <li class="submenu-main__item"><a class="submenu-main__link" href="#">Мебель для улицы</a></li>
+                        <li class="submenu-main__item"><a class="submenu-main__link" href="#">Банкетная мебель</a></li>
+                        <li class="submenu-main__item"><a class="submenu-main__link" href="#">Мафы и озеленение</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="main-nav__item"><a class="main-nav__link" href="#">Фудкорт</a></li>
+                  <li class="main-nav__item"><a class="main-nav__link" href="#">Летние кафе</a></li>
+                  <li class="main-nav__item"><a class="main-nav__link" href="#">Банкетные залы</a></li>
+                  <li class="main-nav__item"><a class="main-nav__link" href="#">Конференц залы</a></li>
+                  <li class="main-nav__item"><a class="main-nav__link" href="#">Гостиницы</a></li>
+                  <li class="main-nav__item"><a class="main-nav__link" href="#">ТЦ и озеленение</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="content">
+        <div class="main-banner">
+          <div class="main-banner__item">
+            <div class="main-banner__left"></div>
+            <div class="main-banner__content">
+              <div class="container">
+                <div class="main-banner__content-wrap">
+                  <h1 class="main-banner__title main-title">Производство мебели</h1>
+                  <div class="main-banner__desc banner-desc">
+                    <div class="banner-desc__dots"></div>
+                    <p class="banner-desc__text">по индивидуальному проекту</p>
+                  </div><a class="banner-item__more banner-more" href="#"><span class="banner-more__text"><span>Подробнее</span><span>Подробнее</span></span>
+                    <svg class="svg-sprite-icon icon-arrow-top banner-more__icon">
+                      <use xlink:href="static/images/svg/symbol/sprite.svg#arrow-top"></use>
+                    </svg></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="advantages">
+          <div class="container">
+            <div class="advantages-item">
+              <div class="advantages-item__img">
+                <svg class="svg-sprite-icon icon-adv-icon1 advantages-item__icon">
+                  <use xlink:href="static/images/svg/symbol/sprite.svg#adv-icon1"></use>
+                </svg>
+              </div><span class="advantages-item__text">Опыт c 2014 г.</span>
+            </div>
+            <div class="advantages-item">
+              <div class="advantages-item__img">
+                <svg class="svg-sprite-icon icon-adv-icon2 advantages-item__icon">
+                  <use xlink:href="static/images/svg/symbol/sprite.svg#adv-icon2"></use>
+                </svg>
+              </div><span class="advantages-item__text">Конструкторское дизайнерское бюро</span>
+            </div>
+            <div class="advantages-item">
+              <div class="advantages-item__img">
+                <svg class="svg-sprite-icon icon-adv-icon3 advantages-item__icon">
+                  <use xlink:href="static/images/svg/symbol/sprite.svg#adv-icon3"></use>
+                </svg>
+              </div><span class="advantages-item__text">Оснащено более 3000 объектов</span>
+            </div>
+            <div class="advantages-item">
+              <div class="advantages-item__img">
+                <svg class="svg-sprite-icon icon-adv-icon4 advantages-item__icon">
+                  <use xlink:href="static/images/svg/symbol/sprite.svg#adv-icon4"></use>
+                </svg>
+              </div><span class="advantages-item__text">Контроль качества продукции</span>
+            </div>
+            <div class="advantages-item">
+              <div class="advantages-item__img">
+                <svg class="svg-sprite-icon icon-adv-icon5 advantages-item__icon">
+                  <use xlink:href="static/images/svg/symbol/sprite.svg#adv-icon5"></use>
+                </svg>
+              </div><span class="advantages-item__text">Складская программа</span>
+            </div>
+            <div class="advantages-item">
+              <div class="advantages-item__img">
+                <svg class="svg-sprite-icon icon-adv-icon6 advantages-item__icon">
+                  <use xlink:href="static/images/svg/symbol/sprite.svg#adv-icon6"></use>
+                </svg>
+              </div><span class="advantages-item__text">Быстрая доставка по РФ</span>
+            </div>
+          </div>
+        </div>
+        <nav class="categories">
+          <div class="container">
+            <ul class="categories__list">
+              <li class="categories__item"><a class="categories__link" href="#">
+                  <div class="categories__header">
+                    <div class="categories__img"><img class="categories__picture" src="static/images/content/categories-img1.png" alt="">
+                      <div class="categories-active">
+                        <div class="categories-active__icon"></div>
+                      </div>
+                    </div>
+                  </div><span class="categories__text">Мебель для ресторанов и кафе</span></a></li>
+              <li class="categories__item"><a class="categories__link" href="#">
+                  <div class="categories__header">
+                    <div class="categories__img"><img class="categories__picture" src="static/images/content/categories-img2.png" alt="">
+                      <div class="categories-active">
+                        <div class="categories-active__icon"></div>
+                      </div>
+                    </div>
+                  </div><span class="categories__text">Мебель для фудкортов</span></a></li>
+              <li class="categories__item"><a class="categories__link" href="#">
+                  <div class="categories__header">
+                    <div class="categories__img"><img class="categories__picture" src="static/images/content/categories-img3.png" alt="">
+                      <div class="categories-active">
+                        <div class="categories-active__icon"></div>
+                      </div>
+                    </div>
+                  </div><span class="categories__text">Мебель для летних кафе</span></a></li>
+              <li class="categories__item"><a class="categories__link" href="#">
+                  <div class="categories__header">
+                    <div class="categories__img"><img class="categories__picture" src="static/images/content/categories-img4.png" alt="">
+                      <div class="categories-active">
+                        <div class="categories-active__icon"></div>
+                      </div>
+                    </div>
+                  </div><span class="categories__text">Мебель для банкетных залов</span></a></li>
+              <li class="categories__item"><a class="categories__link" href="#">
+                  <div class="categories__header">
+                    <div class="categories__img"><img class="categories__picture" src="static/images/content/categories-img5.png" alt="">
+                      <div class="categories-active">
+                        <div class="categories-active__icon"></div>
+                      </div>
+                    </div>
+                  </div><span class="categories__text">Мебель гостиниц</span></a></li>
+              <li class="categories__item"><a class="categories__link" href="#">
+                  <div class="categories__header">
+                    <div class="categories__img"><img class="categories__picture" src="static/images/content/categories-img6.png" alt="">
+                      <div class="categories-active">
+                        <div class="categories-active__icon"></div>
+                      </div>
+                    </div>
+                  </div><span class="categories__text">Мебель для салонов красоты</span></a></li>
+              <li class="categories__item"><a class="categories__link" href="#">
+                  <div class="categories__header">
+                    <div class="categories__img"><img class="categories__picture" src="static/images/content/categories-img7.png" alt="">
+                      <div class="categories-active">
+                        <div class="categories-active__icon"></div>
+                      </div>
+                    </div>
+                  </div><span class="categories__text">Мебель для конференц залов</span></a></li>
+              <li class="categories__item"><a class="categories__link" href="#">
+                  <div class="categories__header">
+                    <div class="categories__img"><img class="categories__picture" src="static/images/content/categories-img2.png" alt="">
+                      <div class="categories-active">
+                        <div class="categories-active__icon"></div>
+                      </div>
+                    </div>
+                  </div><span class="categories__text">Мебель для торговых точек</span></a></li>
+              <li class="categories__item"><a class="categories__link" href="#">
+                  <div class="categories__header">
+                    <div class="categories__img"><img class="categories__picture" src="static/images/content/categories-img3.png" alt="">
+                      <div class="categories-active">
+                        <div class="categories-active__icon"></div>
+                      </div>
+                    </div>
+                  </div><span class="categories__text">Мебель для пивных баров</span></a></li>
+              <li class="categories__item"><a class="categories__link" href="#">
+                  <div class="categories__header">
+                    <div class="categories__img"><img class="categories__picture" src="static/images/content/categories-img5.png" alt="">
+                      <div class="categories-active">
+                        <div class="categories-active__icon"></div>
+                      </div>
+                    </div>
+                  </div><span class="categories__text">Мебель для кальянных</span></a></li>
+              <li class="categories__item"><a class="categories__link" href="#">
+                  <div class="categories__header">
+                    <div class="categories__img"><img class="categories__picture" src="static/images/content/categories-img8.png" alt="">
+                      <div class="categories-active">
+                        <div class="categories-active__icon"></div>
+                      </div>
+                    </div>
+                  </div><span class="categories__text">Мебель для общественных зон</span></a></li>
+              <li class="categories__item"><a class="categories__link" href="#">
+                  <div class="categories__header">
+                    <div class="categories__img"><img class="categories__picture" src="static/images/content/categories-img6.png" alt="">
+                      <div class="categories-active">
+                        <div class="categories-active__icon"></div>
+                      </div>
+                    </div>
+                  </div><span class="categories__text">Озеленение</span></a></li>
+            </ul>
+          </div>
+        </nav>
+        <div class="newest">
+          <div class="container">
+            <h3 class="section-title newest__title">Новинки</h3>
+            <div class="newest-container swiper-container">
+              <div class="newest-wrapper swiper-wrapper">
+                <div class="newest-item swiper-slide"><span class="newest-item__after">Новинка</span><a class="newest-item__header" href="#">
+                    <div class="newest-item__img"><img class="newest-item__picture" src="static/images/content/newest-img1.png" alt=""></div>
+                    <div class="newest-item__info"><span class="newest-item__title">Стол банкетный</span></div></a>
+                  <div class="newest-item__footer"><a class="newest-item__price" href="#"> <span class="newest-item__price-text">Узнать цену</span></a><a class="newest-item__basket" href="#">
+                      <svg class="svg-sprite-icon icon-basket newest-item__icon">
+                        <use xlink:href="static/images/svg/symbol/sprite.svg#basket"></use>
+                      </svg></a></div>
+                </div>
+                <div class="newest-item swiper-slide"><a class="newest-item__header" href="#">
+                    <div class="newest-item__img"><img class="newest-item__picture" src="static/images/content/newest-img2.png" alt=""></div>
+                    <div class="newest-item__info"><span class="newest-item__title">Стол банкетный</span></div></a>
+                  <div class="newest-item__footer"><a class="newest-item__price" href="#"> <span class="newest-item__price-text">Узнать цену</span></a><a class="newest-item__basket" href="#">
+                      <svg class="svg-sprite-icon icon-basket newest-item__icon">
+                        <use xlink:href="static/images/svg/symbol/sprite.svg#basket"></use>
+                      </svg></a></div>
+                </div>
+                <div class="newest-item swiper-slide"><span class="newest-item__after newest-item__after--black">Хит продаж</span><a class="newest-item__header" href="#">
+                    <div class="newest-item__img"><img class="newest-item__picture" src="static/images/content/newest-img3.png" alt=""></div>
+                    <div class="newest-item__info"><span class="newest-item__title">Стол банкетный</span></div></a>
+                  <div class="newest-item__footer"><a class="newest-item__price" href="#"> <span class="newest-item__price-text">Узнать цену</span></a><a class="newest-item__basket" href="#">
+                      <svg class="svg-sprite-icon icon-basket newest-item__icon">
+                        <use xlink:href="static/images/svg/symbol/sprite.svg#basket"></use>
+                      </svg></a></div>
+                </div>
+                <div class="newest-item swiper-slide"><span class="newest-item__after newest-item__after--red">В шоу-руме</span><a class="newest-item__header" href="#">
+                    <div class="newest-item__img"><img class="newest-item__picture" src="static/images/content/newest-img4.png" alt=""></div>
+                    <div class="newest-item__info"><span class="newest-item__title">Стол банкетный</span></div></a>
+                  <div class="newest-item__footer"><a class="newest-item__price" href="#"> <span class="newest-item__price-text">Узнать цену</span></a><a class="newest-item__basket" href="#">
+                      <svg class="svg-sprite-icon icon-basket newest-item__icon">
+                        <use xlink:href="static/images/svg/symbol/sprite.svg#basket"></use>
+                      </svg></a></div>
+                </div>
+                <div class="newest-item swiper-slide"><span class="newest-item__after">Новинка</span><a class="newest-item__header" href="#">
+                    <div class="newest-item__img"><img class="newest-item__picture" src="static/images/content/newest-img1.png" alt=""></div>
+                    <div class="newest-item__info"><span class="newest-item__title">Стол банкетный</span></div></a>
+                  <div class="newest-item__footer"><a class="newest-item__price" href="#"> <span class="newest-item__price-text">Узнать цену</span></a><a class="newest-item__basket" href="#">
+                      <svg class="svg-sprite-icon icon-basket newest-item__icon">
+                        <use xlink:href="static/images/svg/symbol/sprite.svg#basket"></use>
+                      </svg></a></div>
+                </div>
+              </div>
+              <div class="newest-button__wrap newest-button__wrap--next">
+                <div class="newest-button newest-button-next btn-animation">
+                  <svg class="svg-sprite-icon icon-arrow-top newest-button__arrow">
+                    <use xlink:href="static/images/svg/symbol/sprite.svg#arrow-top"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="newest-button__wrap newest-button__wrap--prev">
+                <div class="newest-button newest-button-prev btn-animation">
+                  <svg class="svg-sprite-icon icon-arrow-top newest-button__arrow">
+                    <use xlink:href="static/images/svg/symbol/sprite.svg#arrow-top"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="works">
+          <div class="container">
+            <h3 class="section-title works__title">Наши выполненные работы</h3>
+            <div class="works__content">
+              <div class="works__wrap"><a class="works-item works-item--h100 works-item--bg1" href="#">
+                  <div class="works-item__plus">
+                    <div class="works-item__icon"></div>
+                  </div>
+                  <div class="works-item__wrap">
+                    <div class="works-item__content"><span class="works-item__title">Ресторан древний Китай</span><span class="works-item__city">Москва</span></div>
+                  </div></a></div>
+              <div class="works__wrap"><a class="works-item works-item--mb works-item--bg2" href="#">
+                  <div class="works-item__plus">
+                    <div class="works-item__icon"></div>
+                  </div>
+                  <div class="works-item__wrap">
+                    <div class="works-item__content"><span class="works-item__title">Кафе <br>белые ночи</span><span class="works-item__city">Москва</span></div>
+                  </div></a><a class="works-item works-item--bg3" href="#">
+                  <div class="works-item__plus">
+                    <div class="works-item__icon"></div>
+                  </div>
+                  <div class="works-item__wrap">
+                    <div class="works-item__content"><span class="works-item__title">Ресторан Якитория</span><span class="works-item__city">Москва</span></div>
+                  </div></a></div>
+            </div><a class="banner-item__more banner-more works__btn" href="#"><span class="banner-more__text"><span>Перейти в портфолио</span><span>Перейти в портфолио</span></span>
+              <svg class="svg-sprite-icon icon-arrow-top banner-more__icon">
+                <use xlink:href="static/images/svg/symbol/sprite.svg#arrow-top"></use>
+              </svg></a>
+          </div>
+        </div>
+        <div class="reviews">
+          <div class="container">
+            <div class="reviews-block"></div>
+            <h3 class="section-title reviews__title">Отзывы</h3>
+            <div class="reviews-container swiper-container">
+              <div class="reviews-wrapper swiper-wrapper"><a class="swiper-slide modal-href reviews-item" href="javascript:void(0);" style="background-image: url(static/images/content/reviews-img1.jpg);" show-modal="reviews-1">
+                  <div class="reviews-item__wrap">
+                    <div class="reviews-play">
+                      <div class="reviews-play__wrap"><span class="reviews-play__triangle"></span></div>
+                    </div>
+                  </div></a><a class="swiper-slide modal-href reviews-item" href="javascript:void(0);" style="background-image: url(static/images/content/reviews-img2.jpg);" show-modal="reviews-2">
+                  <div class="reviews-item__wrap">
+                    <div class="reviews-play">
+                      <div class="reviews-play__wrap"><span class="reviews-play__triangle"></span></div>
+                    </div>
+                  </div></a><a class="swiper-slide modal-href reviews-item" href="javascript:void(0);" style="background-image: url(static/images/content/reviews-img3.jpg);" show-modal="reviews-3">
+                  <div class="reviews-item__wrap">
+                    <div class="reviews-play">
+                      <div class="reviews-play__wrap"><span class="reviews-play__triangle"></span></div>
+                    </div>
+                  </div></a></div>
+              <div class="reviews-navigation">
+                <div class="newest-button newest-button-next reviews-button reviews-button-next btn-animation">
+                  <svg class="svg-sprite-icon icon-arrow-top newest-button__arrow">
+                    <use xlink:href="static/images/svg/symbol/sprite.svg#arrow-top"></use>
+                  </svg>
+                </div>
+                <div class="newest-button newest-button-prev reviews-button reviews-button-prev btn-animation">
+                  <svg class="svg-sprite-icon icon-arrow-top newest-button__arrow">
+                    <use xlink:href="static/images/svg/symbol/sprite.svg#arrow-top"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about">
+          <div class="container">
+            <div class="about__block">
+              <div class="about__content">
+                <div class="about__info">
+                  <h3 class="section-title about__title">О компании</h3><span class="about__description">
+                    Каждый в жизни  должен заниматься своим делом –  художник рисовать, повар кормить людей, врач лечить. Именно тогда, когда вопрос решает профессионал, можно быть уверенным в отличном результате. <span class="about__description-text">Наш клиент –  именно тот, кто готов свои вопросы и заботы поручить профессионалам, кто ценит свое время. Мы называем своих клиентов партнерами, потому что понимаем, что от нашего сотрудничества не может выиграть только одна сторона. Наш бизнес только тогда является прибыльным и долгосрочным, когда наши клиенты успешны,  возвращаются к нам снова, рекомендуют нас своим знакомым.</span><span class="about__description-text">На нашем производстве и в торговом доме работают люди, каждого из которых можно смело назвать экспертом в отрасли, потому что работают они в мебельном производстве 7 и более лет.  Именно это позволяет нам сформировать оптимальное предложение по дизайну,  стоимости, срокам для каждого конкретного проекта.</span>
+                    <span class="about__description-text">Собственные дизайнеры и конструкторы в штате компании позволяют разрабатывать уникальные решения для каждого проекта, обеспечивать авторский контроль по ходу исполнения заказа, монтаж и дальнейшее обслуживание изделия, там, где это необходимо. Каждый проект ведет персональный менеджер, который работает по принципу «одного окна», решая все возможные вопросы наших заказчиков по дизайну, производству, логистике.</span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="news">
+          <div class="container">
+            <h3 class="section-title news__title">Новости</h3>
+            <div class="news__content"><a class="news-item" href="#">
+                <div class="news-item__img"><img class="news-item__picture" src="static/images/content/news-img.png" alt=""></div>
+                <div class="news-item__info">
+                  <div class="news-item__date"><span>22.02.2020</span></div>
+                  <p class="news-item__title">Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
+                  <p class="news-item__desc">sed do eiusmod tempor incididunt ut labore et dolore</p>
+                  <div class="btn-animation news-item__btn">
+                    <svg class="svg-sprite-icon icon-arrow-top news-item__arrow">
+                      <use xlink:href="static/images/svg/symbol/sprite.svg#arrow-top"></use>
+                    </svg>
+                  </div>
+                </div></a><a class="news-item" href="#">
+                <div class="news-item__img"><img class="news-item__picture" src="static/images/content/news-img.png" alt=""></div>
+                <div class="news-item__info">
+                  <div class="news-item__date"><span>22.02.2020</span></div>
+                  <p class="news-item__title">Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
+                  <p class="news-item__desc">sed do eiusmod tempor incididunt ut labore et dolore</p>
+                  <div class="btn-animation news-item__btn">
+                    <svg class="svg-sprite-icon icon-arrow-top news-item__arrow">
+                      <use xlink:href="static/images/svg/symbol/sprite.svg#arrow-top"></use>
+                    </svg>
+                  </div>
+                </div></a><a class="news-item" href="#">
+                <div class="news-item__img"><img class="news-item__picture" src="static/images/content/news-img.png" alt=""></div>
+                <div class="news-item__info">
+                  <div class="news-item__date"><span>22.02.2020</span></div>
+                  <p class="news-item__title">Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
+                  <p class="news-item__desc">sed do eiusmod tempor incididunt ut labore et dolore</p>
+                  <div class="btn-animation news-item__btn">
+                    <svg class="svg-sprite-icon icon-arrow-top news-item__arrow">
+                      <use xlink:href="static/images/svg/symbol/sprite.svg#arrow-top"></use>
+                    </svg>
+                  </div>
+                </div></a><a class="news-item" href="#">
+                <div class="news-item__img"><img class="news-item__picture" src="static/images/content/news-img.png" alt=""></div>
+                <div class="news-item__info">
+                  <div class="news-item__date"><span>22.02.2020</span></div>
+                  <p class="news-item__title">Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
+                  <p class="news-item__desc">sed do eiusmod tempor incididunt ut labore et dolore</p>
+                  <div class="btn-animation news-item__btn">
+                    <svg class="svg-sprite-icon icon-arrow-top news-item__arrow">
+                      <use xlink:href="static/images/svg/symbol/sprite.svg#arrow-top"></use>
+                    </svg>
+                  </div>
+                </div></a></div>
+          </div>
+        </div>
+        <div class="photo-offer">
+          <div class="container">
+            <h3 class="section-title photo-offer__title">Фото заказов с производства</h3>
+            <div class="photo-container swiper-container">
+              <div class="photo-wrapper swiper-wrapper">
+                <div class="photo-item swiper-slide">
+                  <div class="photo-item__img"><img class="photo-item__picture" src="static/images/content/photo-img1.jpg" alt=""></div><span class="photo-item__title">Декор на стул Кьявари 03  с подушкой </span>
+                </div>
+                <div class="photo-item swiper-slide">
+                  <div class="photo-item__img"><img class="photo-item__picture" src="static/images/content/photo-img2.jpg" alt=""></div><span class="photo-item__title">Кресло Астралис </span>
+                </div>
+                <div class="photo-item swiper-slide">
+                  <div class="photo-item__img"><img class="photo-item__picture" src="static/images/content/photo-img3.jpg" alt=""></div><span class="photo-item__title">Стол Eames DSW</span>
+                </div>
+                <div class="photo-item swiper-slide">
+                  <div class="photo-item__img"><img class="photo-item__picture" src="static/images/content/photo-img4.jpg" alt=""></div><span class="photo-item__title">Кресло Хукер</span>
+                </div>
+              </div>
+              <div class="newest-button__wrap newest-button__wrap--next">
+                <div class="newest-button newest-button-next photo-button-next btn-animation">
+                  <svg class="svg-sprite-icon icon-arrow-top newest-button__arrow">
+                    <use xlink:href="static/images/svg/symbol/sprite.svg#arrow-top"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="newest-button__wrap newest-button__wrap--prev">
+                <div class="newest-button newest-button-prev photo-button-prev btn-animation">
+                  <svg class="svg-sprite-icon icon-arrow-top newest-button__arrow">
+                    <use xlink:href="static/images/svg/symbol/sprite.svg#arrow-top"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="partners">
+          <div class="container">
+            <h3 class="section-title partners__title">Нас рекомендуют</h3>
+            <div class="partners-container swiper-container">
+              <div class="partners-wrapper swiper-wrapper">
+                <div class="partners-item partners-item--bg1 swiper-slide"></div>
+                <div class="partners-item partners-item--bg2 swiper-slide"></div>
+                <div class="partners-item partners-item--bg3 swiper-slide"></div>
+                <div class="partners-item partners-item--bg4 swiper-slide"></div>
+                <div class="partners-item partners-item--bg5 swiper-slide"></div>
+              </div>
+              <div class="newest-button__wrap newest-button__wrap--next">
+                <div class="newest-button newest-button-next partners-button-next btn-animation">
+                  <svg class="svg-sprite-icon icon-arrow-top newest-button__arrow">
+                    <use xlink:href="static/images/svg/symbol/sprite.svg#arrow-top"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="newest-button__wrap newest-button__wrap--prev">
+                <div class="newest-button newest-button-prev partners-button-prev btn-animation">
+                  <svg class="svg-sprite-icon icon-arrow-top newest-button__arrow">
+                    <use xlink:href="static/images/svg/symbol/sprite.svg#arrow-top"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="subscribe">
+          <div class="container">
+            <div class="subscribe__block">
+              <div class="subscribe__content">
+                <h3 class="section-title subscribe__title">Подпишитесь на рассылку</h3>
+                <div class="subscribe__info"><span class="subscribe__desc">Узнавайте первыми о скидках и вкциях, получайте советы и  новости сферы HoReCa</span>
+                  <form class="subscribe-form" method="POST" action="#">
+                    <input class="subscribe-form__field" type="text" placeholder="Введите e-mail">
+                    <button class="newest-item__price subscribe-form__send"><span class="newest-item__price-text">Подписаться</span></button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal modal-reviews reviews-1"><a class="modal-close" href="javascript:void(0);">
+            <svg class="svg-sprite-icon icon-close modal-close__icon">
+              <use xlink:href="static/images/svg/symbol/sprite.svg#close"></use>
+            </svg></a>
+          <div class="youtube" id="RK1K2bCg4J8" style="width: 500px; height: 281px;"></div>
+        </div>
+        <div class="modal modal-reviews reviews-2"><a class="modal-close" href="javascript:void(0);">
+            <svg class="svg-sprite-icon icon-close modal-close__icon">
+              <use xlink:href="static/images/svg/symbol/sprite.svg#close"></use>
+            </svg></a>
+          <div class="youtube" id="MB80ZuIJATI" style="width: 500px; height: 281px;"></div>
+        </div>
+        <div class="modal modal-reviews reviews-3"><a class="modal-close" href="javascript:void(0);">
+            <svg class="svg-sprite-icon icon-close modal-close__icon">
+              <use xlink:href="static/images/svg/symbol/sprite.svg#close"></use>
+            </svg></a>
+          <div class="youtube" id="rN6nlNC9WQA" style="width: 500px; height: 281px;"></div>
+        </div>
+        <div class="modal modal-callback"><a class="modal-close modal-callback__close" href="javascript:void(0);">
+            <svg class="svg-sprite-icon icon-close modal-close__icon">
+              <use xlink:href="static/images/svg/symbol/sprite.svg#close"></use>
+            </svg></a>
+          <div class="modal-callback__content"><span class="modal-callback__title">Заказать звонок</span>
+            <form class="modal-callback__form" action="#" method="POST">
+              <input class="modal-callback__field" type="text" placeholder="Ваше имя">
+              <input class="modal-callback__field inputmask-tel" type="tel" placeholder="Ваш телефон">
+              <button class="newest-item__price modal-callback__send"><span class="newest-item__price-text">Перезвоните мне</span></button>
+            </form>
+          </div>
+        </div>
+        <div class="modal modal-offer"><a class="modal-close modal-callback__close" href="javascript:void(0);">
+            <svg class="svg-sprite-icon icon-close modal-close__icon">
+              <use xlink:href="static/images/svg/symbol/sprite.svg#close"></use>
+            </svg></a>
+          <div class="modal-callback__content"><span class="modal-callback__title">Сделать заявку</span>
+            <form class="modal-callback__form" action="#" method="POST">
+              <input class="modal-callback__field" type="text" placeholder="Ваше имя" required>
+              <input class="modal-callback__field" type="text" placeholder="Ваш E-mail" required>
+              <input class="modal-callback__field inputmask-tel" type="tel" placeholder="Ваш телефон" required>
+              <textarea class="modal-offer__textarea" placeholder="Описание проекта"></textarea>
+              <button class="newest-item__price modal-callback__send"><span class="newest-item__price-text">Перезвоните мне</span></button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__top">
+            <div class="footer__side footer__side--logo"><a class="logo footer-logo" href="#">
+                <svg class="svg-sprite-icon icon-logo logo__img footer-logo__img">
+                  <use xlink:href="static/images/svg/symbol/sprite.svg#logo"></use>
+                </svg><span class="logo__title">Мебель</span></a>
+              <div class="footer-social"><a class="footer-social__link" href="#">
+                  <svg class="svg-sprite-icon icon-facebook footer-social__icon footer-social__icon--fb">
+                    <use xlink:href="static/images/svg/symbol/sprite.svg#facebook"></use>
+                  </svg></a><a class="footer-social__link" href="#">
+                  <svg class="svg-sprite-icon icon-vk footer-social__icon footer-social__icon--vk">
+                    <use xlink:href="static/images/svg/symbol/sprite.svg#vk"></use>
+                  </svg></a><a class="footer-social__link" href="#">
+                  <svg class="svg-sprite-icon icon-inst footer-social__icon">
+                    <use xlink:href="static/images/svg/symbol/sprite.svg#inst"></use>
+                  </svg></a></div>
+            </div>
+            <div class="footer__side"><span class="footer__side-title">О компании</span>
+              <nav class="footer-nav">
+                <ul class="footer-nav__list">
+                  <li class="footer-nav__item"><a class="footer-nav__link" href="#">Вакансии</a></li>
+                  <li class="footer-nav__item"><a class="footer-nav__link" href="#">Новости</a></li>
+                  <li class="footer-nav__item"><a class="footer-nav__link" href="#">Договор</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="footer__side footer__side--width"><span class="footer__side-title">Разделы каталога</span>
+              <nav class="footer-nav">
+                <ul class="footer-nav__list footer-nav__list--pr">
+                  <li class="footer-nav__item"><a class="footer-nav__link" href="#">Столы</a></li>
+                  <li class="footer-nav__item"><a class="footer-nav__link" href="#">Стулья</a></li>
+                  <li class="footer-nav__item"><a class="footer-nav__link" href="#">Подстолья</a></li>
+                  <li class="footer-nav__item"><a class="footer-nav__link" href="#">Столешницы</a></li>
+                  <li class="footer-nav__item"><a class="footer-nav__link" href="#">Стойки</a></li>
+                  <li class="footer-nav__item"><a class="footer-nav__link" href="#">Складная мебель</a></li>
+                </ul>
+                <ul class="footer-nav__list">
+                  <li class="footer-nav__item"><a class="footer-nav__link" href="#">Столешницы</a></li>
+                  <li class="footer-nav__item"><a class="footer-nav__link" href="#">Мягкая мебель</a></li>
+                  <li class="footer-nav__item"><a class="footer-nav__link" href="#">Стойки</a></li>
+                  <li class="footer-nav__item"><a class="footer-nav__link" href="#">Складная мебель</a></li>
+                  <li class="footer-nav__item"><a class="footer-nav__link" href="#">Мягкая мебель</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="footer__side"><span class="footer__side-title">ООО «3КМЕБЕЛЬ»</span>
+              <div class="footer-contacts">
+                <div class="footer-contacts__item">
+                  <svg class="svg-sprite-icon icon-location footer-contacts__icon">
+                    <use xlink:href="static/images/svg/symbol/sprite.svg#location"></use>
+                  </svg><span class="footer-contacts__text">111111, Москва, ул. Новорязанское шоссе 42</span>
+                </div>
+                <div class="footer-contacts__item">
+                  <svg class="svg-sprite-icon icon-tel footer-contacts__icon">
+                    <use xlink:href="static/images/svg/symbol/sprite.svg#tel"></use>
+                  </svg><span class="footer-contacts__text">Тел.: <a href="tel:+74951234567" class="footer-contacts__link">+7 (495) 123-45-67</a></span>
+                </div>
+                <div class="footer-contacts__item">
+                  <svg class="svg-sprite-icon icon-e-mail footer-contacts__icon footer-contacts__icon--email">
+                    <use xlink:href="static/images/svg/symbol/sprite.svg#e-mail"></use>
+                  </svg><span class="footer-contacts__text"><a href="mailto:sale@3k-mebel.ru" class="footer-contacts__link">sale@3k-mebel.ru</a></span>
+                </div>
+                <div class="footer-contacts__item">
+                  <svg class="svg-sprite-icon icon-time footer-contacts__icon">
+                    <use xlink:href="static/images/svg/symbol/sprite.svg#time"></use>
+                  </svg><span class="footer-contacts__text">Понедельник - Пятница <br>с 9:00 до 19:00</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer__bottom">
+            <div class="footer__side footer__text"><span class="footer__copy">&#169; Все права защищены. 2020</span><a class="footer__map" href="#">Карта сайта</a><span class="footer__design">Дизайн сайта Буяльская Татьяна</span></div>
+            <p class="footer__text">Компания «3Кмебель» не несёт ответственности за услуги, предоставляемые сторонними организациями</p>
+            <p class="footer__text">Изображения изделий в каталоге и на сайте, в том числе цвет, рисунок на мебели и другие элементы, могут отличаться, компания ___ оставляет за собой право изменять комплектацию</p>
+            <p class="footer__text">Находясь на сайте, вы принимаете <a href="#" class="footer__politic">Политику конфиденциальности</a></p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="static/js/jquery-3.3.1.min.js"></script>
+    <script src="static/js/libs.min.js"></script>
+    <script src="static/js/main.js"></script>
+  </body>
+</html>
