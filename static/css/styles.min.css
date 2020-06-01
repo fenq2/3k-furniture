@@ -1177,12 +1177,24 @@ button {
 }
 
 .header__bottom {
+  position: -webkit-sticky;
+  position:         sticky;
+  top: 0;
   padding-top: 15px;
 }
 @media screen and (max-width: 768px) {
   .header__bottom {
     display: none;
   }
+}
+.header__bottom--fixed {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 3;
+  background-color: #ffffff;
+  padding-top: 0;
+  box-shadow: 0 0 7px 1px rgba(0, 0, 0, .2);
 }
 
 @media screen and (max-width: 568px) {
@@ -1365,11 +1377,10 @@ button {
   display: none;
   align-items: stretch;
   position: absolute;
-  top: 0;
   z-index: 2;
   background-color: #ffffff;
   box-shadow: 0 30px 35px 1px rgba(0, 0, 0, .3);
-  top: 44px;
+  top: 42px;
   min-height: 572px;
   transition: all linear .2s;
   -webkit-animation-duration: .5s;
@@ -1566,7 +1577,7 @@ button {
   align-items: center;
   justify-content: flex-end;
   background-color: #f4f4f4;
-  padding: 8.5px 20px;
+  padding: 8.5px 40px;
 }
 .search-modal__close {
   display: block;
@@ -2988,9 +2999,11 @@ button {
 }
 .newest-item {
   position: relative;
+  display: flex;
+  flex-direction: column;
   padding: 20px;
   transition: .3s;
-  min-height: 404px;
+  min-height: 424px;
   overflow: hidden;
 }
 @media screen and (max-width: 539px) {
@@ -3091,7 +3104,7 @@ button {
   display: none;
   align-items: center;
   justify-content: space-between;
-  padding-top: 20px;
+  padding-top: 10px;
   transition: all linear .3s;
   -webkit-animation-duration: .3s;
           animation-duration: .3s;
@@ -3099,6 +3112,7 @@ button {
           animation-fill-mode: both;
   -webkit-animation-name: fadeIn;
           animation-name: fadeIn;
+  margin-top: auto;
 }
 .newest-item__basket {
   display: block;
