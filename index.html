@@ -33,6 +33,10 @@
                 <li class="top-nav__item"><a class="top-nav__link" href="#">Контакты</a></li>
               </ul>
               <div class="top-nav__right">
+                <div class="top-nav__email"><a class="top-nav__email-link" href="#">
+                    <svg class="svg-sprite-icon icon-mail-header top-nav__email-icon">
+                      <use xlink:href="static/images/svg/symbol/sprite.svg#mail-header"></use>
+                    </svg></a></div>
                 <div class="search"><a class="search__link" href="#">
                     <svg class="svg-sprite-icon icon-search search__icon">
                       <use xlink:href="static/images/svg/symbol/sprite.svg#search"></use>
@@ -247,7 +251,7 @@
                 <use xlink:href="static/images/svg/symbol/sprite.svg#mail"></use>
               </svg></a>
             <div class="header-info"><a class="header-info__title" href="tel:+74951234567">+7 ( 495 ) 123-45-67</a><span class="header-info__description">Пн-Пт 8:00-18:00</span></div><a class="btn callback-btn modal-href" href="javascript:void(0);" show-modal="modal-callback">Заказать звонок</a>
-            <div class="header-info header-info--order"><a class="header-info__title" href="mailto:email@3kmebel.ru">email@3kmebel.ru</a><span class="header-info__description">Прием заказов круглосуточно</span></div>
+            <div class="header-info header-info--order"><a class="btn offer-btn modal-href" href="javascript:void(0);" show-modal="modal-offer">Сделать заявку</a></div>
             <div class="basket-mobile"><a class="basket-prev__link" href="#">
                 <svg class="svg-sprite-icon icon-basket basket-prev__icon">
                   <use xlink:href="static/images/svg/symbol/sprite.svg#basket"></use>
@@ -880,6 +884,20 @@
             <form class="modal-callback__form" action="#" method="POST">
               <input class="modal-callback__field" type="text" placeholder="Ваше имя">
               <input class="modal-callback__field inputmask-tel" type="tel" placeholder="Ваш телефон">
+              <button class="newest-item__price modal-callback__send"><span class="newest-item__price-text">Перезвоните мне</span></button>
+            </form>
+          </div>
+        </div>
+        <div class="modal modal-offer"><a class="modal-close modal-callback__close" href="javascript:void(0);">
+            <svg class="svg-sprite-icon icon-close modal-close__icon">
+              <use xlink:href="static/images/svg/symbol/sprite.svg#close"></use>
+            </svg></a>
+          <div class="modal-callback__content"><span class="modal-callback__title">Сделать заявку</span>
+            <form class="modal-callback__form" action="#" method="POST">
+              <input class="modal-callback__field" type="text" placeholder="Ваше имя" required>
+              <input class="modal-callback__field" type="text" placeholder="Ваш E-mail" required>
+              <input class="modal-callback__field inputmask-tel" type="tel" placeholder="Ваш телефон" required>
+              <textarea class="modal-offer__textarea" placeholder="Описание проекта"></textarea>
               <button class="newest-item__price modal-callback__send"><span class="newest-item__price-text">Перезвоните мне</span></button>
             </form>
           </div>

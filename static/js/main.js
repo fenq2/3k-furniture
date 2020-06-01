@@ -10,6 +10,9 @@ $(document).ready(function () {
   $('.basket-prev__btn').each(function () {
     $(this).append('<span class="basket-prev__btn--bezier"></span><span class="basket-prev__btn--bezier"></span>');
   });
+  $('.offer-btn').each(function () {
+    $(this).append('<span class="offer-btn__bezier"></span><span class="offer-btn__bezier"></span>');
+  });
 });
 $('.basket-prev').hover(function () {
   $('.overlay').toggleClass('overlay--active');
