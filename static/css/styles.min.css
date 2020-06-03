@@ -1619,23 +1619,23 @@ button {
 }
 .search-modal__field::-webkit-input-placeholder {
   font-size: 14px;
-  color: #666666;
+  color: #424242;
 }
 .search-modal__field::-moz-placeholder {
   font-size: 14px;
-  color: #666666;
+  color: #424242;
 }
 .search-modal__field:-ms-input-placeholder {
   font-size: 14px;
-  color: #666666;
+  color: #424242;
 }
 .search-modal__field::-ms-input-placeholder {
   font-size: 14px;
-  color: #666666;
+  color: #424242;
 }
 .search-modal__field::placeholder {
   font-size: 14px;
-  color: #666666;
+  color: #424242;
 }
 .search-modal__submit {
   font-family: "ProximaNova-Bold";
@@ -2050,6 +2050,9 @@ button {
 .sandwich .menu-layer--active {
   display: block;
 }
+.sandwich .menu-contacts {
+  padding-top: 20px;
+}
 .sandwich .menu__header {
   position: relative;
   padding: 15px;
@@ -2100,23 +2103,23 @@ button {
 }
 .sandwich .menu-search__field::-webkit-input-placeholder {
   font-size: 14px;
-  color: #666666;
+  color: #424242;
 }
 .sandwich .menu-search__field::-moz-placeholder {
   font-size: 14px;
-  color: #666666;
+  color: #424242;
 }
 .sandwich .menu-search__field:-ms-input-placeholder {
   font-size: 14px;
-  color: #666666;
+  color: #424242;
 }
 .sandwich .menu-search__field::-ms-input-placeholder {
   font-size: 14px;
-  color: #666666;
+  color: #424242;
 }
 .sandwich .menu-search__field::placeholder {
   font-size: 14px;
-  color: #666666;
+  color: #424242;
 }
 .sandwich .menu-search__link {
   display: flex;
@@ -4587,6 +4590,7 @@ button {
 }
 .catalog-nav__sublink:hover {
   color: #fc2b38;
+  font-weight: bold;
 }
 
 .catalog__content {
@@ -4647,12 +4651,22 @@ button {
   justify-content: space-between;
 }
 .catalog-products__item {
-  width: 31%;
+  width: 25%;
   margin-top: 30px;
+}
+@media screen and (max-width: 1366px) {
+  .catalog-products__item {
+    width: 33%;
+  }
 }
 @media screen and (max-width: 1020px) {
   .catalog-products__item {
     width: 47%;
+  }
+}
+@media screen and (max-width: 539px) {
+  .catalog-products__item {
+    box-shadow: none;
   }
 }
 
@@ -5024,6 +5038,21 @@ button {
   padding: 10px 20px;
   font-size: 14px;
 }
+.modal-offer__textarea::-webkit-input-placeholder {
+  color: #424242;
+}
+.modal-offer__textarea::-moz-placeholder {
+  color: #424242;
+}
+.modal-offer__textarea:-ms-input-placeholder {
+  color: #424242;
+}
+.modal-offer__textarea::-ms-input-placeholder {
+  color: #424242;
+}
+.modal-offer__textarea::placeholder {
+  color: #424242;
+}
 .modal-callback {
   width: 585px;
   padding: 50px 80px;
@@ -5072,27 +5101,27 @@ button {
 }
 .modal-callback__field::-webkit-input-placeholder {
   font-family: "ProximaNova-Regular";
-  color: #666666;
+  color: #424242;
   font-size: 14px;
 }
 .modal-callback__field::-moz-placeholder {
   font-family: "ProximaNova-Regular";
-  color: #666666;
+  color: #424242;
   font-size: 14px;
 }
 .modal-callback__field:-ms-input-placeholder {
   font-family: "ProximaNova-Regular";
-  color: #666666;
+  color: #424242;
   font-size: 14px;
 }
 .modal-callback__field::-ms-input-placeholder {
   font-family: "ProximaNova-Regular";
-  color: #666666;
+  color: #424242;
   font-size: 14px;
 }
 .modal-callback__field::placeholder {
   font-family: "ProximaNova-Regular";
-  color: #666666;
+  color: #424242;
   font-size: 14px;
 }
 .modal-callback__send {
