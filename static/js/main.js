@@ -274,6 +274,28 @@ var partners = new Swiper('.partners-container', {
     nextEl: '.partners-button-next',
     prevEl: '.partners-button-prev'
   }
+});
+var galleryThumbs = new Swiper('.gallery-thumbs', {
+  spaceBetween: 40,
+  slidesPerView: 4,
+  freeMode: true,
+  watchSlidesVisibility: true,
+  watchSlidesProgress: true
+});
+var galleryTop = new Swiper('.gallery-top', {
+  spaceBetween: 10,
+  navigation: {
+    nextEl: '.card-btn-next',
+    prevEl: '.card-btn-prev'
+  },
+  thumbs: {
+    swiper: galleryThumbs
+  }
+});
+$('.tabs-list li').click(function () {
+  var tabName = $(this).attr('show-tab');
+  $(this).addClass('tabs-list__item--active').siblings().removeClass('tabs-list__item--active');
+  $('.tabs-content .' + tabName).addClass('tabs-content__item--active').siblings().removeClass('tabs-content__item--active');
 }); // Полифилы
 // forEach IE 11
 
