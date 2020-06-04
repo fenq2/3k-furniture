@@ -292,7 +292,7 @@ var galleryTop = new Swiper('.gallery-top', {
     swiper: galleryThumbs
   }
 });
-$('.tabs-list li').click(function () {
+$('.tabs-list__item').click(function () {
   var tabName = $(this).attr('show-tab');
   $(this).addClass('tabs-list__item--active').siblings().removeClass('tabs-list__item--active');
   $('.tabs-content .' + tabName).addClass('tabs-content__item--active').siblings().removeClass('tabs-content__item--active');

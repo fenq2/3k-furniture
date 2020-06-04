@@ -4426,7 +4426,7 @@ button {
   display: flex;
   align-items: center;
   position: absolute;
-  right: 0;
+  right: 15px;
   top: 0;
   text-decoration: none;
   color: #666666;
@@ -4436,7 +4436,7 @@ button {
   transition: .3s;
 }
 .btn-back:hover {
-  right: 20px;
+  right: 30px;
 }
 .btn-back__arrow {
   width: 18px;
@@ -5246,11 +5246,14 @@ button {
 .tabs {
   padding: 40px 0 0 0;
 }
-.tabs-list {
+.tabs-card {
   display: flex;
   justify-content: space-between;
 }
-.tabs-list__item {
+.tabs-card__content {
+  padding: 40px 15px 0 15px;
+}
+.tabs-card__item {
   font-family: "ProximaNova-Bold";
   font-size: 18px;
   display: block;
@@ -5264,18 +5267,15 @@ button {
   padding: 10px 0;
   transition: .3s;
 }
-.tabs-list__item:hover {
+.tabs-card__item:hover {
   border-bottom: 2px solid #fc2b38;
 }
-.tabs-list__item--active {
+.tabs-card__item.tabs-list__item--active {
   border-bottom: 2px solid transparent;
   border-top: 2px solid #fc2b38;
 }
-.tabs-list__item--active:hover {
+.tabs-card__item.tabs-list__item--active:hover {
   border-bottom: 2px solid transparent;
-}
-.tabs-content {
-  padding: 40px 15px 0 15px;
 }
 .tabs-content__item {
   display: none;
@@ -5308,6 +5308,100 @@ button {
 }
 .tabs-options__desc {
   font-family: "ProximaNova-Bold";
+}
+.tabs-tone__list {
+  display: flex;
+  padding-top: 10px;
+}
+.tabs-tone__item {
+  font-family: "ProximaNova-Bold";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 105px;
+  height: 105px;
+  text-decoration: none;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 24px;
+}
+.tabs-tone__item.tabs-list__item--active .tabs-tone__arrow {
+  transform: rotate(90deg);
+}
+.tabs-tone__num {
+  display: block;
+}
+.tabs-tone__arrow {
+  width: 10px;
+  height: 10px;
+  transform: rotate(-90deg);
+  fill: #ffffff;
+  transition: .3s;
+}
+.tabs-pattern__item {
+  display: block;
+  width: 135px;
+  height: 135px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.tabs-pattern__line {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.tabs-pattern__content {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 35px;
+}
+.tabs-pattern__full {
+  width: 280px;
+  height: 280px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.tabs-pattern__info {
+  padding-bottom: 10px;
+}
+.tabs-pattern__info-content {
+  display: flex;
+}
+.tabs-pattern__side {
+  padding-left: 10px;
+  width: 438px;
+}
+.tabs-pattern__options-name {
+  display: block;
+  font-family: "ProximaNova-Bold";
+}
+.tabs-pattern__options-name--fw {
+  font-family: "ProximaNova-Regular";
+}
+.tabs-pattern__title {
+  font-size: 18px;
+  display: block;
+  font-family: "ProximaNova-Bold";
+  padding-bottom: 40px;
+}
+.tabs-pattern__tablist {
+  display: flex;
+  justify-content: space-between;
+}
+.tabs-pattern__tabinfo {
+  font-family: "ProximaNova-Bold";
+  width: 200px;
+  padding: 5px;
+  cursor: pointer;
+  text-align: center;
+  border-bottom: 2px solid #1b1616;
+  border-top: 2px solid transparent;
+  transition: .3s;
+}
+.tabs-pattern__tabinfo.tabs-list__item--active {
+  border-bottom: 2px solid transparent;
+  border-top: 2px solid #1b1616;
 }
 
 .btn-animation {
@@ -5361,6 +5455,25 @@ button {
   height: 15px;
   fill: #1b1616;
   transition: .3s all;
+}
+.modal-pattern {
+  padding: 40px 15px 15px 15px;
+  height: auto;
+  max-height: 100%;
+  overflow-y: scroll;
+}
+.modal-pattern__title {
+  font-family: "ProximaNova-Bold";
+  display: block;
+  text-align: center;
+  font-size: 24px;
+}
+.modal-pattern__subtitle {
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  color: #666666;
+  padding-top: 10px;
 }
 .modal-offer {
   width: 584px;
