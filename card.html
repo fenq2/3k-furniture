@@ -466,7 +466,7 @@
               <div class="card-item__content">
                 <h2 class="card-item__title">Столешницы Werzalit</h2>
                 <div class="card-item__row"><span class="card-item__price">Цена от <span class="card-item__price--fw">7777</span> руб</span><span class="card-item__discond">При заказе  от 5 шт действуют скидки</span></div>
-                <div class="card-item__nav"><a class="newest-item__price card-item__btn" href="#"> <span class="newest-item__price-text">Узнать цену</span></a>
+                <div class="card-item__nav"><a class="newest-item__price card-item__btn modal-href" href="#" show-modal="modal-price"><span class="newest-item__price-text">Узнать цену</span></a>
                   <div class="card-quantity"><span class="card-quantity__title">Количество</span>
                     <div class="card-quantity__count">
                       <button class="card-quantity__btn card-quantity__prev btn-animation">
@@ -666,6 +666,19 @@
             </div>
           </div>
         </div>
+        <div class="modal modal-price"><a class="modal-close modal-callback__close" href="javascript:void(0);">
+            <svg class="svg-sprite-icon icon-close modal-close__icon">
+              <use xlink:href="static/images/svg/symbol/sprite.svg#close"></use>
+            </svg></a>
+          <div class="modal-callback__content"><span class="modal-callback__title">Узнать цену</span>
+            <form class="modal-callback__form" action="#" method="POST">
+              <input class="modal-callback__field" type="text" placeholder="Ваше имя">
+              <input class="modal-callback__field" type="text" placeholder="Ваш e-mail">
+              <input class="modal-callback__field inputmask-tel" type="tel" placeholder="Ваш телефон">
+              <button class="newest-item__price modal-callback__send"><span class="newest-item__price-text">Перезвоните мне</span></button>
+            </form>
+          </div>
+        </div>
         <div class="modal modal-pattern"><a class="modal-close modal-callback__close" href="javascript:void(0);">
             <svg class="svg-sprite-icon icon-close modal-close__icon">
               <use xlink:href="static/images/svg/symbol/sprite.svg#close"></use>
@@ -711,88 +724,783 @@
                   <div class="tabs-content__item tabs-content__item--active tabs-color1">
                     <div class="tabs-pattern__content">
                       <div class="tabs-pattern__line">
-                        <div class="tabs-list__item tabs-pattern__item" style="background-image: url('static/images/content/pattern1.png');" show-tab="tabs-pattern1"></div>
-                        <div class="tabs-list__item tabs-pattern__item" style="background-image: url('static/images/content/pattern2.png');" show-tab="tabs-pattern2"></div>
-                        <div class="tabs-list__item tabs-pattern__item" style="background-image: url('static/images/content/pattern3.png');" show-tab="tabs-pattern3"></div>
-                        <div class="tabs-list__item tabs-pattern__item" style="background-image: url('static/images/content/pattern4.png');" show-tab="tabs-pattern4"></div>
-                        <div class="tabs-list__item tabs-pattern__item" style="background-image: url('static/images/content/pattern5.png');" show-tab="tabs-pattern5"></div>
-                        <div class="tabs-list__item tabs-pattern__item" style="background-image: url('static/images/content/pattern6.png');" show-tab="tabs-pattern6"></div>
-                        <div class="tabs-list__item tabs-pattern__item" style="background-image: url('static/images/content/pattern7.png');" show-tab="tabs-pattern7"></div>
-                        <div class="tabs-list__item tabs-pattern__item" style="background-image: url('static/images/content/pattern8.png');" show-tab="tabs-pattern8"></div>
-                      </div>
-                      <div class="tabs-pattern__line">
-                        <div class="tabs-list__item tabs-pattern__item" style="background-image: url('static/images/content/pattern9.png');" show-tab="tabs-pattern9"></div>
-                        <div class="tabs-list__item tabs-pattern__item" style="background-image: url('static/images/content/pattern10.png');" show-tab="tabs-pattern10"></div>
-                        <div class="tabs-list__item tabs-pattern__item" style="background-image: url('static/images/content/pattern11.png');" show-tab="tabs-pattern11"></div>
-                        <div class="tabs-list__item tabs-pattern__item" style="background-image: url('static/images/content/pattern12.png');" show-tab="tabs-pattern12"></div>
-                        <div class="tabs-list__item tabs-pattern__item" style="background-image: url('static/images/content/pattern13.png');" show-tab="tabs-pattern13"></div>
-                        <div class="tabs-list__item tabs-pattern__item" style="background-image: url('static/images/content/pattern14.png');" show-tab="tabs-pattern14"></div>
-                        <div class="tabs-list__item tabs-pattern__item" style="background-image: url('static/images/content/pattern15.png');" show-tab="tabs-pattern15"></div>
-                        <div class="tabs-list__item tabs-pattern__item" style="background-image: url('static/images/content/pattern16.png');" show-tab="tabs-pattern16"></div>
+                        <div class="tabs-list__item tabs-pattern__item" style="background-image: url('static/images/content/pattern1.png');" show-tab="tabs-pattern1">
+                          <div class="tabs-pattern__item-name">ADEL COM 72</div>
+                          <div class="tabs-pattern__item-current">
+                            <svg class="svg-sprite-icon icon-arrow-top tabs-pattern__item-current-icon">
+                              <use xlink:href="static/images/svg/symbol/sprite.svg#arrow-top"></use>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="tabs-list__item tabs-pattern__item" style="background-image: url('static/images/content/pattern2.png');" show-tab="tabs-pattern2">
+                          <div class="tabs-pattern__item-name">ADEL COM 72</div>
+                          <div class="tabs-pattern__item-current">
+                            <svg class="svg-sprite-icon icon-arrow-top tabs-pattern__item-current-icon">
+                              <use xlink:href="static/images/svg/symbol/sprite.svg#arrow-top"></use>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="tabs-list__item tabs-pattern__item" style="background-image: url('static/images/content/pattern3.png');" show-tab="tabs-pattern3">
+                          <div class="tabs-pattern__item-name">ADEL COM 72</div>
+                          <div class="tabs-pattern__item-current">
+                            <svg class="svg-sprite-icon icon-arrow-top tabs-pattern__item-current-icon">
+                              <use xlink:href="static/images/svg/symbol/sprite.svg#arrow-top"></use>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="tabs-list__item tabs-pattern__item" style="background-image: url('static/images/content/pattern4.png');" show-tab="tabs-pattern4">
+                          <div class="tabs-pattern__item-name">ADEL COM 72</div>
+                          <div class="tabs-pattern__item-current">
+                            <svg class="svg-sprite-icon icon-arrow-top tabs-pattern__item-current-icon">
+                              <use xlink:href="static/images/svg/symbol/sprite.svg#arrow-top"></use>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="tabs-list__item tabs-pattern__item" style="background-image: url('static/images/content/pattern5.png');" show-tab="tabs-pattern5">
+                          <div class="tabs-pattern__item-name">ADEL COM 72</div>
+                          <div class="tabs-pattern__item-current">
+                            <svg class="svg-sprite-icon icon-arrow-top tabs-pattern__item-current-icon">
+                              <use xlink:href="static/images/svg/symbol/sprite.svg#arrow-top"></use>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="tabs-list__item tabs-pattern__item" style="background-image: url('static/images/content/pattern6.png');" show-tab="tabs-pattern6">
+                          <div class="tabs-pattern__item-name">ADEL COM 72</div>
+                          <div class="tabs-pattern__item-current">
+                            <svg class="svg-sprite-icon icon-arrow-top tabs-pattern__item-current-icon">
+                              <use xlink:href="static/images/svg/symbol/sprite.svg#arrow-top"></use>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="tabs-list__item tabs-pattern__item" style="background-image: url('static/images/content/pattern7.png');" show-tab="tabs-pattern7">
+                          <div class="tabs-pattern__item-name">ADEL COM 72</div>
+                          <div class="tabs-pattern__item-current">
+                            <svg class="svg-sprite-icon icon-arrow-top tabs-pattern__item-current-icon">
+                              <use xlink:href="static/images/svg/symbol/sprite.svg#arrow-top"></use>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="tabs-list__item tabs-pattern__item" style="background-image: url('static/images/content/pattern8.png');" show-tab="tabs-pattern8">
+                          <div class="tabs-pattern__item-name">ADEL COM 72</div>
+                          <div class="tabs-pattern__item-current">
+                            <svg class="svg-sprite-icon icon-arrow-top tabs-pattern__item-current-icon">
+                              <use xlink:href="static/images/svg/symbol/sprite.svg#arrow-top"></use>
+                            </svg>
+                          </div>
+                        </div>
                       </div>
                       <div class="tabs-content">
                         <div class="tabs-content__item tabs-pattern__info tabs-pattern1">
                           <div class="tabs-pattern__info-content">
-                            <div class="tabs-pattern__full" style="background-image: url('static/images/content/pattern1.png');"></div>
+                            <div class="tabs-pattern__full" style="background-image: url('static/images/content/pattern1.png');">
+                              <div class="tabs-pattern__close">
+                                <svg class="svg-sprite-icon icon-close tabs-pattern__close-icon">
+                                  <use xlink:href="static/images/svg/symbol/sprite.svg#close"></use>
+                                </svg>
+                              </div>
+                            </div>
                             <div class="tabs-pattern__side"><span class="tabs-pattern__title">ADEL COM 72</span>
                               <div class="tabs-pattern__options"><span class="tabs-pattern__options-name">Состав: <span class="tabs-pattern__options-name--fw">полиэстер - 85%, вискоза - 15%</span></span><span class="tabs-pattern__options-name">Ширина ткани: <span class="tabs-pattern__options-name--fw">140 см</span></span><span class="tabs-pattern__options-name">Плотность ткани: <span class="tabs-pattern__options-name--fw">460 г/м2</span></span><span class="tabs-pattern__options-name">Устойчивость к истиранию: <span class="tabs-pattern__options-name--fw">15 000 циклов</span></span><span class="tabs-pattern__options-name">Тип ткани: <span class="tabs-pattern__options-name--fw">Жаккард</span></span><span class="tabs-pattern__options-name">Страна-производитель: <span class="tabs-pattern__options-name--fw">Китай</span></span></div>
                             </div>
                             <div class="tabs-pattern__side">
                               <div class="tabs-list tabs-pattern__tablist">
-                                <div class="tabs-list__item tabs-list__item--active tabs-pattern__tabinfo" show-tab="tabs-pattern-desc">Описание</div>
-                                <div class="tabs-list__item tabs-pattern__tabinfo" show-tab="tabs-pattern-care">Уход</div>
+                                <div class="tabs-list__item--active tabs-pattern__tabinfo" show-tab="tabs-pattern-desc">Описание</div>
+                                <div class="tabs-pattern__tabinfo" show-tab="tabs-pattern-care">Уход</div>
                               </div>
                               <div class="tabs-content">
-                                <div class="tabs-content__item tabs-content__item--active tabs-pattern-desc">123</div>
-                                <div class="tabs-content__item tabs-pattern-care">12345</div>
+                                <div class="tabs-pattern-desc tabs-pattern__tabcontent tabs-pattern__tabcontent--active"><span class="tabs-pattern__tabitem">легкий блеск</span><span class="tabs-pattern__tabitem">многообразие сочетаний с однотонными  коллекциями</span><span class="tabs-pattern__tabitem">деликатная ткань</span><span class="tabs-pattern__tabitem">оптимальное соотношение цены и качества</span><span class="tabs-pattern__tabitem">элегантность</span></div>
+                                <div class="tabs-pattern-care tabs-pattern__tabcontent">12345</div>
                               </div>
                             </div>
                           </div>
                         </div>
                         <div class="tabs-content__item tabs-pattern__info tabs-pattern2">
-                          <div class="tabs-pattern__full" style="background-image: url('static/images/content/pattern2.png');"></div>
+                          <div class="tabs-pattern__info-content">
+                            <div class="tabs-pattern__full" style="background-image: url('static/images/content/pattern2.png');">
+                              <div class="tabs-pattern__close">
+                                <svg class="svg-sprite-icon icon-close tabs-pattern__close-icon">
+                                  <use xlink:href="static/images/svg/symbol/sprite.svg#close"></use>
+                                </svg>
+                              </div>
+                            </div>
+                            <div class="tabs-pattern__side"><span class="tabs-pattern__title">ADEL COM 72</span>
+                              <div class="tabs-pattern__options"><span class="tabs-pattern__options-name">Состав: <span class="tabs-pattern__options-name--fw">полиэстер - 85%, вискоза - 15%</span></span><span class="tabs-pattern__options-name">Ширина ткани: <span class="tabs-pattern__options-name--fw">140 см</span></span><span class="tabs-pattern__options-name">Плотность ткани: <span class="tabs-pattern__options-name--fw">460 г/м2</span></span><span class="tabs-pattern__options-name">Устойчивость к истиранию: <span class="tabs-pattern__options-name--fw">15 000 циклов</span></span><span class="tabs-pattern__options-name">Тип ткани: <span class="tabs-pattern__options-name--fw">Жаккард</span></span><span class="tabs-pattern__options-name">Страна-производитель: <span class="tabs-pattern__options-name--fw">Китай</span></span></div>
+                            </div>
+                            <div class="tabs-pattern__side">
+                              <div class="tabs-list tabs-pattern__tablist">
+                                <div class="tabs-list__item--active tabs-pattern__tabinfo" show-tab="tabs-pattern-desc">Описание</div>
+                                <div class="tabs-pattern__tabinfo" show-tab="tabs-pattern-care">Уход</div>
+                              </div>
+                              <div class="tabs-content">
+                                <div class="tabs-pattern-desc tabs-pattern__tabcontent tabs-pattern__tabcontent--active"><span class="tabs-pattern__tabitem">легкий блеск</span><span class="tabs-pattern__tabitem">многообразие сочетаний с однотонными  коллекциями</span><span class="tabs-pattern__tabitem">деликатная ткань</span><span class="tabs-pattern__tabitem">оптимальное соотношение цены и качества</span><span class="tabs-pattern__tabitem">элегантность</span></div>
+                                <div class="tabs-pattern-care tabs-pattern__tabcontent">12345</div>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                         <div class="tabs-content__item tabs-pattern__info tabs-pattern3">
-                          <div class="tabs-pattern__full" style="background-image: url('static/images/content/pattern3.png');"></div>
+                          <div class="tabs-pattern__info-content">
+                            <div class="tabs-pattern__full" style="background-image: url('static/images/content/pattern3.png');">
+                              <div class="tabs-pattern__close">
+                                <svg class="svg-sprite-icon icon-close tabs-pattern__close-icon">
+                                  <use xlink:href="static/images/svg/symbol/sprite.svg#close"></use>
+                                </svg>
+                              </div>
+                            </div>
+                            <div class="tabs-pattern__side"><span class="tabs-pattern__title">ADEL COM 72</span>
+                              <div class="tabs-pattern__options"><span class="tabs-pattern__options-name">Состав: <span class="tabs-pattern__options-name--fw">полиэстер - 85%, вискоза - 15%</span></span><span class="tabs-pattern__options-name">Ширина ткани: <span class="tabs-pattern__options-name--fw">140 см</span></span><span class="tabs-pattern__options-name">Плотность ткани: <span class="tabs-pattern__options-name--fw">460 г/м2</span></span><span class="tabs-pattern__options-name">Устойчивость к истиранию: <span class="tabs-pattern__options-name--fw">15 000 циклов</span></span><span class="tabs-pattern__options-name">Тип ткани: <span class="tabs-pattern__options-name--fw">Жаккард</span></span><span class="tabs-pattern__options-name">Страна-производитель: <span class="tabs-pattern__options-name--fw">Китай</span></span></div>
+                            </div>
+                            <div class="tabs-pattern__side">
+                              <div class="tabs-list tabs-pattern__tablist">
+                                <div class="tabs-list__item--active tabs-pattern__tabinfo" show-tab="tabs-pattern-desc">Описание</div>
+                                <div class="tabs-pattern__tabinfo" show-tab="tabs-pattern-care">Уход</div>
+                              </div>
+                              <div class="tabs-content">
+                                <div class="tabs-pattern-desc tabs-pattern__tabcontent tabs-pattern__tabcontent--active"><span class="tabs-pattern__tabitem">легкий блеск</span><span class="tabs-pattern__tabitem">многообразие сочетаний с однотонными  коллекциями</span><span class="tabs-pattern__tabitem">деликатная ткань</span><span class="tabs-pattern__tabitem">оптимальное соотношение цены и качества</span><span class="tabs-pattern__tabitem">элегантность</span></div>
+                                <div class="tabs-pattern-care tabs-pattern__tabcontent">12345</div>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                         <div class="tabs-content__item tabs-pattern__info tabs-pattern4">
-                          <div class="tabs-pattern__full" style="background-image: url('static/images/content/pattern4.png');"></div>
+                          <div class="tabs-pattern__info-content">
+                            <div class="tabs-pattern__full" style="background-image: url('static/images/content/pattern4.png');">
+                              <div class="tabs-pattern__close">
+                                <svg class="svg-sprite-icon icon-close tabs-pattern__close-icon">
+                                  <use xlink:href="static/images/svg/symbol/sprite.svg#close"></use>
+                                </svg>
+                              </div>
+                            </div>
+                            <div class="tabs-pattern__side"><span class="tabs-pattern__title">ADEL COM 72</span>
+                              <div class="tabs-pattern__options"><span class="tabs-pattern__options-name">Состав: <span class="tabs-pattern__options-name--fw">полиэстер - 85%, вискоза - 15%</span></span><span class="tabs-pattern__options-name">Ширина ткани: <span class="tabs-pattern__options-name--fw">140 см</span></span><span class="tabs-pattern__options-name">Плотность ткани: <span class="tabs-pattern__options-name--fw">460 г/м2</span></span><span class="tabs-pattern__options-name">Устойчивость к истиранию: <span class="tabs-pattern__options-name--fw">15 000 циклов</span></span><span class="tabs-pattern__options-name">Тип ткани: <span class="tabs-pattern__options-name--fw">Жаккард</span></span><span class="tabs-pattern__options-name">Страна-производитель: <span class="tabs-pattern__options-name--fw">Китай</span></span></div>
+                            </div>
+                            <div class="tabs-pattern__side">
+                              <div class="tabs-list tabs-pattern__tablist">
+                                <div class="tabs-list__item--active tabs-pattern__tabinfo" show-tab="tabs-pattern-desc">Описание</div>
+                                <div class="tabs-pattern__tabinfo" show-tab="tabs-pattern-care">Уход</div>
+                              </div>
+                              <div class="tabs-content">
+                                <div class="tabs-pattern-desc tabs-pattern__tabcontent tabs-pattern__tabcontent--active"><span class="tabs-pattern__tabitem">легкий блеск</span><span class="tabs-pattern__tabitem">многообразие сочетаний с однотонными  коллекциями</span><span class="tabs-pattern__tabitem">деликатная ткань</span><span class="tabs-pattern__tabitem">оптимальное соотношение цены и качества</span><span class="tabs-pattern__tabitem">элегантность</span></div>
+                                <div class="tabs-pattern-care tabs-pattern__tabcontent">12345</div>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                         <div class="tabs-content__item tabs-pattern__info tabs-pattern5">
-                          <div class="tabs-pattern__full" style="background-image: url('static/images/content/pattern5.png');"></div>
+                          <div class="tabs-pattern__info-content">
+                            <div class="tabs-pattern__full" style="background-image: url('static/images/content/pattern5.png');">
+                              <div class="tabs-pattern__close">
+                                <svg class="svg-sprite-icon icon-close tabs-pattern__close-icon">
+                                  <use xlink:href="static/images/svg/symbol/sprite.svg#close"></use>
+                                </svg>
+                              </div>
+                            </div>
+                            <div class="tabs-pattern__side"><span class="tabs-pattern__title">ADEL COM 72</span>
+                              <div class="tabs-pattern__options"><span class="tabs-pattern__options-name">Состав: <span class="tabs-pattern__options-name--fw">полиэстер - 85%, вискоза - 15%</span></span><span class="tabs-pattern__options-name">Ширина ткани: <span class="tabs-pattern__options-name--fw">140 см</span></span><span class="tabs-pattern__options-name">Плотность ткани: <span class="tabs-pattern__options-name--fw">460 г/м2</span></span><span class="tabs-pattern__options-name">Устойчивость к истиранию: <span class="tabs-pattern__options-name--fw">15 000 циклов</span></span><span class="tabs-pattern__options-name">Тип ткани: <span class="tabs-pattern__options-name--fw">Жаккард</span></span><span class="tabs-pattern__options-name">Страна-производитель: <span class="tabs-pattern__options-name--fw">Китай</span></span></div>
+                            </div>
+                            <div class="tabs-pattern__side">
+                              <div class="tabs-list tabs-pattern__tablist">
+                                <div class="tabs-list__item--active tabs-pattern__tabinfo" show-tab="tabs-pattern-desc">Описание</div>
+                                <div class="tabs-pattern__tabinfo" show-tab="tabs-pattern-care">Уход</div>
+                              </div>
+                              <div class="tabs-content">
+                                <div class="tabs-pattern-desc tabs-pattern__tabcontent tabs-pattern__tabcontent--active"><span class="tabs-pattern__tabitem">легкий блеск</span><span class="tabs-pattern__tabitem">многообразие сочетаний с однотонными  коллекциями</span><span class="tabs-pattern__tabitem">деликатная ткань</span><span class="tabs-pattern__tabitem">оптимальное соотношение цены и качества</span><span class="tabs-pattern__tabitem">элегантность</span></div>
+                                <div class="tabs-pattern-care tabs-pattern__tabcontent">12345</div>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                         <div class="tabs-content__item tabs-pattern__info tabs-pattern6">
-                          <div class="tabs-pattern__full" style="background-image: url('static/images/content/pattern6.png');"></div>
+                          <div class="tabs-pattern__info-content">
+                            <div class="tabs-pattern__full" style="background-image: url('static/images/content/pattern6.png');">
+                              <div class="tabs-pattern__close">
+                                <svg class="svg-sprite-icon icon-close tabs-pattern__close-icon">
+                                  <use xlink:href="static/images/svg/symbol/sprite.svg#close"></use>
+                                </svg>
+                              </div>
+                            </div>
+                            <div class="tabs-pattern__side"><span class="tabs-pattern__title">ADEL COM 72</span>
+                              <div class="tabs-pattern__options"><span class="tabs-pattern__options-name">Состав: <span class="tabs-pattern__options-name--fw">полиэстер - 85%, вискоза - 15%</span></span><span class="tabs-pattern__options-name">Ширина ткани: <span class="tabs-pattern__options-name--fw">140 см</span></span><span class="tabs-pattern__options-name">Плотность ткани: <span class="tabs-pattern__options-name--fw">460 г/м2</span></span><span class="tabs-pattern__options-name">Устойчивость к истиранию: <span class="tabs-pattern__options-name--fw">15 000 циклов</span></span><span class="tabs-pattern__options-name">Тип ткани: <span class="tabs-pattern__options-name--fw">Жаккард</span></span><span class="tabs-pattern__options-name">Страна-производитель: <span class="tabs-pattern__options-name--fw">Китай</span></span></div>
+                            </div>
+                            <div class="tabs-pattern__side">
+                              <div class="tabs-list tabs-pattern__tablist">
+                                <div class="tabs-list__item--active tabs-pattern__tabinfo" show-tab="tabs-pattern-desc">Описание</div>
+                                <div class="tabs-pattern__tabinfo" show-tab="tabs-pattern-care">Уход</div>
+                              </div>
+                              <div class="tabs-content">
+                                <div class="tabs-pattern-desc tabs-pattern__tabcontent tabs-pattern__tabcontent--active"><span class="tabs-pattern__tabitem">легкий блеск</span><span class="tabs-pattern__tabitem">многообразие сочетаний с однотонными  коллекциями</span><span class="tabs-pattern__tabitem">деликатная ткань</span><span class="tabs-pattern__tabitem">оптимальное соотношение цены и качества</span><span class="tabs-pattern__tabitem">элегантность</span></div>
+                                <div class="tabs-pattern-care tabs-pattern__tabcontent">12345</div>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                         <div class="tabs-content__item tabs-pattern__info tabs-pattern7">
-                          <div class="tabs-pattern__full" style="background-image: url('static/images/content/pattern7.png');"></div>
+                          <div class="tabs-pattern__info-content">
+                            <div class="tabs-pattern__full" style="background-image: url('static/images/content/pattern7.png');">
+                              <div class="tabs-pattern__close">
+                                <svg class="svg-sprite-icon icon-close tabs-pattern__close-icon">
+                                  <use xlink:href="static/images/svg/symbol/sprite.svg#close"></use>
+                                </svg>
+                              </div>
+                            </div>
+                            <div class="tabs-pattern__side"><span class="tabs-pattern__title">ADEL COM 72</span>
+                              <div class="tabs-pattern__options"><span class="tabs-pattern__options-name">Состав: <span class="tabs-pattern__options-name--fw">полиэстер - 85%, вискоза - 15%</span></span><span class="tabs-pattern__options-name">Ширина ткани: <span class="tabs-pattern__options-name--fw">140 см</span></span><span class="tabs-pattern__options-name">Плотность ткани: <span class="tabs-pattern__options-name--fw">460 г/м2</span></span><span class="tabs-pattern__options-name">Устойчивость к истиранию: <span class="tabs-pattern__options-name--fw">15 000 циклов</span></span><span class="tabs-pattern__options-name">Тип ткани: <span class="tabs-pattern__options-name--fw">Жаккард</span></span><span class="tabs-pattern__options-name">Страна-производитель: <span class="tabs-pattern__options-name--fw">Китай</span></span></div>
+                            </div>
+                            <div class="tabs-pattern__side">
+                              <div class="tabs-list tabs-pattern__tablist">
+                                <div class="tabs-list__item--active tabs-pattern__tabinfo" show-tab="tabs-pattern-desc">Описание</div>
+                                <div class="tabs-pattern__tabinfo" show-tab="tabs-pattern-care">Уход</div>
+                              </div>
+                              <div class="tabs-content">
+                                <div class="tabs-pattern-desc tabs-pattern__tabcontent tabs-pattern__tabcontent--active"><span class="tabs-pattern__tabitem">легкий блеск</span><span class="tabs-pattern__tabitem">многообразие сочетаний с однотонными  коллекциями</span><span class="tabs-pattern__tabitem">деликатная ткань</span><span class="tabs-pattern__tabitem">оптимальное соотношение цены и качества</span><span class="tabs-pattern__tabitem">элегантность</span></div>
+                                <div class="tabs-pattern-care tabs-pattern__tabcontent">12345</div>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                         <div class="tabs-content__item tabs-pattern__info tabs-pattern8">
-                          <div class="tabs-pattern__full" style="background-image: url('static/images/content/pattern8.png');"></div>
+                          <div class="tabs-pattern__info-content">
+                            <div class="tabs-pattern__full" style="background-image: url('static/images/content/pattern8.png');">
+                              <div class="tabs-pattern__close">
+                                <svg class="svg-sprite-icon icon-close tabs-pattern__close-icon">
+                                  <use xlink:href="static/images/svg/symbol/sprite.svg#close"></use>
+                                </svg>
+                              </div>
+                            </div>
+                            <div class="tabs-pattern__side"><span class="tabs-pattern__title">ADEL COM 72</span>
+                              <div class="tabs-pattern__options"><span class="tabs-pattern__options-name">Состав: <span class="tabs-pattern__options-name--fw">полиэстер - 85%, вискоза - 15%</span></span><span class="tabs-pattern__options-name">Ширина ткани: <span class="tabs-pattern__options-name--fw">140 см</span></span><span class="tabs-pattern__options-name">Плотность ткани: <span class="tabs-pattern__options-name--fw">460 г/м2</span></span><span class="tabs-pattern__options-name">Устойчивость к истиранию: <span class="tabs-pattern__options-name--fw">15 000 циклов</span></span><span class="tabs-pattern__options-name">Тип ткани: <span class="tabs-pattern__options-name--fw">Жаккард</span></span><span class="tabs-pattern__options-name">Страна-производитель: <span class="tabs-pattern__options-name--fw">Китай</span></span></div>
+                            </div>
+                            <div class="tabs-pattern__side">
+                              <div class="tabs-list tabs-pattern__tablist">
+                                <div class="tabs-list__item--active tabs-pattern__tabinfo" show-tab="tabs-pattern-desc">Описание</div>
+                                <div class="tabs-pattern__tabinfo" show-tab="tabs-pattern-care">Уход</div>
+                              </div>
+                              <div class="tabs-content">
+                                <div class="tabs-pattern-desc tabs-pattern__tabcontent tabs-pattern__tabcontent--active"><span class="tabs-pattern__tabitem">легкий блеск</span><span class="tabs-pattern__tabitem">многообразие сочетаний с однотонными  коллекциями</span><span class="tabs-pattern__tabitem">деликатная ткань</span><span class="tabs-pattern__tabitem">оптимальное соотношение цены и качества</span><span class="tabs-pattern__tabitem">элегантность</span></div>
+                                <div class="tabs-pattern-care tabs-pattern__tabcontent">12345</div>
+                              </div>
+                            </div>
+                          </div>
                         </div>
+                      </div>
+                      <div class="tabs-pattern__line">
+                        <div class="tabs-list__item tabs-pattern__item" style="background-image: url('static/images/content/pattern9.png');" show-tab="tabs-pattern9">
+                          <div class="tabs-pattern__item-name">ADEL COM 72</div>
+                          <div class="tabs-pattern__item-current">
+                            <svg class="svg-sprite-icon icon-arrow-top tabs-pattern__item-current-icon">
+                              <use xlink:href="static/images/svg/symbol/sprite.svg#arrow-top"></use>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="tabs-list__item tabs-pattern__item" style="background-image: url('static/images/content/pattern10.png');" show-tab="tabs-pattern10">
+                          <div class="tabs-pattern__item-name">ADEL COM 72</div>
+                          <div class="tabs-pattern__item-current">
+                            <svg class="svg-sprite-icon icon-arrow-top tabs-pattern__item-current-icon">
+                              <use xlink:href="static/images/svg/symbol/sprite.svg#arrow-top"></use>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="tabs-list__item tabs-pattern__item" style="background-image: url('static/images/content/pattern11.png');" show-tab="tabs-pattern11">
+                          <div class="tabs-pattern__item-name">ADEL COM 72</div>
+                          <div class="tabs-pattern__item-current">
+                            <svg class="svg-sprite-icon icon-arrow-top tabs-pattern__item-current-icon">
+                              <use xlink:href="static/images/svg/symbol/sprite.svg#arrow-top"></use>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="tabs-list__item tabs-pattern__item" style="background-image: url('static/images/content/pattern12.png');" show-tab="tabs-pattern12">
+                          <div class="tabs-pattern__item-name">ADEL COM 72</div>
+                          <div class="tabs-pattern__item-current">
+                            <svg class="svg-sprite-icon icon-arrow-top tabs-pattern__item-current-icon">
+                              <use xlink:href="static/images/svg/symbol/sprite.svg#arrow-top"></use>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="tabs-list__item tabs-pattern__item" style="background-image: url('static/images/content/pattern13.png');" show-tab="tabs-pattern13">
+                          <div class="tabs-pattern__item-name">ADEL COM 72</div>
+                          <div class="tabs-pattern__item-current">
+                            <svg class="svg-sprite-icon icon-arrow-top tabs-pattern__item-current-icon">
+                              <use xlink:href="static/images/svg/symbol/sprite.svg#arrow-top"></use>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="tabs-list__item tabs-pattern__item" style="background-image: url('static/images/content/pattern14.png');" show-tab="tabs-pattern14">
+                          <div class="tabs-pattern__item-name">ADEL COM 72</div>
+                          <div class="tabs-pattern__item-current">
+                            <svg class="svg-sprite-icon icon-arrow-top tabs-pattern__item-current-icon">
+                              <use xlink:href="static/images/svg/symbol/sprite.svg#arrow-top"></use>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="tabs-list__item tabs-pattern__item" style="background-image: url('static/images/content/pattern15.png');" show-tab="tabs-pattern15">
+                          <div class="tabs-pattern__item-name">ADEL COM 72</div>
+                          <div class="tabs-pattern__item-current">
+                            <svg class="svg-sprite-icon icon-arrow-top tabs-pattern__item-current-icon">
+                              <use xlink:href="static/images/svg/symbol/sprite.svg#arrow-top"></use>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="tabs-list__item tabs-pattern__item" style="background-image: url('static/images/content/pattern16.png');" show-tab="tabs-pattern16">
+                          <div class="tabs-pattern__item-name">ADEL COM 72</div>
+                          <div class="tabs-pattern__item-current">
+                            <svg class="svg-sprite-icon icon-arrow-top tabs-pattern__item-current-icon">
+                              <use xlink:href="static/images/svg/symbol/sprite.svg#arrow-top"></use>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tabs-content">
                         <div class="tabs-content__item tabs-pattern__info tabs-pattern9">
-                          <div class="tabs-pattern__full" style="background-image: url('static/images/content/pattern9.png');"></div>
+                          <div class="tabs-pattern__info-content">
+                            <div class="tabs-pattern__full" style="background-image: url('static/images/content/pattern9.png');">
+                              <div class="tabs-pattern__close">
+                                <svg class="svg-sprite-icon icon-close tabs-pattern__close-icon">
+                                  <use xlink:href="static/images/svg/symbol/sprite.svg#close"></use>
+                                </svg>
+                              </div>
+                            </div>
+                            <div class="tabs-pattern__side"><span class="tabs-pattern__title">ADEL COM 72</span>
+                              <div class="tabs-pattern__options"><span class="tabs-pattern__options-name">Состав: <span class="tabs-pattern__options-name--fw">полиэстер - 85%, вискоза - 15%</span></span><span class="tabs-pattern__options-name">Ширина ткани: <span class="tabs-pattern__options-name--fw">140 см</span></span><span class="tabs-pattern__options-name">Плотность ткани: <span class="tabs-pattern__options-name--fw">460 г/м2</span></span><span class="tabs-pattern__options-name">Устойчивость к истиранию: <span class="tabs-pattern__options-name--fw">15 000 циклов</span></span><span class="tabs-pattern__options-name">Тип ткани: <span class="tabs-pattern__options-name--fw">Жаккард</span></span><span class="tabs-pattern__options-name">Страна-производитель: <span class="tabs-pattern__options-name--fw">Китай</span></span></div>
+                            </div>
+                            <div class="tabs-pattern__side">
+                              <div class="tabs-list tabs-pattern__tablist">
+                                <div class="tabs-list__item--active tabs-pattern__tabinfo" show-tab="tabs-pattern-desc">Описание</div>
+                                <div class="tabs-pattern__tabinfo" show-tab="tabs-pattern-care">Уход</div>
+                              </div>
+                              <div class="tabs-content">
+                                <div class="tabs-pattern-desc tabs-pattern__tabcontent tabs-pattern__tabcontent--active"><span class="tabs-pattern__tabitem">легкий блеск</span><span class="tabs-pattern__tabitem">многообразие сочетаний с однотонными  коллекциями</span><span class="tabs-pattern__tabitem">деликатная ткань</span><span class="tabs-pattern__tabitem">оптимальное соотношение цены и качества</span><span class="tabs-pattern__tabitem">элегантность</span></div>
+                                <div class="tabs-pattern-care tabs-pattern__tabcontent">12345</div>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                         <div class="tabs-content__item tabs-pattern__info tabs-pattern10">
-                          <div class="tabs-pattern__full" style="background-image: url('static/images/content/pattern10.png');"></div>
+                          <div class="tabs-pattern__info-content">
+                            <div class="tabs-pattern__full" style="background-image: url('static/images/content/pattern10.png');">
+                              <div class="tabs-pattern__close">
+                                <svg class="svg-sprite-icon icon-close tabs-pattern__close-icon">
+                                  <use xlink:href="static/images/svg/symbol/sprite.svg#close"></use>
+                                </svg>
+                              </div>
+                            </div>
+                            <div class="tabs-pattern__side"><span class="tabs-pattern__title">ADEL COM 72</span>
+                              <div class="tabs-pattern__options"><span class="tabs-pattern__options-name">Состав: <span class="tabs-pattern__options-name--fw">полиэстер - 85%, вискоза - 15%</span></span><span class="tabs-pattern__options-name">Ширина ткани: <span class="tabs-pattern__options-name--fw">140 см</span></span><span class="tabs-pattern__options-name">Плотность ткани: <span class="tabs-pattern__options-name--fw">460 г/м2</span></span><span class="tabs-pattern__options-name">Устойчивость к истиранию: <span class="tabs-pattern__options-name--fw">15 000 циклов</span></span><span class="tabs-pattern__options-name">Тип ткани: <span class="tabs-pattern__options-name--fw">Жаккард</span></span><span class="tabs-pattern__options-name">Страна-производитель: <span class="tabs-pattern__options-name--fw">Китай</span></span></div>
+                            </div>
+                            <div class="tabs-pattern__side">
+                              <div class="tabs-list tabs-pattern__tablist">
+                                <div class="tabs-list__item--active tabs-pattern__tabinfo" show-tab="tabs-pattern-desc">Описание</div>
+                                <div class="tabs-pattern__tabinfo" show-tab="tabs-pattern-care">Уход</div>
+                              </div>
+                              <div class="tabs-content">
+                                <div class="tabs-pattern-desc tabs-pattern__tabcontent tabs-pattern__tabcontent--active"><span class="tabs-pattern__tabitem">легкий блеск</span><span class="tabs-pattern__tabitem">многообразие сочетаний с однотонными  коллекциями</span><span class="tabs-pattern__tabitem">деликатная ткань</span><span class="tabs-pattern__tabitem">оптимальное соотношение цены и качества</span><span class="tabs-pattern__tabitem">элегантность</span></div>
+                                <div class="tabs-pattern-care tabs-pattern__tabcontent">12345</div>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                         <div class="tabs-content__item tabs-pattern__info tabs-pattern11">
-                          <div class="tabs-pattern__full" style="background-image: url('static/images/content/pattern11.png');"></div>
+                          <div class="tabs-pattern__info-content">
+                            <div class="tabs-pattern__full" style="background-image: url('static/images/content/pattern11.png');">
+                              <div class="tabs-pattern__close">
+                                <svg class="svg-sprite-icon icon-close tabs-pattern__close-icon">
+                                  <use xlink:href="static/images/svg/symbol/sprite.svg#close"></use>
+                                </svg>
+                              </div>
+                            </div>
+                            <div class="tabs-pattern__side"><span class="tabs-pattern__title">ADEL COM 72</span>
+                              <div class="tabs-pattern__options"><span class="tabs-pattern__options-name">Состав: <span class="tabs-pattern__options-name--fw">полиэстер - 85%, вискоза - 15%</span></span><span class="tabs-pattern__options-name">Ширина ткани: <span class="tabs-pattern__options-name--fw">140 см</span></span><span class="tabs-pattern__options-name">Плотность ткани: <span class="tabs-pattern__options-name--fw">460 г/м2</span></span><span class="tabs-pattern__options-name">Устойчивость к истиранию: <span class="tabs-pattern__options-name--fw">15 000 циклов</span></span><span class="tabs-pattern__options-name">Тип ткани: <span class="tabs-pattern__options-name--fw">Жаккард</span></span><span class="tabs-pattern__options-name">Страна-производитель: <span class="tabs-pattern__options-name--fw">Китай</span></span></div>
+                            </div>
+                            <div class="tabs-pattern__side">
+                              <div class="tabs-list tabs-pattern__tablist">
+                                <div class="tabs-list__item--active tabs-pattern__tabinfo" show-tab="tabs-pattern-desc">Описание</div>
+                                <div class="tabs-pattern__tabinfo" show-tab="tabs-pattern-care">Уход</div>
+                              </div>
+                              <div class="tabs-content">
+                                <div class="tabs-pattern-desc tabs-pattern__tabcontent tabs-pattern__tabcontent--active"><span class="tabs-pattern__tabitem">легкий блеск</span><span class="tabs-pattern__tabitem">многообразие сочетаний с однотонными  коллекциями</span><span class="tabs-pattern__tabitem">деликатная ткань</span><span class="tabs-pattern__tabitem">оптимальное соотношение цены и качества</span><span class="tabs-pattern__tabitem">элегантность</span></div>
+                                <div class="tabs-pattern-care tabs-pattern__tabcontent">12345</div>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                         <div class="tabs-content__item tabs-pattern__info tabs-pattern12">
-                          <div class="tabs-pattern__full" style="background-image: url('static/images/content/pattern12.png');"></div>
+                          <div class="tabs-pattern__info-content">
+                            <div class="tabs-pattern__full" style="background-image: url('static/images/content/pattern12.png');">
+                              <div class="tabs-pattern__close">
+                                <svg class="svg-sprite-icon icon-close tabs-pattern__close-icon">
+                                  <use xlink:href="static/images/svg/symbol/sprite.svg#close"></use>
+                                </svg>
+                              </div>
+                            </div>
+                            <div class="tabs-pattern__side"><span class="tabs-pattern__title">ADEL COM 72</span>
+                              <div class="tabs-pattern__options"><span class="tabs-pattern__options-name">Состав: <span class="tabs-pattern__options-name--fw">полиэстер - 85%, вискоза - 15%</span></span><span class="tabs-pattern__options-name">Ширина ткани: <span class="tabs-pattern__options-name--fw">140 см</span></span><span class="tabs-pattern__options-name">Плотность ткани: <span class="tabs-pattern__options-name--fw">460 г/м2</span></span><span class="tabs-pattern__options-name">Устойчивость к истиранию: <span class="tabs-pattern__options-name--fw">15 000 циклов</span></span><span class="tabs-pattern__options-name">Тип ткани: <span class="tabs-pattern__options-name--fw">Жаккард</span></span><span class="tabs-pattern__options-name">Страна-производитель: <span class="tabs-pattern__options-name--fw">Китай</span></span></div>
+                            </div>
+                            <div class="tabs-pattern__side">
+                              <div class="tabs-list tabs-pattern__tablist">
+                                <div class="tabs-list__item--active tabs-pattern__tabinfo" show-tab="tabs-pattern-desc">Описание</div>
+                                <div class="tabs-pattern__tabinfo" show-tab="tabs-pattern-care">Уход</div>
+                              </div>
+                              <div class="tabs-content">
+                                <div class="tabs-pattern-desc tabs-pattern__tabcontent tabs-pattern__tabcontent--active"><span class="tabs-pattern__tabitem">легкий блеск</span><span class="tabs-pattern__tabitem">многообразие сочетаний с однотонными  коллекциями</span><span class="tabs-pattern__tabitem">деликатная ткань</span><span class="tabs-pattern__tabitem">оптимальное соотношение цены и качества</span><span class="tabs-pattern__tabitem">элегантность</span></div>
+                                <div class="tabs-pattern-care tabs-pattern__tabcontent">12345</div>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                         <div class="tabs-content__item tabs-pattern__info tabs-pattern13">
-                          <div class="tabs-pattern__full" style="background-image: url('static/images/content/pattern13.png');"></div>
+                          <div class="tabs-pattern__info-content">
+                            <div class="tabs-pattern__full" style="background-image: url('static/images/content/pattern13.png');">
+                              <div class="tabs-pattern__close">
+                                <svg class="svg-sprite-icon icon-close tabs-pattern__close-icon">
+                                  <use xlink:href="static/images/svg/symbol/sprite.svg#close"></use>
+                                </svg>
+                              </div>
+                            </div>
+                            <div class="tabs-pattern__side"><span class="tabs-pattern__title">ADEL COM 72</span>
+                              <div class="tabs-pattern__options"><span class="tabs-pattern__options-name">Состав: <span class="tabs-pattern__options-name--fw">полиэстер - 85%, вискоза - 15%</span></span><span class="tabs-pattern__options-name">Ширина ткани: <span class="tabs-pattern__options-name--fw">140 см</span></span><span class="tabs-pattern__options-name">Плотность ткани: <span class="tabs-pattern__options-name--fw">460 г/м2</span></span><span class="tabs-pattern__options-name">Устойчивость к истиранию: <span class="tabs-pattern__options-name--fw">15 000 циклов</span></span><span class="tabs-pattern__options-name">Тип ткани: <span class="tabs-pattern__options-name--fw">Жаккард</span></span><span class="tabs-pattern__options-name">Страна-производитель: <span class="tabs-pattern__options-name--fw">Китай</span></span></div>
+                            </div>
+                            <div class="tabs-pattern__side">
+                              <div class="tabs-list tabs-pattern__tablist">
+                                <div class="tabs-list__item--active tabs-pattern__tabinfo" show-tab="tabs-pattern-desc">Описание</div>
+                                <div class="tabs-pattern__tabinfo" show-tab="tabs-pattern-care">Уход</div>
+                              </div>
+                              <div class="tabs-content">
+                                <div class="tabs-pattern-desc tabs-pattern__tabcontent tabs-pattern__tabcontent--active"><span class="tabs-pattern__tabitem">легкий блеск</span><span class="tabs-pattern__tabitem">многообразие сочетаний с однотонными  коллекциями</span><span class="tabs-pattern__tabitem">деликатная ткань</span><span class="tabs-pattern__tabitem">оптимальное соотношение цены и качества</span><span class="tabs-pattern__tabitem">элегантность</span></div>
+                                <div class="tabs-pattern-care tabs-pattern__tabcontent">12345</div>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                         <div class="tabs-content__item tabs-pattern__info tabs-pattern14">
-                          <div class="tabs-pattern__full" style="background-image: url('static/images/content/pattern14.png');"></div>
+                          <div class="tabs-pattern__info-content">
+                            <div class="tabs-pattern__full" style="background-image: url('static/images/content/pattern14.png');">
+                              <div class="tabs-pattern__close">
+                                <svg class="svg-sprite-icon icon-close tabs-pattern__close-icon">
+                                  <use xlink:href="static/images/svg/symbol/sprite.svg#close"></use>
+                                </svg>
+                              </div>
+                            </div>
+                            <div class="tabs-pattern__side"><span class="tabs-pattern__title">ADEL COM 72</span>
+                              <div class="tabs-pattern__options"><span class="tabs-pattern__options-name">Состав: <span class="tabs-pattern__options-name--fw">полиэстер - 85%, вискоза - 15%</span></span><span class="tabs-pattern__options-name">Ширина ткани: <span class="tabs-pattern__options-name--fw">140 см</span></span><span class="tabs-pattern__options-name">Плотность ткани: <span class="tabs-pattern__options-name--fw">460 г/м2</span></span><span class="tabs-pattern__options-name">Устойчивость к истиранию: <span class="tabs-pattern__options-name--fw">15 000 циклов</span></span><span class="tabs-pattern__options-name">Тип ткани: <span class="tabs-pattern__options-name--fw">Жаккард</span></span><span class="tabs-pattern__options-name">Страна-производитель: <span class="tabs-pattern__options-name--fw">Китай</span></span></div>
+                            </div>
+                            <div class="tabs-pattern__side">
+                              <div class="tabs-list tabs-pattern__tablist">
+                                <div class="tabs-list__item--active tabs-pattern__tabinfo" show-tab="tabs-pattern-desc">Описание</div>
+                                <div class="tabs-pattern__tabinfo" show-tab="tabs-pattern-care">Уход</div>
+                              </div>
+                              <div class="tabs-content">
+                                <div class="tabs-pattern-desc tabs-pattern__tabcontent tabs-pattern__tabcontent--active"><span class="tabs-pattern__tabitem">легкий блеск</span><span class="tabs-pattern__tabitem">многообразие сочетаний с однотонными  коллекциями</span><span class="tabs-pattern__tabitem">деликатная ткань</span><span class="tabs-pattern__tabitem">оптимальное соотношение цены и качества</span><span class="tabs-pattern__tabitem">элегантность</span></div>
+                                <div class="tabs-pattern-care tabs-pattern__tabcontent">12345</div>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                         <div class="tabs-content__item tabs-pattern__info tabs-pattern15">
-                          <div class="tabs-pattern__full" style="background-image: url('static/images/content/pattern15.png');"></div>
+                          <div class="tabs-pattern__info-content">
+                            <div class="tabs-pattern__full" style="background-image: url('static/images/content/pattern15.png');">
+                              <div class="tabs-pattern__close">
+                                <svg class="svg-sprite-icon icon-close tabs-pattern__close-icon">
+                                  <use xlink:href="static/images/svg/symbol/sprite.svg#close"></use>
+                                </svg>
+                              </div>
+                            </div>
+                            <div class="tabs-pattern__side"><span class="tabs-pattern__title">ADEL COM 72</span>
+                              <div class="tabs-pattern__options"><span class="tabs-pattern__options-name">Состав: <span class="tabs-pattern__options-name--fw">полиэстер - 85%, вискоза - 15%</span></span><span class="tabs-pattern__options-name">Ширина ткани: <span class="tabs-pattern__options-name--fw">140 см</span></span><span class="tabs-pattern__options-name">Плотность ткани: <span class="tabs-pattern__options-name--fw">460 г/м2</span></span><span class="tabs-pattern__options-name">Устойчивость к истиранию: <span class="tabs-pattern__options-name--fw">15 000 циклов</span></span><span class="tabs-pattern__options-name">Тип ткани: <span class="tabs-pattern__options-name--fw">Жаккард</span></span><span class="tabs-pattern__options-name">Страна-производитель: <span class="tabs-pattern__options-name--fw">Китай</span></span></div>
+                            </div>
+                            <div class="tabs-pattern__side">
+                              <div class="tabs-list tabs-pattern__tablist">
+                                <div class="tabs-list__item--active tabs-pattern__tabinfo" show-tab="tabs-pattern-desc">Описание</div>
+                                <div class="tabs-pattern__tabinfo" show-tab="tabs-pattern-care">Уход</div>
+                              </div>
+                              <div class="tabs-content">
+                                <div class="tabs-pattern-desc tabs-pattern__tabcontent tabs-pattern__tabcontent--active"><span class="tabs-pattern__tabitem">легкий блеск</span><span class="tabs-pattern__tabitem">многообразие сочетаний с однотонными  коллекциями</span><span class="tabs-pattern__tabitem">деликатная ткань</span><span class="tabs-pattern__tabitem">оптимальное соотношение цены и качества</span><span class="tabs-pattern__tabitem">элегантность</span></div>
+                                <div class="tabs-pattern-care tabs-pattern__tabcontent">12345</div>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                         <div class="tabs-content__item tabs-pattern__info tabs-pattern16">
-                          <div class="tabs-pattern__full" style="background-image: url('static/images/content/pattern16.png');"></div>
+                          <div class="tabs-pattern__info-content">
+                            <div class="tabs-pattern__full" style="background-image: url('static/images/content/pattern16.png');">
+                              <div class="tabs-pattern__close">
+                                <svg class="svg-sprite-icon icon-close tabs-pattern__close-icon">
+                                  <use xlink:href="static/images/svg/symbol/sprite.svg#close"></use>
+                                </svg>
+                              </div>
+                            </div>
+                            <div class="tabs-pattern__side"><span class="tabs-pattern__title">ADEL COM 72</span>
+                              <div class="tabs-pattern__options"><span class="tabs-pattern__options-name">Состав: <span class="tabs-pattern__options-name--fw">полиэстер - 85%, вискоза - 15%</span></span><span class="tabs-pattern__options-name">Ширина ткани: <span class="tabs-pattern__options-name--fw">140 см</span></span><span class="tabs-pattern__options-name">Плотность ткани: <span class="tabs-pattern__options-name--fw">460 г/м2</span></span><span class="tabs-pattern__options-name">Устойчивость к истиранию: <span class="tabs-pattern__options-name--fw">15 000 циклов</span></span><span class="tabs-pattern__options-name">Тип ткани: <span class="tabs-pattern__options-name--fw">Жаккард</span></span><span class="tabs-pattern__options-name">Страна-производитель: <span class="tabs-pattern__options-name--fw">Китай</span></span></div>
+                            </div>
+                            <div class="tabs-pattern__side">
+                              <div class="tabs-list tabs-pattern__tablist">
+                                <div class="tabs-list__item--active tabs-pattern__tabinfo" show-tab="tabs-pattern-desc">Описание</div>
+                                <div class="tabs-pattern__tabinfo" show-tab="tabs-pattern-care">Уход</div>
+                              </div>
+                              <div class="tabs-content">
+                                <div class="tabs-pattern-desc tabs-pattern__tabcontent tabs-pattern__tabcontent--active"><span class="tabs-pattern__tabitem">легкий блеск</span><span class="tabs-pattern__tabitem">многообразие сочетаний с однотонными  коллекциями</span><span class="tabs-pattern__tabitem">деликатная ткань</span><span class="tabs-pattern__tabitem">оптимальное соотношение цены и качества</span><span class="tabs-pattern__tabitem">элегантность</span></div>
+                                <div class="tabs-pattern-care tabs-pattern__tabcontent">12345</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tabs-pattern__line">
+                        <div class="tabs-list__item tabs-pattern__item" style="background-image: url('static/images/content/pattern1.png');" show-tab="tabs-pattern17">
+                          <div class="tabs-pattern__item-name">ADEL COM 72</div>
+                          <div class="tabs-pattern__item-current">
+                            <svg class="svg-sprite-icon icon-arrow-top tabs-pattern__item-current-icon">
+                              <use xlink:href="static/images/svg/symbol/sprite.svg#arrow-top"></use>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="tabs-list__item tabs-pattern__item" style="background-image: url('static/images/content/pattern2.png');" show-tab="tabs-pattern18">
+                          <div class="tabs-pattern__item-name">ADEL COM 72</div>
+                          <div class="tabs-pattern__item-current">
+                            <svg class="svg-sprite-icon icon-arrow-top tabs-pattern__item-current-icon">
+                              <use xlink:href="static/images/svg/symbol/sprite.svg#arrow-top"></use>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="tabs-list__item tabs-pattern__item" style="background-image: url('static/images/content/pattern3.png');" show-tab="tabs-pattern19">
+                          <div class="tabs-pattern__item-name">ADEL COM 72</div>
+                          <div class="tabs-pattern__item-current">
+                            <svg class="svg-sprite-icon icon-arrow-top tabs-pattern__item-current-icon">
+                              <use xlink:href="static/images/svg/symbol/sprite.svg#arrow-top"></use>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="tabs-list__item tabs-pattern__item" style="background-image: url('static/images/content/pattern4.png');" show-tab="tabs-pattern20">
+                          <div class="tabs-pattern__item-name">ADEL COM 72</div>
+                          <div class="tabs-pattern__item-current">
+                            <svg class="svg-sprite-icon icon-arrow-top tabs-pattern__item-current-icon">
+                              <use xlink:href="static/images/svg/symbol/sprite.svg#arrow-top"></use>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="tabs-list__item tabs-pattern__item" style="background-image: url('static/images/content/pattern5.png');" show-tab="tabs-pattern21">
+                          <div class="tabs-pattern__item-name">ADEL COM 72</div>
+                          <div class="tabs-pattern__item-current">
+                            <svg class="svg-sprite-icon icon-arrow-top tabs-pattern__item-current-icon">
+                              <use xlink:href="static/images/svg/symbol/sprite.svg#arrow-top"></use>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="tabs-list__item tabs-pattern__item" style="background-image: url('static/images/content/pattern6.png');" show-tab="tabs-pattern22">
+                          <div class="tabs-pattern__item-name">ADEL COM 72</div>
+                          <div class="tabs-pattern__item-current">
+                            <svg class="svg-sprite-icon icon-arrow-top tabs-pattern__item-current-icon">
+                              <use xlink:href="static/images/svg/symbol/sprite.svg#arrow-top"></use>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="tabs-list__item tabs-pattern__item" style="background-image: url('static/images/content/pattern7.png');" show-tab="tabs-pattern23">
+                          <div class="tabs-pattern__item-name">ADEL COM 72</div>
+                          <div class="tabs-pattern__item-current">
+                            <svg class="svg-sprite-icon icon-arrow-top tabs-pattern__item-current-icon">
+                              <use xlink:href="static/images/svg/symbol/sprite.svg#arrow-top"></use>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="tabs-list__item tabs-pattern__item" style="background-image: url('static/images/content/pattern8.png');" show-tab="tabs-pattern24">
+                          <div class="tabs-pattern__item-name">ADEL COM 72</div>
+                          <div class="tabs-pattern__item-current">
+                            <svg class="svg-sprite-icon icon-arrow-top tabs-pattern__item-current-icon">
+                              <use xlink:href="static/images/svg/symbol/sprite.svg#arrow-top"></use>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tabs-content">
+                        <div class="tabs-content__item tabs-pattern__info tabs-pattern17">
+                          <div class="tabs-pattern__info-content">
+                            <div class="tabs-pattern__full" style="background-image: url('static/images/content/pattern9.png');">
+                              <div class="tabs-pattern__close">
+                                <svg class="svg-sprite-icon icon-close tabs-pattern__close-icon">
+                                  <use xlink:href="static/images/svg/symbol/sprite.svg#close"></use>
+                                </svg>
+                              </div>
+                            </div>
+                            <div class="tabs-pattern__side"><span class="tabs-pattern__title">ADEL COM 72</span>
+                              <div class="tabs-pattern__options"><span class="tabs-pattern__options-name">Состав: <span class="tabs-pattern__options-name--fw">полиэстер - 85%, вискоза - 15%</span></span><span class="tabs-pattern__options-name">Ширина ткани: <span class="tabs-pattern__options-name--fw">140 см</span></span><span class="tabs-pattern__options-name">Плотность ткани: <span class="tabs-pattern__options-name--fw">460 г/м2</span></span><span class="tabs-pattern__options-name">Устойчивость к истиранию: <span class="tabs-pattern__options-name--fw">15 000 циклов</span></span><span class="tabs-pattern__options-name">Тип ткани: <span class="tabs-pattern__options-name--fw">Жаккард</span></span><span class="tabs-pattern__options-name">Страна-производитель: <span class="tabs-pattern__options-name--fw">Китай</span></span></div>
+                            </div>
+                            <div class="tabs-pattern__side">
+                              <div class="tabs-list tabs-pattern__tablist">
+                                <div class="tabs-list__item--active tabs-pattern__tabinfo" show-tab="tabs-pattern-desc">Описание</div>
+                                <div class="tabs-pattern__tabinfo" show-tab="tabs-pattern-care">Уход</div>
+                              </div>
+                              <div class="tabs-content">
+                                <div class="tabs-pattern-desc tabs-pattern__tabcontent tabs-pattern__tabcontent--active"><span class="tabs-pattern__tabitem">легкий блеск</span><span class="tabs-pattern__tabitem">многообразие сочетаний с однотонными  коллекциями</span><span class="tabs-pattern__tabitem">деликатная ткань</span><span class="tabs-pattern__tabitem">оптимальное соотношение цены и качества</span><span class="tabs-pattern__tabitem">элегантность</span></div>
+                                <div class="tabs-pattern-care tabs-pattern__tabcontent">12345</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="tabs-content__item tabs-pattern__info tabs-pattern18">
+                          <div class="tabs-pattern__info-content">
+                            <div class="tabs-pattern__full" style="background-image: url('static/images/content/pattern10.png');">
+                              <div class="tabs-pattern__close">
+                                <svg class="svg-sprite-icon icon-close tabs-pattern__close-icon">
+                                  <use xlink:href="static/images/svg/symbol/sprite.svg#close"></use>
+                                </svg>
+                              </div>
+                            </div>
+                            <div class="tabs-pattern__side"><span class="tabs-pattern__title">ADEL COM 72</span>
+                              <div class="tabs-pattern__options"><span class="tabs-pattern__options-name">Состав: <span class="tabs-pattern__options-name--fw">полиэстер - 85%, вискоза - 15%</span></span><span class="tabs-pattern__options-name">Ширина ткани: <span class="tabs-pattern__options-name--fw">140 см</span></span><span class="tabs-pattern__options-name">Плотность ткани: <span class="tabs-pattern__options-name--fw">460 г/м2</span></span><span class="tabs-pattern__options-name">Устойчивость к истиранию: <span class="tabs-pattern__options-name--fw">15 000 циклов</span></span><span class="tabs-pattern__options-name">Тип ткани: <span class="tabs-pattern__options-name--fw">Жаккард</span></span><span class="tabs-pattern__options-name">Страна-производитель: <span class="tabs-pattern__options-name--fw">Китай</span></span></div>
+                            </div>
+                            <div class="tabs-pattern__side">
+                              <div class="tabs-list tabs-pattern__tablist">
+                                <div class="tabs-list__item--active tabs-pattern__tabinfo" show-tab="tabs-pattern-desc">Описание</div>
+                                <div class="tabs-pattern__tabinfo" show-tab="tabs-pattern-care">Уход</div>
+                              </div>
+                              <div class="tabs-content">
+                                <div class="tabs-pattern-desc tabs-pattern__tabcontent tabs-pattern__tabcontent--active"><span class="tabs-pattern__tabitem">легкий блеск</span><span class="tabs-pattern__tabitem">многообразие сочетаний с однотонными  коллекциями</span><span class="tabs-pattern__tabitem">деликатная ткань</span><span class="tabs-pattern__tabitem">оптимальное соотношение цены и качества</span><span class="tabs-pattern__tabitem">элегантность</span></div>
+                                <div class="tabs-pattern-care tabs-pattern__tabcontent">12345</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="tabs-content__item tabs-pattern__info tabs-pattern19">
+                          <div class="tabs-pattern__info-content">
+                            <div class="tabs-pattern__full" style="background-image: url('static/images/content/pattern11.png');">
+                              <div class="tabs-pattern__close">
+                                <svg class="svg-sprite-icon icon-close tabs-pattern__close-icon">
+                                  <use xlink:href="static/images/svg/symbol/sprite.svg#close"></use>
+                                </svg>
+                              </div>
+                            </div>
+                            <div class="tabs-pattern__side"><span class="tabs-pattern__title">ADEL COM 72</span>
+                              <div class="tabs-pattern__options"><span class="tabs-pattern__options-name">Состав: <span class="tabs-pattern__options-name--fw">полиэстер - 85%, вискоза - 15%</span></span><span class="tabs-pattern__options-name">Ширина ткани: <span class="tabs-pattern__options-name--fw">140 см</span></span><span class="tabs-pattern__options-name">Плотность ткани: <span class="tabs-pattern__options-name--fw">460 г/м2</span></span><span class="tabs-pattern__options-name">Устойчивость к истиранию: <span class="tabs-pattern__options-name--fw">15 000 циклов</span></span><span class="tabs-pattern__options-name">Тип ткани: <span class="tabs-pattern__options-name--fw">Жаккард</span></span><span class="tabs-pattern__options-name">Страна-производитель: <span class="tabs-pattern__options-name--fw">Китай</span></span></div>
+                            </div>
+                            <div class="tabs-pattern__side">
+                              <div class="tabs-list tabs-pattern__tablist">
+                                <div class="tabs-list__item--active tabs-pattern__tabinfo" show-tab="tabs-pattern-desc">Описание</div>
+                                <div class="tabs-pattern__tabinfo" show-tab="tabs-pattern-care">Уход</div>
+                              </div>
+                              <div class="tabs-content">
+                                <div class="tabs-pattern-desc tabs-pattern__tabcontent tabs-pattern__tabcontent--active"><span class="tabs-pattern__tabitem">легкий блеск</span><span class="tabs-pattern__tabitem">многообразие сочетаний с однотонными  коллекциями</span><span class="tabs-pattern__tabitem">деликатная ткань</span><span class="tabs-pattern__tabitem">оптимальное соотношение цены и качества</span><span class="tabs-pattern__tabitem">элегантность</span></div>
+                                <div class="tabs-pattern-care tabs-pattern__tabcontent">12345</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="tabs-content__item tabs-pattern__info tabs-pattern20">
+                          <div class="tabs-pattern__info-content">
+                            <div class="tabs-pattern__full" style="background-image: url('static/images/content/pattern12.png');">
+                              <div class="tabs-pattern__close">
+                                <svg class="svg-sprite-icon icon-close tabs-pattern__close-icon">
+                                  <use xlink:href="static/images/svg/symbol/sprite.svg#close"></use>
+                                </svg>
+                              </div>
+                            </div>
+                            <div class="tabs-pattern__side"><span class="tabs-pattern__title">ADEL COM 72</span>
+                              <div class="tabs-pattern__options"><span class="tabs-pattern__options-name">Состав: <span class="tabs-pattern__options-name--fw">полиэстер - 85%, вискоза - 15%</span></span><span class="tabs-pattern__options-name">Ширина ткани: <span class="tabs-pattern__options-name--fw">140 см</span></span><span class="tabs-pattern__options-name">Плотность ткани: <span class="tabs-pattern__options-name--fw">460 г/м2</span></span><span class="tabs-pattern__options-name">Устойчивость к истиранию: <span class="tabs-pattern__options-name--fw">15 000 циклов</span></span><span class="tabs-pattern__options-name">Тип ткани: <span class="tabs-pattern__options-name--fw">Жаккард</span></span><span class="tabs-pattern__options-name">Страна-производитель: <span class="tabs-pattern__options-name--fw">Китай</span></span></div>
+                            </div>
+                            <div class="tabs-pattern__side">
+                              <div class="tabs-list tabs-pattern__tablist">
+                                <div class="tabs-list__item--active tabs-pattern__tabinfo" show-tab="tabs-pattern-desc">Описание</div>
+                                <div class="tabs-pattern__tabinfo" show-tab="tabs-pattern-care">Уход</div>
+                              </div>
+                              <div class="tabs-content">
+                                <div class="tabs-pattern-desc tabs-pattern__tabcontent tabs-pattern__tabcontent--active"><span class="tabs-pattern__tabitem">легкий блеск</span><span class="tabs-pattern__tabitem">многообразие сочетаний с однотонными  коллекциями</span><span class="tabs-pattern__tabitem">деликатная ткань</span><span class="tabs-pattern__tabitem">оптимальное соотношение цены и качества</span><span class="tabs-pattern__tabitem">элегантность</span></div>
+                                <div class="tabs-pattern-care tabs-pattern__tabcontent">12345</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="tabs-content__item tabs-pattern__info tabs-pattern21">
+                          <div class="tabs-pattern__info-content">
+                            <div class="tabs-pattern__full" style="background-image: url('static/images/content/pattern13.png');">
+                              <div class="tabs-pattern__close">
+                                <svg class="svg-sprite-icon icon-close tabs-pattern__close-icon">
+                                  <use xlink:href="static/images/svg/symbol/sprite.svg#close"></use>
+                                </svg>
+                              </div>
+                            </div>
+                            <div class="tabs-pattern__side"><span class="tabs-pattern__title">ADEL COM 72</span>
+                              <div class="tabs-pattern__options"><span class="tabs-pattern__options-name">Состав: <span class="tabs-pattern__options-name--fw">полиэстер - 85%, вискоза - 15%</span></span><span class="tabs-pattern__options-name">Ширина ткани: <span class="tabs-pattern__options-name--fw">140 см</span></span><span class="tabs-pattern__options-name">Плотность ткани: <span class="tabs-pattern__options-name--fw">460 г/м2</span></span><span class="tabs-pattern__options-name">Устойчивость к истиранию: <span class="tabs-pattern__options-name--fw">15 000 циклов</span></span><span class="tabs-pattern__options-name">Тип ткани: <span class="tabs-pattern__options-name--fw">Жаккард</span></span><span class="tabs-pattern__options-name">Страна-производитель: <span class="tabs-pattern__options-name--fw">Китай</span></span></div>
+                            </div>
+                            <div class="tabs-pattern__side">
+                              <div class="tabs-list tabs-pattern__tablist">
+                                <div class="tabs-list__item--active tabs-pattern__tabinfo" show-tab="tabs-pattern-desc">Описание</div>
+                                <div class="tabs-pattern__tabinfo" show-tab="tabs-pattern-care">Уход</div>
+                              </div>
+                              <div class="tabs-content">
+                                <div class="tabs-pattern-desc tabs-pattern__tabcontent tabs-pattern__tabcontent--active"><span class="tabs-pattern__tabitem">легкий блеск</span><span class="tabs-pattern__tabitem">многообразие сочетаний с однотонными  коллекциями</span><span class="tabs-pattern__tabitem">деликатная ткань</span><span class="tabs-pattern__tabitem">оптимальное соотношение цены и качества</span><span class="tabs-pattern__tabitem">элегантность</span></div>
+                                <div class="tabs-pattern-care tabs-pattern__tabcontent">12345</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="tabs-content__item tabs-pattern__info tabs-pattern22">
+                          <div class="tabs-pattern__info-content">
+                            <div class="tabs-pattern__full" style="background-image: url('static/images/content/pattern14.png');">
+                              <div class="tabs-pattern__close">
+                                <svg class="svg-sprite-icon icon-close tabs-pattern__close-icon">
+                                  <use xlink:href="static/images/svg/symbol/sprite.svg#close"></use>
+                                </svg>
+                              </div>
+                            </div>
+                            <div class="tabs-pattern__side"><span class="tabs-pattern__title">ADEL COM 72</span>
+                              <div class="tabs-pattern__options"><span class="tabs-pattern__options-name">Состав: <span class="tabs-pattern__options-name--fw">полиэстер - 85%, вискоза - 15%</span></span><span class="tabs-pattern__options-name">Ширина ткани: <span class="tabs-pattern__options-name--fw">140 см</span></span><span class="tabs-pattern__options-name">Плотность ткани: <span class="tabs-pattern__options-name--fw">460 г/м2</span></span><span class="tabs-pattern__options-name">Устойчивость к истиранию: <span class="tabs-pattern__options-name--fw">15 000 циклов</span></span><span class="tabs-pattern__options-name">Тип ткани: <span class="tabs-pattern__options-name--fw">Жаккард</span></span><span class="tabs-pattern__options-name">Страна-производитель: <span class="tabs-pattern__options-name--fw">Китай</span></span></div>
+                            </div>
+                            <div class="tabs-pattern__side">
+                              <div class="tabs-list tabs-pattern__tablist">
+                                <div class="tabs-list__item--active tabs-pattern__tabinfo" show-tab="tabs-pattern-desc">Описание</div>
+                                <div class="tabs-pattern__tabinfo" show-tab="tabs-pattern-care">Уход</div>
+                              </div>
+                              <div class="tabs-content">
+                                <div class="tabs-pattern-desc tabs-pattern__tabcontent tabs-pattern__tabcontent--active"><span class="tabs-pattern__tabitem">легкий блеск</span><span class="tabs-pattern__tabitem">многообразие сочетаний с однотонными  коллекциями</span><span class="tabs-pattern__tabitem">деликатная ткань</span><span class="tabs-pattern__tabitem">оптимальное соотношение цены и качества</span><span class="tabs-pattern__tabitem">элегантность</span></div>
+                                <div class="tabs-pattern-care tabs-pattern__tabcontent">12345</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="tabs-content__item tabs-pattern__info tabs-pattern23">
+                          <div class="tabs-pattern__info-content">
+                            <div class="tabs-pattern__full" style="background-image: url('static/images/content/pattern15.png');">
+                              <div class="tabs-pattern__close">
+                                <svg class="svg-sprite-icon icon-close tabs-pattern__close-icon">
+                                  <use xlink:href="static/images/svg/symbol/sprite.svg#close"></use>
+                                </svg>
+                              </div>
+                            </div>
+                            <div class="tabs-pattern__side"><span class="tabs-pattern__title">ADEL COM 72</span>
+                              <div class="tabs-pattern__options"><span class="tabs-pattern__options-name">Состав: <span class="tabs-pattern__options-name--fw">полиэстер - 85%, вискоза - 15%</span></span><span class="tabs-pattern__options-name">Ширина ткани: <span class="tabs-pattern__options-name--fw">140 см</span></span><span class="tabs-pattern__options-name">Плотность ткани: <span class="tabs-pattern__options-name--fw">460 г/м2</span></span><span class="tabs-pattern__options-name">Устойчивость к истиранию: <span class="tabs-pattern__options-name--fw">15 000 циклов</span></span><span class="tabs-pattern__options-name">Тип ткани: <span class="tabs-pattern__options-name--fw">Жаккард</span></span><span class="tabs-pattern__options-name">Страна-производитель: <span class="tabs-pattern__options-name--fw">Китай</span></span></div>
+                            </div>
+                            <div class="tabs-pattern__side">
+                              <div class="tabs-list tabs-pattern__tablist">
+                                <div class="tabs-list__item--active tabs-pattern__tabinfo" show-tab="tabs-pattern-desc">Описание</div>
+                                <div class="tabs-pattern__tabinfo" show-tab="tabs-pattern-care">Уход</div>
+                              </div>
+                              <div class="tabs-content">
+                                <div class="tabs-pattern-desc tabs-pattern__tabcontent tabs-pattern__tabcontent--active"><span class="tabs-pattern__tabitem">легкий блеск</span><span class="tabs-pattern__tabitem">многообразие сочетаний с однотонными  коллекциями</span><span class="tabs-pattern__tabitem">деликатная ткань</span><span class="tabs-pattern__tabitem">оптимальное соотношение цены и качества</span><span class="tabs-pattern__tabitem">элегантность</span></div>
+                                <div class="tabs-pattern-care tabs-pattern__tabcontent">12345</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="tabs-content__item tabs-pattern__info tabs-pattern24">
+                          <div class="tabs-pattern__info-content">
+                            <div class="tabs-pattern__full" style="background-image: url('static/images/content/pattern16.png');">
+                              <div class="tabs-pattern__close">
+                                <svg class="svg-sprite-icon icon-close tabs-pattern__close-icon">
+                                  <use xlink:href="static/images/svg/symbol/sprite.svg#close"></use>
+                                </svg>
+                              </div>
+                            </div>
+                            <div class="tabs-pattern__side"><span class="tabs-pattern__title">ADEL COM 72</span>
+                              <div class="tabs-pattern__options"><span class="tabs-pattern__options-name">Состав: <span class="tabs-pattern__options-name--fw">полиэстер - 85%, вискоза - 15%</span></span><span class="tabs-pattern__options-name">Ширина ткани: <span class="tabs-pattern__options-name--fw">140 см</span></span><span class="tabs-pattern__options-name">Плотность ткани: <span class="tabs-pattern__options-name--fw">460 г/м2</span></span><span class="tabs-pattern__options-name">Устойчивость к истиранию: <span class="tabs-pattern__options-name--fw">15 000 циклов</span></span><span class="tabs-pattern__options-name">Тип ткани: <span class="tabs-pattern__options-name--fw">Жаккард</span></span><span class="tabs-pattern__options-name">Страна-производитель: <span class="tabs-pattern__options-name--fw">Китай</span></span></div>
+                            </div>
+                            <div class="tabs-pattern__side">
+                              <div class="tabs-list tabs-pattern__tablist">
+                                <div class="tabs-list__item--active tabs-pattern__tabinfo" show-tab="tabs-pattern-desc">Описание</div>
+                                <div class="tabs-pattern__tabinfo" show-tab="tabs-pattern-care">Уход</div>
+                              </div>
+                              <div class="tabs-content">
+                                <div class="tabs-pattern-desc tabs-pattern__tabcontent tabs-pattern__tabcontent--active"><span class="tabs-pattern__tabitem">легкий блеск</span><span class="tabs-pattern__tabitem">многообразие сочетаний с однотонными  коллекциями</span><span class="tabs-pattern__tabitem">деликатная ткань</span><span class="tabs-pattern__tabitem">оптимальное соотношение цены и качества</span><span class="tabs-pattern__tabitem">элегантность</span></div>
+                                <div class="tabs-pattern-care tabs-pattern__tabcontent">12345</div>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -807,16 +1515,6 @@
                   <div class="tabs-content__item tabs-color9">9</div>
                   <div class="tabs-content__item tabs-color10">10</div>
                   <div class="tabs-content__item tabs-color11">11</div>
-                  <div class="tabs-pattern__line">
-                    <div class="tabs-list__item tabs-pattern__item" style="background-image: url('static/images/content/pattern9.png');" show-tab="tabs-pattern9"></div>
-                    <div class="tabs-list__item tabs-pattern__item" style="background-image: url('static/images/content/pattern10.png');" show-tab="tabs-pattern10"></div>
-                    <div class="tabs-list__item tabs-pattern__item" style="background-image: url('static/images/content/pattern11.png');" show-tab="tabs-pattern11"></div>
-                    <div class="tabs-list__item tabs-pattern__item" style="background-image: url('static/images/content/pattern12.png');" show-tab="tabs-pattern12"></div>
-                    <div class="tabs-list__item tabs-pattern__item" style="background-image: url('static/images/content/pattern13.png');" show-tab="tabs-pattern13"></div>
-                    <div class="tabs-list__item tabs-pattern__item" style="background-image: url('static/images/content/pattern14.png');" show-tab="tabs-pattern14"></div>
-                    <div class="tabs-list__item tabs-pattern__item" style="background-image: url('static/images/content/pattern15.png');" show-tab="tabs-pattern15"></div>
-                    <div class="tabs-list__item tabs-pattern__item" style="background-image: url('static/images/content/pattern16.png');" show-tab="tabs-pattern16"></div>
-                  </div>
                 </div>
               </div>
             </div>

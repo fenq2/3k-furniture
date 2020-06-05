@@ -276,11 +276,21 @@ var partners = new Swiper('.partners-container', {
   }
 });
 var galleryThumbs = new Swiper('.gallery-thumbs', {
-  spaceBetween: 40,
-  slidesPerView: 4,
+  spaceBetween: 30,
+  slidesPerView: 2,
   freeMode: true,
   watchSlidesVisibility: true,
-  watchSlidesProgress: true
+  watchSlidesProgress: true,
+  breakpoints: {
+    420: {
+      slidesPerView: 3,
+      spaceBetween: 30
+    },
+    540: {
+      slidesPerView: 4,
+      spaceBetween: 40
+    }
+  }
 });
 var galleryTop = new Swiper('.gallery-top', {
   spaceBetween: 10,
@@ -296,6 +306,16 @@ $('.tabs-list__item').click(function () {
   var tabName = $(this).attr('show-tab');
   $(this).addClass('tabs-list__item--active').siblings().removeClass('tabs-list__item--active');
   $('.tabs-content .' + tabName).addClass('tabs-content__item--active').siblings().removeClass('tabs-content__item--active');
+  $('.tabs-pattern__content .tabs-content__item').not('.' + tabName).removeClass('tabs-content__item--active');
+});
+$('.tabs-pattern__tabinfo').click(function () {
+  var tabName = $(this).attr('show-tab');
+  $(this).addClass('tabs-list__item--active').siblings().removeClass('tabs-list__item--active');
+  $('.tabs-pattern__tabcontent.' + tabName).addClass('tabs-pattern__tabcontent--active').siblings().removeClass('tabs-pattern__tabcontent--active');
+});
+$('.tabs-pattern__close').click(function () {
+  $('.tabs-pattern__content .tabs-pattern__info').removeClass('tabs-content__item--active');
+  $('.tabs-pattern__item').removeClass('tabs-list__item--active');
 }); // Полифилы
 // forEach IE 11
 
