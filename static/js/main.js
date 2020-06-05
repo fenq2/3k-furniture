@@ -58,7 +58,14 @@ var modal = function modal() {
   });
 };
 
-modal();
+modal(); // let searchHint = function() {
+//     $('.search-modal__field').on('input keyup', function(e) {
+//         $('.search-hint').addClass('search-hint--active');
+//     });
+//     $('.search-hint').removeClass('search-hint--active');
+// };
+// searchHint();
+
 'use strict';
 
 function r(f) {
@@ -304,9 +311,10 @@ var galleryTop = new Swiper('.gallery-top', {
 });
 $('.tabs-list__item').click(function () {
   var tabName = $(this).attr('show-tab');
-  $(this).addClass('tabs-list__item--active').siblings().removeClass('tabs-list__item--active');
+  $(this).addClass('tabs-list__item--active');
+  $('.tabs-list__item').not(this).removeClass('tabs-list__item--active');
   $('.tabs-content .' + tabName).addClass('tabs-content__item--active').siblings().removeClass('tabs-content__item--active');
-  $('.tabs-pattern__content .tabs-content__item').not('.' + tabName).removeClass('tabs-content__item--active');
+  $('.tabs-pattern__info').not('.' + tabName).removeClass('tabs-content__item--active');
 });
 $('.tabs-pattern__tabinfo').click(function () {
   var tabName = $(this).attr('show-tab');
