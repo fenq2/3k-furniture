@@ -2489,7 +2489,7 @@ button {
   text-transform: uppercase;
   font-size: 14px;
   letter-spacing: 1px;
-  padding: 12px 14px;
+  padding: 12px 15px;
   transition: all .2s cubic-bezier(.2, .3, .25, .9) 0s;
 }
 @media screen and (max-width: 960px) {
@@ -5009,7 +5009,7 @@ button {
 }
 @media screen and (max-width: 1050px) {
   .card-item {
-    flex-direction: column;
+    display: block;
   }
 }
 .card-item__content {
@@ -5025,6 +5025,12 @@ button {
   .card-item__content {
     padding-left: 0;
     padding-top: 30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .card-item__content {
+    padding-left: 0;
+    padding-top: 0;
   }
 }
 .card-item__title {
@@ -5059,6 +5065,7 @@ button {
 .card-item__btn {
   width: 220px;
   height: 50px;
+  font-size: 18px;
 }
 @media screen and (max-width: 460px) {
   .card-item__btn {
@@ -5353,6 +5360,9 @@ button {
     margin-right: 20px;
   }
 }
+.card-color__item:not(:last-child) .card-color__arrow {
+  margin: 0 26px;
+}
 .card-color__theme {
   width: 50px;
   height: 50px;
@@ -5565,6 +5575,9 @@ button {
     height: 50px;
   }
 }
+.tabs-tone__item:hover .tabs-tone__arrow {
+  transform: rotate(90deg);
+}
 .tabs-tone__item.tabs-list__item--active .tabs-tone__arrow {
   transform: rotate(90deg);
 }
@@ -5776,6 +5789,153 @@ button {
   width: 15px;
   height: 15px;
   fill: #ffffff;
+}
+
+.tabletop-slider__thumbs .card-slider__thumbs-item {
+  border: none;
+}
+
+.tabletop-info {
+  padding-top: 15px;
+}
+.tabletop-info__title {
+  display: block;
+  font-family: "ProximaNova-Bold";
+}
+.tabletop-info__desc {
+  display: block;
+  color: #666666;
+}
+
+.tabletop-options {
+  padding-top: 5px;
+  padding-bottom: 30px;
+  border-bottom: 2px solid #e6e6e6;
+}
+.tabletop-options__item {
+  position: relative;
+  padding: 2px 2px 2px 27px;
+}
+.tabletop-options__item:before {
+  position: absolute;
+  content: "";
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #fc2b38;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.tabletop-size {
+  padding-top: 25px;
+}
+.tabletop-size__list {
+  display: flex;
+  color: #666666;
+}
+@media screen and (max-width: 520px) {
+  .tabletop-size__list {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+.tabletop-size__list-title {
+  display: block;
+  padding: 15px 0;
+}
+.tabletop-size__list-item {
+  display: block;
+}
+.tabletop-size__item {
+  padding-right: 40px;
+}
+@media screen and (max-width: 420px) {
+  .tabletop-size__item {
+    width: 130px;
+    padding-right: 20px;
+  }
+}
+
+.tabletop-color {
+  padding-bottom: 80px;
+}
+.tabletop-color__title {
+  font-family: "ProximaNova-Bold";
+  font-size: 30px;
+}
+@media screen and (max-width: 540px) {
+  .tabletop-color__title {
+    font-size: 20px;
+  }
+}
+.tabletop-color__subtitle {
+  font-family: "ProximaNova-Bold";
+  display: block;
+  padding-bottom: 5px;
+}
+.tabletop-color__item {
+  margin-top: 30px;
+}
+@media screen and (max-width: 540px) {
+  .tabletop-color__item {
+    margin-top: 20px;
+  }
+}
+.tabletop-color__row {
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 460px) {
+  .tabletop-color__row {
+    flex-wrap: wrap;
+  }
+}
+.tabletop-color__pattern {
+  width: 135px;
+  height: 135px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-top: 15px;
+  cursor: pointer;
+  padding: 6px;
+}
+@media screen and (max-width: 960px) {
+  .tabletop-color__pattern {
+    width: 100px;
+    height: 100px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .tabletop-color__pattern {
+    width: 70px;
+    height: 70px;
+  }
+}
+.tabletop-color__pattern:hover .tabletop-color__name {
+  display: flex;
+}
+.tabletop-color__name {
+  font-family: "ProximaNova-Bold";
+  display: none;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  border: 2px solid #ffffff;
+  font-size: 14px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, .82);
+  transition: .3s;
+  transition: all linear .3s;
+  -webkit-animation-duration: .3s;
+          animation-duration: .3s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
 }
 
 .btn-animation {

@@ -282,7 +282,7 @@ var partners = new Swiper('.partners-container', {
     prevEl: '.partners-button-prev'
   }
 });
-var galleryThumbs = new Swiper('.gallery-thumbs', {
+var cardThumbs = new Swiper('.card-slider__thumbs', {
   spaceBetween: 30,
   slidesPerView: 2,
   freeMode: true,
@@ -299,14 +299,41 @@ var galleryThumbs = new Swiper('.gallery-thumbs', {
     }
   }
 });
-var galleryTop = new Swiper('.gallery-top', {
+var cardTop = new Swiper('.card-slider__top', {
   spaceBetween: 10,
   navigation: {
     nextEl: '.card-btn-next',
     prevEl: '.card-btn-prev'
   },
   thumbs: {
-    swiper: galleryThumbs
+    swiper: cardThumbs
+  }
+});
+var tabletopThumbs = new Swiper('.tabletop-slider__thumbs', {
+  spaceBetween: 11,
+  slidesPerView: 2,
+  freeMode: true,
+  watchSlidesVisibility: true,
+  watchSlidesProgress: true,
+  breakpoints: {
+    420: {
+      slidesPerView: 3,
+      spaceBetween: 11
+    },
+    540: {
+      slidesPerView: 4,
+      spaceBetween: 11
+    }
+  }
+});
+var tabletopTop = new Swiper('.tabletop-slider__top', {
+  spaceBetween: 10,
+  navigation: {
+    nextEl: '.card-btn-next',
+    prevEl: '.card-btn-prev'
+  },
+  thumbs: {
+    swiper: tabletopThumbs
   }
 });
 $('.tabs-list__item').click(function () {
