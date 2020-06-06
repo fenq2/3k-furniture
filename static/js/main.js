@@ -346,6 +346,9 @@ $(document).ready(function () {
     closeEffect: 'none'
   });
 });
+$('.basket-main__close').click(function () {
+  $(this).closest('.basket-main__item').addClass('basket-main__item--active');
+});
 $('.tabs-list__item').click(function () {
   var tabName = $(this).attr('show-tab');
   $(this).addClass('tabs-list__item--active');
