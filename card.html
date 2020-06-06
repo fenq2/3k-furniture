@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="keywords" content="">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
     <link rel="stylesheet" type="text/css" href="static/css/styles.min.css"><!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script><![endif]-->
   </head>
@@ -469,14 +470,14 @@
                 <div class="card-item__row"><span class="card-item__price">Цена от <span class="card-item__price--fw">7777</span> руб</span><span class="card-item__discond">При заказе  от 5 шт действуют скидки</span></div>
                 <div class="card-item__nav"><a class="newest-item__price card-item__btn modal-href" href="#" show-modal="modal-price"><span class="newest-item__price-text">Узнать цену</span></a>
                   <div class="card-quantity"><span class="card-quantity__title">Количество</span>
-                    <div class="card-quantity__count">
-                      <button class="card-quantity__btn card-quantity__prev btn-animation">
+                    <div class="card-quantity__count" id="spinner" data-trigger="spinner">
+                      <button class="card-quantity__btn card-quantity__prev btn-animation" data-spin="down">
                         <svg class="svg-sprite-icon icon-arrow-top card-quantity__icon">
                           <use xlink:href="static/images/svg/symbol/sprite.svg#arrow-top"></use>
                         </svg>
                       </button>
-                      <input class="card-quantity__field" type="text" value="1">
-                      <button class="card-quantity__btn card-quantity__next btn-animation">
+                      <input class="card-quantity__field" type="text" value="1" data-rule="quantity">
+                      <button class="card-quantity__btn card-quantity__next btn-animation" data-spin="up">
                         <svg class="svg-sprite-icon icon-arrow-top card-quantity__icon">
                           <use xlink:href="static/images/svg/symbol/sprite.svg#arrow-top"></use>
                         </svg>
@@ -1648,6 +1649,7 @@
     </div>
     <script src="static/js/jquery-3.3.1.min.js"></script>
     <script src="static/js/libs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     <script src="static/js/main.js"></script>
   </body>
 </html>

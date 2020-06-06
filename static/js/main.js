@@ -336,6 +336,16 @@ var tabletopTop = new Swiper('.tabletop-slider__top', {
     swiper: tabletopThumbs
   }
 });
+$("#spinner").spinner('delay', 200) //delay in ms
+.spinner('changed', function (e, newVal, oldVal) {// trigger lazed, depend on delay option.
+}).spinner('changing', function (e, newVal, oldVal) {// trigger immediately
+});
+$(document).ready(function () {
+  $(".tabletop-color__pattern").fancybox({
+    openEffect: 'none',
+    closeEffect: 'none'
+  });
+});
 $('.tabs-list__item').click(function () {
   var tabName = $(this).attr('show-tab');
   $(this).addClass('tabs-list__item--active');

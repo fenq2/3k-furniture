@@ -5893,6 +5893,9 @@ button {
   }
 }
 .tabletop-color__pattern {
+  display: block;
+  text-decoration: none;
+  color: #1b1616;
   width: 135px;
   height: 135px;
   background-repeat: no-repeat;
@@ -5909,6 +5912,18 @@ button {
   }
 }
 @media screen and (max-width: 768px) {
+  .tabletop-color__pattern {
+    width: 70px;
+    height: 70px;
+  }
+}
+@media screen and (max-width: 460px) {
+  .tabletop-color__pattern {
+    width: 85px;
+    height: 70px;
+  }
+}
+@media screen and (max-width: 370px) {
   .tabletop-color__pattern {
     width: 70px;
     height: 70px;
@@ -5936,6 +5951,10 @@ button {
           animation-fill-mode: both;
   -webkit-animation-name: fadeIn;
           animation-name: fadeIn;
+}
+
+.article-news {
+  background-color: transparent;
 }
 
 .btn-animation {
