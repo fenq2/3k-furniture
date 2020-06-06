@@ -2,7 +2,7 @@
 <html lang="ru-RU">
   <head>
     <meta charset="utf-8">
-    <title>Новости</title><!--[if IE]>
+    <title>Корзина</title><!--[if IE]>
     <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="keywords" content="">
@@ -425,89 +425,101 @@
       </header>
       <div class="content">
         <div class="breadcrumbs">
-          <div class="container"><a class="breadcrumbs__link" href="#">Главная</a><span class="breadcrumbs__current">Новости</span></div>
+          <div class="container"><a class="breadcrumbs__link" href="#">Главная</a><span class="breadcrumbs__current">Корзина</span></div>
         </div>
-        <article class="article-section">
+        <main class="basket-main">
           <div class="container">
-            <h1 class="section-title article-section__title">Lorem ipsum dolor sit amet, consectetur adipis</h1>
-            <div class="article-section__content">
-              <div class="article-section__img"><img src="static/images/content/article-item1.png" alt=""></div>
-              <div class="article-section__info">
-                <div class="news-item__date"><span>22.02.2020</span></div><span class="article-section__text">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,</span>
-              </div>
-            </div>
-          </div>
-        </article>
-        <div class="news article-news">
-          <div class="container">
-            <h3 class="section-title article__title">Другие новости</h3>
-            <div class="news__content"><a class="news-item" href="#">
-                <div class="news-item__img"><img class="news-item__picture" src="static/images/content/news-img2.png" alt=""></div>
-                <div class="news-item__info">
-                  <div class="news-item__date"><span>22.02.2020</span></div>
-                  <p class="news-item__title">Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
-                  <p class="news-item__desc">sed do eiusmod tempor incididunt ut labore et dolore</p>
-                  <div class="btn-animation news-item__btn">
-                    <svg class="svg-sprite-icon icon-arrow-top news-item__arrow">
-                      <use xlink:href="static/images/svg/symbol/sprite.svg#arrow-top"></use>
-                    </svg>
+            <h1 class="section-title">Корзина</h1>
+            <div class="basket-main__content">
+              <div class="basket-main__list">
+                <div class="basket-main__list-wrap">
+                  <div class="basket-main__item">
+                    <div class="basket-main__img"><img src="static/images/content/card-item.png" alt=""></div>
+                    <div class="basket-main__nav"><span class="basket-main__name">Полукресло Саймон 1 <span class="basket-main__price">от <span class="basket-main__price--fw">4830</span> руб</span></span>
+                      <div class="card-quantity basket-quantity"><span class="card-quantity__title basket-quantity__title">Количество</span>
+                        <div class="card-quantity__count" id="spinner" data-trigger="spinner">
+                          <button class="card-quantity__btn card-quantity__prev btn-animation" data-spin="down">
+                            <svg class="svg-sprite-icon icon-arrow-top card-quantity__icon">
+                              <use xlink:href="static/images/svg/symbol/sprite.svg#arrow-top"></use>
+                            </svg>
+                          </button>
+                          <input class="card-quantity__field" type="text" value="1" data-rule="quantity">
+                          <button class="card-quantity__btn card-quantity__next btn-animation" data-spin="up">
+                            <svg class="svg-sprite-icon icon-arrow-top card-quantity__icon">
+                              <use xlink:href="static/images/svg/symbol/sprite.svg#arrow-top"></use>
+                            </svg>
+                          </button>
+                        </div>
+                      </div><a class="basket-main__close" href="javascript:void(0);">
+                        <svg class="svg-sprite-icon icon-close basket-main__close-icon">
+                          <use xlink:href="static/images/svg/symbol/sprite.svg#close"></use>
+                        </svg></a>
+                    </div>
                   </div>
-                </div></a><a class="news-item" href="#">
-                <div class="news-item__img"><img class="news-item__picture" src="static/images/content/news-img3.png" alt=""></div>
-                <div class="news-item__info">
-                  <div class="news-item__date"><span>22.02.2020</span></div>
-                  <p class="news-item__title">Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
-                  <p class="news-item__desc">sed do eiusmod tempor incididunt ut labore et dolore</p>
-                  <div class="btn-animation news-item__btn">
-                    <svg class="svg-sprite-icon icon-arrow-top news-item__arrow">
-                      <use xlink:href="static/images/svg/symbol/sprite.svg#arrow-top"></use>
-                    </svg>
+                  <div class="basket-main__item">
+                    <div class="basket-main__img"><img src="static/images/content/basket-item1.png" alt=""></div>
+                    <div class="basket-main__nav"><span class="basket-main__name">кресло Саймон 4</span>
+                      <div class="card-quantity basket-quantity"><span class="card-quantity__title basket-quantity__title">Количество</span>
+                        <div class="card-quantity__count" id="spinner" data-trigger="spinner">
+                          <button class="card-quantity__btn card-quantity__prev btn-animation" data-spin="down">
+                            <svg class="svg-sprite-icon icon-arrow-top card-quantity__icon">
+                              <use xlink:href="static/images/svg/symbol/sprite.svg#arrow-top"></use>
+                            </svg>
+                          </button>
+                          <input class="card-quantity__field" type="text" value="1" data-rule="quantity">
+                          <button class="card-quantity__btn card-quantity__next btn-animation" data-spin="up">
+                            <svg class="svg-sprite-icon icon-arrow-top card-quantity__icon">
+                              <use xlink:href="static/images/svg/symbol/sprite.svg#arrow-top"></use>
+                            </svg>
+                          </button>
+                        </div>
+                      </div><a class="basket-main__close" href="javascript:void(0);">
+                        <svg class="svg-sprite-icon icon-close basket-main__close-icon">
+                          <use xlink:href="static/images/svg/symbol/sprite.svg#close"></use>
+                        </svg></a>
+                    </div>
                   </div>
-                </div></a><a class="news-item article-item" href="#">
-                <div class="news-item__info article-item__info">
-                  <div class="article-item__content">
-                    <div class="news-item__date"><span>22.02.2020</span></div>
-                    <p class="news-item__title">Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
-                    <p class="news-item__desc">sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum</p>
+                  <div class="basket-main__item">
+                    <div class="basket-main__img"><img src="static/images/content/basket-item2.png" alt=""></div>
+                    <div class="basket-main__nav"><span class="basket-main__name">Стол Баттерфляй W черный</span>
+                      <div class="card-quantity basket-quantity"><span class="card-quantity__title basket-quantity__title">Количество</span>
+                        <div class="card-quantity__count" id="spinner" data-trigger="spinner">
+                          <button class="card-quantity__btn card-quantity__prev btn-animation" data-spin="down">
+                            <svg class="svg-sprite-icon icon-arrow-top card-quantity__icon">
+                              <use xlink:href="static/images/svg/symbol/sprite.svg#arrow-top"></use>
+                            </svg>
+                          </button>
+                          <input class="card-quantity__field" type="text" value="1" data-rule="quantity">
+                          <button class="card-quantity__btn card-quantity__next btn-animation" data-spin="up">
+                            <svg class="svg-sprite-icon icon-arrow-top card-quantity__icon">
+                              <use xlink:href="static/images/svg/symbol/sprite.svg#arrow-top"></use>
+                            </svg>
+                          </button>
+                        </div>
+                      </div><a class="basket-main__close" href="javascript:void(0);">
+                        <svg class="svg-sprite-icon icon-close basket-main__close-icon">
+                          <use xlink:href="static/images/svg/symbol/sprite.svg#close"></use>
+                        </svg></a>
+                    </div>
                   </div>
-                  <div class="btn-animation news-item__btn">
-                    <svg class="svg-sprite-icon icon-arrow-top news-item__arrow">
-                      <use xlink:href="static/images/svg/symbol/sprite.svg#arrow-top"></use>
-                    </svg>
-                  </div>
-                </div></a><a class="news-item article-item" href="#">
-                <div class="news-item__info article-item__info">
-                  <div class="article-item__content">
-                    <div class="news-item__date"><span>22.02.2020</span></div>
-                    <p class="news-item__title">Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
-                    <p class="news-item__desc">sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum</p>
-                  </div>
-                  <div class="btn-animation news-item__btn">
-                    <svg class="svg-sprite-icon icon-arrow-top news-item__arrow">
-                      <use xlink:href="static/images/svg/symbol/sprite.svg#arrow-top"></use>
-                    </svg>
-                  </div>
-                </div></a></div><a class="btn-animation news-item__btn article-more" href="#"> <span class="article-more__text">Все новости</span>
-              <svg class="svg-sprite-icon icon-arrow-top article-more__arrow">
-                <use xlink:href="static/images/svg/symbol/sprite.svg#arrow-top"></use>
-              </svg></a>
-          </div>
-        </div>
-        <div class="subscribe">
-          <div class="container">
-            <div class="subscribe__block">
-              <div class="subscribe__content">
-                <h3 class="section-title subscribe__title">Подпишитесь на рассылку</h3>
-                <div class="subscribe__info"><span class="subscribe__desc">Узнавайте первыми о скидках и вкциях, получайте советы и  новости сферы HoReCa</span>
-                  <form class="subscribe-form" method="POST" action="#">
-                    <input class="subscribe-form__field" type="text" placeholder="Введите e-mail">
-                    <button class="newest-item__price subscribe-form__send"><span class="newest-item__price-text">Подписаться</span></button>
-                  </form>
+                </div>
+                <div class="basket-main__footer"><a class="banner-item__more banner-more basket-main__back" href="#"><span class="banner-more__text"><span>Вернуться в каталог</span><span>Вернуться в каталог</span></span></a>
+                  <div class="basket-main__pricefull"><span class="basket-main__pricefull-title">Итого</span><span class="basket-main__pricefull-num">57640 <span class="basket-main__pricefull-num--fw">руб</span></span></div>
                 </div>
               </div>
+              <aside class="basket-main__offer">
+                <div class="basket-main__offer-wrap"><span class="basket-main__offer-title">Оформить заказ</span>
+                  <form class="basket-main__form" action="" method="POST">
+                    <input class="basket-main__field" type="text" placeholder="Имя">
+                    <input class="basket-main__field inputmask-tel" type="tel" placeholder="Телефон">
+                    <input class="basket-main__field" type="text" placeholder="E-mail">
+                    <button class="basket-main__send btn-animation"> <span class="basket-main__send-text">Заказать</span></button>
+                  </form><span class="basket-main__politic">И принять условия <a href="#" class="basket-main__politic-link">Политики конфиденциальности</a></span>
+                </div>
+              </aside>
             </div>
           </div>
-        </div>
+        </main>
         <div class="modal modal-reviews reviews-1"><a class="modal-close" href="javascript:void(0);">
             <svg class="svg-sprite-icon icon-close modal-close__icon">
               <use xlink:href="static/images/svg/symbol/sprite.svg#close"></use>
