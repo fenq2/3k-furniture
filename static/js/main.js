@@ -282,6 +282,17 @@ var partners = new Swiper('.partners-container', {
     prevEl: '.partners-button-prev'
   }
 });
+var aboutUs = new Swiper('.about-us__container', {
+  slidesPerView: 1,
+  loop: true,
+  navigation: {
+    nextEl: '.card-btn-next',
+    prevEl: '.card-btn-prev'
+  },
+  pagination: {
+    el: '.swiper-pagination'
+  }
+});
 var cardThumbs = new Swiper('.card-slider__thumbs', {
   spaceBetween: 30,
   slidesPerView: 2,
