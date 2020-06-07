@@ -5246,16 +5246,12 @@ button {
   display: flex;
   justify-content: flex-end;
   flex-wrap: wrap;
-  padding: 10px 0 50px 0;
+  padding: 30px 0 50px 0;
   width: 100%;
 }
 @media screen and (max-width: 768px) {
   .pagination {
     justify-content: center;
-  }
-}
-@media screen and (max-width: 768px) {
-  .pagination {
     padding: 30px 0;
   }
 }
@@ -5268,7 +5264,6 @@ button {
   height: 30px;
   background-color: #f5f5f5;
   border: 0;
-  margin-top: 10px;
 }
 .pagination__num:not(:last-child) {
   margin-right: 15px;
@@ -6356,6 +6351,97 @@ button {
 }
 .article-section__img {
   cursor: pointer;
+}
+
+.portfolio-calculator__wrap {
+  padding: 60px 0 77px 0;
+}
+
+.portfolio-calculator__content {
+  background-color: rgba(245, 245, 245, .68);
+  box-shadow: 0 0 47px 0 rgba(0, 0, 0, .2);
+}
+
+.portfolio-calculator__title {
+  color: #1b1616;
+}
+
+.portfolio-calculator__field {
+  border: 2px solid #e6e6e6;
+}
+.portfolio-calculator__field ::-webkit-input-placeholder {
+  color: #1b1616;
+}
+.portfolio-calculator__field ::-moz-placeholder {
+  color: #1b1616;
+}
+.portfolio-calculator__field :-ms-input-placeholder {
+  color: #1b1616;
+}
+.portfolio-calculator__field ::-ms-input-placeholder {
+  color: #1b1616;
+}
+.portfolio-calculator__field ::placeholder {
+  color: #1b1616;
+}
+
+.portfolio__wrap {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.portfolio__content {
+  padding: 0;
+}
+
+.portfolio-item {
+  position: relative;
+  display: block;
+  text-decoration: none;
+  color: #1b1616;
+  min-height: 250px;
+}
+@media screen and (max-width: 620px) {
+  .portfolio-item {
+    min-height: 200px;
+  }
+}
+.portfolio-item__wrap {
+  width: 49%;
+  overflow: hidden;
+  margin-top: 20px;
+}
+@media screen and (max-width: 540px) {
+  .portfolio-item__wrap {
+    width: 100%;
+  }
+}
+.portfolio-item__content {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 290px;
+  background-color: rgba(255, 255, 255, .86);
+  padding: 15px 15px 15px 25px;
+}
+@media screen and (max-width: 620px) {
+  .portfolio-item__content {
+    padding: 10px;
+    top: inherit;
+    bottom: 0;
+    transform: translateY(0);
+  }
+}
+.portfolio-item__text {
+  font-family: "ProximaNova-Bold";
+}
+@media screen and (max-width: 620px) {
+  .portfolio-item__text {
+    font-size: 14px;
+  }
 }
 
 .btn-animation {
