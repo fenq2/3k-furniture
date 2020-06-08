@@ -2041,6 +2041,12 @@ button {
 .basket-main__price--fw {
   font-family: "ProximaNova-Bold";
 }
+.basket-main__back {
+  padding-left: 25px;
+}
+.basket-main__back:hover .basket-more__icon {
+  left: 20px;
+}
 .basket-main__back.banner-more {
   position: relative;
   font-family: "ProximaNova-Bold";
@@ -3186,6 +3192,16 @@ button {
   width: 14px;
   height: 10px;
 }
+.banner-more__icon.basket-more__icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) rotate(180deg);
+  right: inherit;
+  left: 25px;
+  transition: .3s all;
+  width: 14px;
+  height: 10px;
+}
 
 .advantages {
   padding: 40px 0 60px 0;
@@ -3209,11 +3225,10 @@ button {
   width: 165px;
   margin-top: 20px;
 }
-@media screen and (max-width: 359px) {
+@media screen and (max-width: 530px) {
   .advantages-item {
-    display: flex;
-    align-items: center;
-    width: 100%;
+    display: block;
+    width: 30%;
   }
 }
 .advantages-item__img {
@@ -3245,13 +3260,9 @@ button {
   line-height: 1.2;
   padding-top: 23px;
 }
-@media screen and (max-width: 359px) {
+@media screen and (max-width: 530px) {
   .advantages-item__text {
-    padding-top: 0;
-    padding-left: 15px;
-    max-width: 100%;
-    text-align: left;
-    margin: 0;
+    font-size: 12px;
   }
 }
 .advantages-item__text:before {
@@ -5655,8 +5666,10 @@ button {
     margin-right: 20px;
   }
 }
-.card-color__item:not(:last-child) .card-color__arrow {
-  margin: 0 26px;
+@media screen and (max-width: 520px) {
+  .card-color__item:not(:last-child) .card-color__arrow {
+    margin: 0 26px;
+  }
 }
 .card-color__theme {
   width: 50px;
@@ -6778,6 +6791,325 @@ button {
     top: inherit;
     bottom: 0;
   }
+}
+
+.main-design {
+  padding-bottom: 45px;
+}
+
+.design-info {
+  padding-top: 20px;
+}
+.design-info .container {
+  display: flex;
+}
+@media screen and (max-width: 860px) {
+  .design-info .container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.design-info__side {
+  width: 50%;
+  padding-right: 50px;
+  flex: 1;
+}
+@media screen and (max-width: 860px) {
+  .design-info__side {
+    width: 100%;
+    padding-right: 0;
+    padding-bottom: 20px;
+  }
+}
+.design-info__img {
+  flex: 1;
+  overflow: hidden;
+  position: relative;
+  height: 410px;
+}
+@media screen and (max-width: 860px) {
+  .design-info__img {
+    height: 350px;
+    min-height: 350px;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 540px) {
+  .design-info__img {
+    height: 200px;
+    min-height: 200px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .design-info__img {
+    height: 150px;
+    min-height: 150px;
+  }
+}
+.design-info__img img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-width: none;
+  max-height: none;
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%, -50%);
+  max-height: 100%;
+  max-width: 100%;
+}
+.design-info__title {
+  line-height: 1;
+}
+.design-info__desc {
+  padding-top: 35px;
+  line-height: 1.5;
+}
+@media screen and (max-width: 540px) {
+  .design-info__desc {
+    text-align: center;
+    padding-top: 15px;
+  }
+}
+.design-info__desc--ln {
+  display: block;
+}
+.design-info__desc--font {
+  font-family: "ProximaNova-Bold";
+  color: #fc2b38;
+}
+
+.design-advantages {
+  background-color: #454545;
+}
+.design-advantages .advantages-item__icon {
+  fill: #ffffff;
+}
+.design-advantages .advantages-item__text {
+  color: #ffffff;
+}
+
+.design-portfolio {
+  padding: 60px 0 80px 0;
+}
+
+.tarifs {
+  padding: 50px 0 70px 0;
+}
+@media screen and (max-width: 768px) {
+  .tarifs {
+    padding: 0 0 30px 0;
+  }
+}
+.tarifs-item {
+  padding-top: 40px;
+}
+.tarifs-item__title {
+  font-family: "ProximaNova-Bold";
+  display: block;
+  padding-left: 20px;
+  padding-bottom: 3px;
+}
+.tarifs-item__subtitle {
+  font-family: "ProximaNova-Bold";
+  display: block;
+  padding: 0 0 40px 45px;
+}
+.tarifs-item__desc {
+  font-family: "ProximaNova-Bold";
+  color: #ffffff;
+  max-width: 555px;
+  text-align: right;
+}
+@media screen and (max-width: 480px) {
+  .tarifs-item__desc {
+    font-size: 14px;
+    max-width: 100%;
+    text-align: center;
+  }
+}
+.tarifs-item__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(to bottom, #d91b28 0%, #fc2b39 100%);
+  padding: 5px 20px;
+}
+@media screen and (max-width: 480px) {
+  .tarifs-item__header {
+    flex-direction: column;
+    padding: 5px 10px;
+  }
+}
+.tarifs-item__name {
+  font-family: "ProximaNova-Bold";
+  text-transform: uppercase;
+  font-size: 30px;
+  color: #ffffff;
+  padding-right: 30px;
+}
+@media screen and (max-width: 768px) {
+  .tarifs-item__name {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .tarifs-item__name {
+    font-size: 18px;
+    padding-right: 0;
+  }
+}
+.tarifs-list {
+  padding: 25px 0;
+}
+.tarifs-list--pt {
+  padding-top: 0;
+}
+.tarifs-list__warn {
+  display: block;
+  background-color: #e6e6e6;
+  padding: 3px 25px;
+  margin-top: 20px;
+}
+.tarifs-list__warn--text {
+  font-family: "ProximaNova-Bold";
+  padding-right: 15px;
+  font-size: 20px;
+  color: #fc2b38;
+}
+.tarifs-list__subtitle {
+  display: block;
+  padding-left: 45px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+@media screen and (max-width: 480px) {
+  .tarifs-list__subtitle {
+    padding-left: 0;
+  }
+}
+.tarifs-list__title {
+  padding-left: 25px;
+}
+@media screen and (max-width: 480px) {
+  .tarifs-list__title {
+    padding-left: 0;
+  }
+}
+.tarifs-list__title--fw {
+  font-family: "ProximaNova-Bold";
+}
+.tarifs-list__title--font {
+  color: #fc2b38;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+.tarifs-list__item {
+  position: relative;
+  padding-left: 20px;
+  margin-top: 10px;
+  margin-left: 25px;
+}
+@media screen and (max-width: 480px) {
+  .tarifs-list__item {
+    margin-left: 0;
+  }
+}
+.tarifs-list__item:before {
+  position: absolute;
+  content: "";
+  width: 5px;
+  height: 5px;
+  background-color: #fc2b38;
+  border-radius: 50%;
+  left: 0;
+  top: 9px;
+}
+.tarifs-example {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: #e6e6e6;
+  padding: 20px 25px;
+}
+@media screen and (max-width: 1020px) {
+  .tarifs-example {
+    padding: 20px 15px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .tarifs-example {
+    justify-content: space-around;
+  }
+}
+.tarifs-example__title {
+  font-family: "ProximaNova-Bold";
+  display: block;
+  padding-right: 30px;
+}
+@media screen and (max-width: 768px) {
+  .tarifs-example__title {
+    padding-right: 0;
+  }
+}
+.tarifs-example__content {
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .tarifs-example__content {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+.tarifs-example__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 768px) {
+  .tarifs-example__list {
+    width: 100%;
+    justify-content: space-around;
+  }
+}
+.tarifs-example__item {
+  display: block;
+  margin-right: 20px;
+  width: 250px;
+  height: 140px;
+  overflow: hidden;
+  position: relative;
+}
+@media screen and (max-width: 1020px) {
+  .tarifs-example__item {
+    width: 180px;
+    height: 100px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .tarifs-example__item {
+    margin-right: 0;
+    margin-top: 15px;
+  }
+}
+.tarifs-example__item:hover .categories-active {
+  top: 0;
+}
+.tarifs-example__item img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-width: none;
+  max-height: none;
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%, -50%);
+  max-height: 100%;
+  max-width: 100%;
 }
 
 .btn-animation {
