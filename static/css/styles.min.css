@@ -5602,6 +5602,13 @@ button {
     margin-right: 10px;
   }
 }
+.card-size__table {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 60px;
+  height: 60px;
+}
 .card-size__icon {
   width: 65px;
   height: 65px;
