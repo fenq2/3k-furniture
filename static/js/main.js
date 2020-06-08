@@ -293,6 +293,14 @@ var aboutUs = new Swiper('.about-us__container', {
     el: '.swiper-pagination'
   }
 });
+var tarifs = new Swiper('.tarifs-slider', {
+  slidesPerView: 1,
+  loop: true,
+  navigation: {
+    nextEl: '.newest-button-next',
+    prevEl: '.newest-button-prev'
+  }
+});
 var cardThumbs = new Swiper('.card-slider__thumbs', {
   spaceBetween: 30,
   slidesPerView: 2,

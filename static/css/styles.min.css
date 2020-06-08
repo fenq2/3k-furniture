@@ -7034,6 +7034,18 @@ button {
   left: 0;
   top: 9px;
 }
+.tarifs-slider {
+  display: none;
+  width: 100%;
+}
+@media screen and (max-width: 480px) {
+  .tarifs-slider {
+    display: block;
+  }
+}
+.tarifs-slider__btn {
+  background-color: #ffffff;
+}
 .tarifs-example {
   display: flex;
   align-items: center;
@@ -7049,6 +7061,11 @@ button {
 @media screen and (max-width: 768px) {
   .tarifs-example {
     justify-content: space-around;
+  }
+}
+@media screen and (max-width: 480px) {
+  .tarifs-example {
+    padding: 20px 5px;
   }
 }
 .tarifs-example__title {
@@ -7081,6 +7098,11 @@ button {
     justify-content: space-around;
   }
 }
+@media screen and (max-width: 480px) {
+  .tarifs-example__list {
+    display: none;
+  }
+}
 .tarifs-example__item {
   display: block;
   margin-right: 20px;
@@ -7097,8 +7119,17 @@ button {
 }
 @media screen and (max-width: 768px) {
   .tarifs-example__item {
-    margin-right: 0;
     margin-top: 15px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .tarifs-example__item {
+    position: static;
+    width: auto;
+    margin-right: 0;
+    overflow: visible;
+    display: flex;
+    justify-content: center;
   }
 }
 .tarifs-example__item:hover .categories-active {
@@ -7117,6 +7148,16 @@ button {
   transform: translate(-50%, -50%);
   max-height: 100%;
   max-width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .tarifs-example__item img {
+    transform: none;
+    position: static;
+    max-height: auto;
+    max-width: auto;
+    width: auto;
+    height: auto;
+  }
 }
 
 .btn-animation {
