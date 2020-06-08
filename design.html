@@ -2,7 +2,7 @@
 <html lang="ru-RU">
   <head>
     <meta charset="utf-8">
-    <title>Корзина</title><!--[if IE]>
+    <title>Дизайн-проекты</title><!--[if IE]>
     <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="keywords" content="">
@@ -425,101 +425,221 @@
       </header>
       <div class="content">
         <div class="breadcrumbs">
-          <div class="container"><a class="breadcrumbs__link" href="#">Главная</a><span class="breadcrumbs__current">Корзина</span></div>
+          <div class="container"><a class="breadcrumbs__link" href="#">Главная</a><span class="breadcrumbs__current">Дизайн-проекты</span><a class="btn-back" href="#">
+              <svg class="svg-sprite-icon icon-arrow-top btn-back__arrow">
+                <use xlink:href="static/images/svg/symbol/sprite.svg#arrow-top"></use>
+              </svg><span class="btn-back__text">Назад в каталог</span></a></div>
         </div>
-        <main class="basket-main">
-          <div class="container">
-            <h1 class="section-title">Корзина</h1>
-            <div class="basket-main__content">
-              <div class="basket-main__list">
-                <div class="basket-main__list-wrap">
-                  <div class="basket-main__item">
-                    <div class="basket-main__img"><img src="static/images/content/card-item.png" alt=""></div>
-                    <div class="basket-main__nav"><span class="basket-main__name">Полукресло Саймон 1 <span class="basket-main__price">от <span class="basket-main__price--fw">4830</span> руб</span></span>
-                      <div class="card-quantity basket-quantity"><span class="card-quantity__title basket-quantity__title">Количество</span>
-                        <div class="card-quantity__count" id="spinner" data-trigger="spinner">
-                          <button class="card-quantity__btn card-quantity__prev btn-animation" data-spin="down">
-                            <svg class="svg-sprite-icon icon-arrow-top card-quantity__icon">
-                              <use xlink:href="static/images/svg/symbol/sprite.svg#arrow-top"></use>
-                            </svg>
-                          </button>
-                          <input class="card-quantity__field" type="text" value="1" data-rule="quantity">
-                          <button class="card-quantity__btn card-quantity__next btn-animation" data-spin="up">
-                            <svg class="svg-sprite-icon icon-arrow-top card-quantity__icon">
-                              <use xlink:href="static/images/svg/symbol/sprite.svg#arrow-top"></use>
-                            </svg>
-                          </button>
-                        </div>
-                      </div><a class="basket-main__close" href="javascript:void(0);">
-                        <svg class="svg-sprite-icon icon-close basket-main__close-icon">
-                          <use xlink:href="static/images/svg/symbol/sprite.svg#close"></use>
-                        </svg></a>
-                    </div>
-                  </div>
-                  <div class="basket-main__item">
-                    <div class="basket-main__img"><img src="static/images/content/basket-item1.png" alt=""></div>
-                    <div class="basket-main__nav"><span class="basket-main__name">кресло Саймон 4</span>
-                      <div class="card-quantity basket-quantity"><span class="card-quantity__title basket-quantity__title">Количество</span>
-                        <div class="card-quantity__count" id="spinner" data-trigger="spinner">
-                          <button class="card-quantity__btn card-quantity__prev btn-animation" data-spin="down">
-                            <svg class="svg-sprite-icon icon-arrow-top card-quantity__icon">
-                              <use xlink:href="static/images/svg/symbol/sprite.svg#arrow-top"></use>
-                            </svg>
-                          </button>
-                          <input class="card-quantity__field" type="text" value="1" data-rule="quantity">
-                          <button class="card-quantity__btn card-quantity__next btn-animation" data-spin="up">
-                            <svg class="svg-sprite-icon icon-arrow-top card-quantity__icon">
-                              <use xlink:href="static/images/svg/symbol/sprite.svg#arrow-top"></use>
-                            </svg>
-                          </button>
-                        </div>
-                      </div><a class="basket-main__close" href="javascript:void(0);">
-                        <svg class="svg-sprite-icon icon-close basket-main__close-icon">
-                          <use xlink:href="static/images/svg/symbol/sprite.svg#close"></use>
-                        </svg></a>
-                    </div>
-                  </div>
-                  <div class="basket-main__item">
-                    <div class="basket-main__img"><img src="static/images/content/basket-item2.png" alt=""></div>
-                    <div class="basket-main__nav"><span class="basket-main__name">Стол Баттерфляй W черный</span>
-                      <div class="card-quantity basket-quantity"><span class="card-quantity__title basket-quantity__title">Количество</span>
-                        <div class="card-quantity__count" id="spinner" data-trigger="spinner">
-                          <button class="card-quantity__btn card-quantity__prev btn-animation" data-spin="down">
-                            <svg class="svg-sprite-icon icon-arrow-top card-quantity__icon">
-                              <use xlink:href="static/images/svg/symbol/sprite.svg#arrow-top"></use>
-                            </svg>
-                          </button>
-                          <input class="card-quantity__field" type="text" value="1" data-rule="quantity">
-                          <button class="card-quantity__btn card-quantity__next btn-animation" data-spin="up">
-                            <svg class="svg-sprite-icon icon-arrow-top card-quantity__icon">
-                              <use xlink:href="static/images/svg/symbol/sprite.svg#arrow-top"></use>
-                            </svg>
-                          </button>
-                        </div>
-                      </div><a class="basket-main__close" href="javascript:void(0);">
-                        <svg class="svg-sprite-icon icon-close basket-main__close-icon">
-                          <use xlink:href="static/images/svg/symbol/sprite.svg#close"></use>
-                        </svg></a>
-                    </div>
-                  </div>
+        <main class="main-design">
+          <div class="design-info">
+            <div class="container">
+              <div class="design-info__side">
+                <h1 class="section-title design-info__title">Дизайн-проекты</h1>
+                <p class="design-info__desc">Для того, чтобы подобрать мебель в заведение, будь  то небольшая кофейня, столовая в бизнес-центре, фудкорт в торговом центре,  требуется тщательно проработать проект заведения.  Помимо того, что Вы будете точно представлять, какая мебель, оборудование, растения  и где будут стоять в Вашем заведении, хорошо проработанный  и продуманный дизайн-проект поможет избежать ошибок и ненужных трат. <span class="design-info__desc--ln">В штате компании  <span class="design-info__desc--font">«3 К Мебель»</span>  работают дизайнеры и конструкторы с  большим опытом работы, поэтому мы готовы предложить различные варианты разработки дизайн –проектов в зависимости от пожеланий и бюджета наших партнеров:</span></p>
+              </div>
+              <div class="design-info__img"><img src="static/images/content/design-img.png" alt=""></div>
+            </div>
+          </div>
+          <div class="tarifs">
+            <div class="container">
+              <div class="tarifs-item"><span class="tarifs-item__title">Дизайн-проект</span>
+                <div class="tarifs-item__header">
+                  <h4 class="tarifs-item__name">Эконом</h4>
+                  <p class="tarifs-item__desc">бесплатно для заказчиков компании</p>
                 </div>
-                <div class="basket-main__footer"><a class="banner-item__more banner-more basket-main__back" href="#">
-                    <svg class="svg-sprite-icon icon-arrow-top banner-more__icon basket-more__icon">
-                      <use xlink:href="static/images/svg/symbol/sprite.svg#arrow-top"></use>
-                    </svg><span class="banner-more__text"><span>Вернуться в каталог</span><span>Вернуться в каталог</span></span></a>
-                  <div class="basket-main__pricefull"><span class="basket-main__pricefull-title">Итого</span><span class="basket-main__pricefull-num">57640 <span class="basket-main__pricefull-num--fw">руб</span></span></div>
+                <div class="tarifs-item__info">
+                  <div class="tarifs-list"><span class="tarifs-list__title">Проект <span class="design-info__desc--font">«Эконом»</span> включает в себя:</span>
+                    <p class="tarifs-list__item">консультации по подбору мебели и  аксессуаров  с учетом специфики  конкретного помещения;</p>
+                    <p class="tarifs-list__item">план расстановкимебели (вид сверху)   в помещении  с учетом габаритов мебели, рекомендуемых  норм по размещению мебели в заведениях.</p>
+                  </div>
+                  <div class="tarifs-example">
+                    <div class="tarifs-example__content"> <span class="tarifs-example__title">Примеры</span>
+                      <div class="tarifs-example__list"><a class="tarifs-example__item" href="static/images/content/tarifs-example1.png" data-fancybox="gallery"><img src="static/images/content/tarifs-example1.png" alt="">
+                          <div class="categories-active">
+                            <div class="categories-active__icon"></div>
+                          </div></a><a class="tarifs-example__item" href="static/images/content/tarifs-example2.png" data-fancybox="gallery"><img src="static/images/content/tarifs-example2.png" alt="">
+                          <div class="categories-active">
+                            <div class="categories-active__icon"></div>
+                          </div></a><a class="tarifs-example__item" href="static/images/content/tarifs-example3.png" data-fancybox="gallery"><img src="static/images/content/tarifs-example3.png" alt="">
+                          <div class="categories-active">
+                            <div class="categories-active__icon"></div>
+                          </div></a></div>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <aside class="basket-main__offer">
-                <div class="basket-main__offer-wrap"><span class="basket-main__offer-title">Оформить заказ</span>
-                  <form class="basket-main__form" action="" method="POST">
-                    <input class="basket-main__field" type="text" placeholder="Имя">
-                    <input class="basket-main__field inputmask-tel" type="tel" placeholder="Телефон">
-                    <input class="basket-main__field" type="text" placeholder="E-mail">
-                    <button class="basket-main__send btn-animation"> <span class="basket-main__send-text">Заказать</span></button>
-                  </form><span class="basket-main__politic">И принять условия <a href="#" class="basket-main__politic-link">Политики конфиденциальности</a></span>
+              <div class="tarifs-item"><span class="tarifs-item__title">Дизайн-проект</span>
+                <div class="tarifs-item__header">
+                  <h4 class="tarifs-item__name">Норм</h4>
+                  <p class="tarifs-item__desc">оптимален по соотношению  объема дизайнерских услуг и их стоимости</p>
                 </div>
-              </aside>
+                <div class="tarifs-item__info">
+                  <div class="tarifs-list"><span class="tarifs-list__title">Дизайн-проект <span class="design-info__desc--font">«Норм»</span> включает в себя:</span>
+                    <p class="tarifs-list__item">Проведение необходимых замеров на объекте.</p><span class="tarifs-list__warn"><span class="tarifs-list__warn--text">!</span> При покупке продукции в компании «3 К Мебель» выезд специалиста для замера помещения включается в стоимость проекта.</span>
+                    <p class="tarifs-list__item">Разработка 2-х   вариантов архитектурно-планировочного  решения с расстановкой мебели на основании технологического решения по помещению</p>
+                    <p class="tarifs-list__item">3D-визуализацию  помещения и утвержденного варианта мебели на основании выбранной и окончательно утвержденной планировки</p>
+                  </div>
+                  <div class="tarifs-list tarifs-list--pt"><span class="tarifs-list__title tarifs-list__title--fw"><span class="tarifs-list__title--font">Бесплатно</span> в виде бонуса при покупке продукции компания готова предоставить своим партнерам:</span>
+                    <p class="tarifs-list__item">Разработка 2-х   вариантов архитектурно-планировочного  решения с расстановкой мебели на основании технологического решения по помещению</p>
+                    <p class="tarifs-list__item">3D-визуализацию  помещения и утвержденного варианта мебели на основании выбранной и окончательно утвержденной планировки </p>
+                  </div>
+                  <div class="tarifs-example">
+                    <div class="tarifs-example__content"> <span class="tarifs-example__title">Примеры</span>
+                      <div class="tarifs-example__list"><a class="tarifs-example__item" href="static/images/content/tarifs-example4.png" data-fancybox="gallery"><img src="static/images/content/tarifs-example4.png" alt="">
+                          <div class="categories-active">
+                            <div class="categories-active__icon"></div>
+                          </div></a><a class="tarifs-example__item" href="static/images/content/tarifs-example5.png" data-fancybox="gallery"><img src="static/images/content/tarifs-example5.png" alt="">
+                          <div class="categories-active">
+                            <div class="categories-active__icon"></div>
+                          </div></a><a class="tarifs-example__item" href="static/images/content/tarifs-example6.png" data-fancybox="gallery"><img src="static/images/content/tarifs-example6.png" alt="">
+                          <div class="categories-active">
+                            <div class="categories-active__icon"></div>
+                          </div></a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tarifs-item"><span class="tarifs-item__title">Дизайн-проект</span>
+                <div class="tarifs-item__header">
+                  <h4 class="tarifs-item__name">Стандарт</h4>
+                  <p class="tarifs-item__desc">расширенныйнабор услуг по оформлению внутреннего пространства кафе, ресторана, бара, фудкорта, отеля</p>
+                </div>
+                <div class="tarifs-item__info">
+                  <div class="tarifs-list"><span class="tarifs-list__title">Дизайн-проект <span class="design-info__desc--font">«Стандарт»</span> включает в себя:</span>
+                    <p class="tarifs-list__item">Проведение необходимых замеров на объекте.</p><span class="tarifs-list__warn"><span class="tarifs-list__warn--text">!</span> При покупке продукции в компании «3 К Мебель» выезд специалиста для замера помещения включается в стоимость проекта.</span>
+                    <p class="tarifs-list__item">Разработка 3-х   вариантов архитектурно-планировочного  решения с расстановкой мебели на основании технологического решения по помещению</p>
+                    <p class="tarifs-list__item">Разработку планов потолка, стен, пола и перегородок с указаниями типов отделочных материалов, светильников и аксессуаров.</p>
+                    <p class="tarifs-list__item">Визуализацию концепции помещения на основании выбранной и окончательно утвержденной планировки. Прилагается  пояснительная записка, план помещений . В альбоме указываются материалы, используемые при строительстве перегородок, отделочные материалы. Дизайн помещений (перспективные изображения)  выполняются  в программе 3d MAX  </p>
+                  </div>
+                  <div class="tarifs-item__subtitle">В качестве дополнительной опции компания может обеспечить  авторский надзор за ведением работ на объекте. </div>
+                  <div class="tarifs-list tarifs-list--pt"><span class="tarifs-list__title tarifs-list__title--fw"><span class="tarifs-list__title--font">Бесплатно</span> в виде бонуса при покупке продукции компания готова предоставить своим партнерам:</span>
+                    <p class="tarifs-list__item"> аудит интерьера помещения с целью предложения оптимальных вариантов использования рабочего пространства,  возможного увеличения полезной площади и улучшения  эргономики помещения. </p>
+                    <p class="tarifs-list__item">консультации по подбору мебели, текстиля,  возможностей озеленения и других аксессуаров для данного помещения;</p>
+                    <p class="tarifs-list__item">план расстановки мебели.</p>
+                  </div>
+                  <div class="tarifs-example">
+                    <div class="tarifs-example__content"> <span class="tarifs-example__title">Примеры</span>
+                      <div class="tarifs-example__list"><a class="tarifs-example__item" href="static/images/content/tarifs-example7.png" data-fancybox="gallery"><img src="static/images/content/tarifs-example7.png" alt="">
+                          <div class="categories-active">
+                            <div class="categories-active__icon"></div>
+                          </div></a><a class="tarifs-example__item" href="static/images/content/tarifs-example8.png" data-fancybox="gallery"><img src="static/images/content/tarifs-example8.png" alt="">
+                          <div class="categories-active">
+                            <div class="categories-active__icon"></div>
+                          </div></a><a class="tarifs-example__item" href="static/images/content/tarifs-example9.png" data-fancybox="gallery"><img src="static/images/content/tarifs-example9.png" alt="">
+                          <div class="categories-active">
+                            <div class="categories-active__icon"></div>
+                          </div></a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="advantages design-advantages">
+            <div class="container">
+              <div class="advantages-item">
+                <div class="advantages-item__img">
+                  <svg class="svg-sprite-icon icon-adv-icon1 advantages-item__icon">
+                    <use xlink:href="static/images/svg/symbol/sprite.svg#adv-icon1"></use>
+                  </svg>
+                </div><span class="advantages-item__text">Опыт c 2014 г.</span>
+              </div>
+              <div class="advantages-item">
+                <div class="advantages-item__img">
+                  <svg class="svg-sprite-icon icon-adv-icon2 advantages-item__icon">
+                    <use xlink:href="static/images/svg/symbol/sprite.svg#adv-icon2"></use>
+                  </svg>
+                </div><span class="advantages-item__text">Конструкторское дизайнерское бюро</span>
+              </div>
+              <div class="advantages-item">
+                <div class="advantages-item__img">
+                  <svg class="svg-sprite-icon icon-adv-icon3 advantages-item__icon">
+                    <use xlink:href="static/images/svg/symbol/sprite.svg#adv-icon3"></use>
+                  </svg>
+                </div><span class="advantages-item__text">Оснащено более 3000 объектов</span>
+              </div>
+              <div class="advantages-item">
+                <div class="advantages-item__img">
+                  <svg class="svg-sprite-icon icon-adv-icon4 advantages-item__icon">
+                    <use xlink:href="static/images/svg/symbol/sprite.svg#adv-icon4"></use>
+                  </svg>
+                </div><span class="advantages-item__text">Контроль качества продукции</span>
+              </div>
+              <div class="advantages-item">
+                <div class="advantages-item__img">
+                  <svg class="svg-sprite-icon icon-adv-icon5 advantages-item__icon">
+                    <use xlink:href="static/images/svg/symbol/sprite.svg#adv-icon5"></use>
+                  </svg>
+                </div><span class="advantages-item__text">Складская программа</span>
+              </div>
+              <div class="advantages-item">
+                <div class="advantages-item__img">
+                  <svg class="svg-sprite-icon icon-adv-icon6 advantages-item__icon">
+                    <use xlink:href="static/images/svg/symbol/sprite.svg#adv-icon6"></use>
+                  </svg>
+                </div><span class="advantages-item__text">Быстрая доставка по РФ</span>
+              </div>
+            </div>
+          </div>
+          <div class="design-portfolio">
+            <div class="container">
+              <h3 class="section-title">Реализованные проекты</h3>
+              <div class="works__content portfolio__content">
+                <div class="portfolio__wrap">
+                  <div class="portfolio-item__wrap"><a class="works-item portfolio-item" href="#" style="background-image: url('static/images/content/portfolio-item1.png');">
+                      <div class="works-item__plus">
+                        <div class="works-item__icon"></div>
+                      </div></a>
+                    <div class="portfolio-item__content"><span class="portfolio-item__text">Ресторан « Santa fe» <br>г. Пятигорск</span></div>
+                  </div>
+                  <div class="portfolio-item__wrap"><a class="works-item portfolio-item" href="#" style="background-image: url('static/images/content/portfolio-item2.png');">
+                      <div class="works-item__plus">
+                        <div class="works-item__icon"></div>
+                      </div></a>
+                    <div class="portfolio-item__content"><span class="portfolio-item__text">Кофейня «Julius Meinel» <br>г. Нижневартовск</span></div>
+                  </div>
+                  <div class="portfolio-item__wrap"><a class="works-item portfolio-item" href="#" style="background-image: url('static/images/content/portfolio-item3.png');">
+                      <div class="works-item__plus">
+                        <div class="works-item__icon"></div>
+                      </div></a>
+                    <div class="portfolio-item__content"><span class="portfolio-item__text">Банкетный зал « Мир» в Клубно-развлекательном комплексе на Цветном бульваре</span></div>
+                  </div>
+                  <div class="portfolio-item__wrap"><a class="works-item portfolio-item" href="#" style="background-image: url('static/images/content/portfolio-item4.png');">
+                      <div class="works-item__plus">
+                        <div class="works-item__icon"></div>
+                      </div></a>
+                    <div class="portfolio-item__content"><span class="portfolio-item__text">Кофейня «Julius» г.Киев </span></div>
+                  </div>
+                  <div class="portfolio-item__wrap"><a class="works-item portfolio-item" href="#" style="background-image: url('static/images/content/portfolio-item5.png');">
+                      <div class="works-item__plus">
+                        <div class="works-item__icon"></div>
+                      </div></a>
+                    <div class="portfolio-item__content"><span class="portfolio-item__text">Ресторан « Santa fe» <br>г. Пятигорск</span></div>
+                  </div>
+                  <div class="portfolio-item__wrap"><a class="works-item portfolio-item" href="#" style="background-image: url('static/images/content/portfolio-item6.png');">
+                      <div class="works-item__plus">
+                        <div class="works-item__icon"></div>
+                      </div></a>
+                    <div class="portfolio-item__content"><span class="portfolio-item__text">Кофейня «Julius Meinel» <br>г. Нижневартовск</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="calculator portfolio-calculator">
+            <div class="container">
+              <div class="calculator__wrap portfolio-calculator__wrap">
+                <div class="calculator__content portfolio-calculator__content"><span class="calculator__title portfolio-calculator__title">Заказать дизайн-проект</span>
+                  <form class="calculator-form" action="#" method="POST">
+                    <div class="calculator-form__row">
+                      <input class="calculator-form__field portfolio-calculator__field" type="text" placeholder="Имя">
+                      <input class="calculator-form__field inputmask-tel portfolio-calculator__field" type="text" placeholder="Телефон">
+                      <input class="calculator-form__field portfolio-calculator__field" type="text" placeholder="E-mail">
+                    </div>
+                    <button class="newest-item__price subscribe-form__send calculator-form__send"><span class="newest-item__price-text">Заказать</span></button>
+                  </form>
+                </div>
+              </div>
             </div>
           </div>
         </main>
