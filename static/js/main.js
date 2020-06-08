@@ -320,6 +320,38 @@ var cardTop = new Swiper('.card-slider__top', {
     swiper: cardThumbs
   }
 });
+var projectItemThumbs = new Swiper('.project-slider__thumbs', {
+  spaceBetween: 20,
+  direction: 'vertical',
+  slidesPerView: 2,
+  navigation: {
+    nextEl: '.card-btn-next',
+    prevEl: '.card-btn-prev'
+  },
+  freeMode: true,
+  watchSlidesVisibility: true,
+  watchSlidesProgress: true,
+  breakpoints: {
+    460: {
+      slidesPerView: 3,
+      spaceBetween: 20
+    },
+    640: {
+      slidesPerView: 4,
+      spaceBetween: 20
+    },
+    960: {
+      slidesPerView: 5,
+      spaceBetween: 20
+    }
+  }
+});
+var projectItemTop = new Swiper('.project-slider__top', {
+  spaceBetween: 20,
+  thumbs: {
+    swiper: projectItemThumbs
+  }
+});
 var tabletopThumbs = new Swiper('.tabletop-slider__thumbs', {
   spaceBetween: 11,
   slidesPerView: 2,
