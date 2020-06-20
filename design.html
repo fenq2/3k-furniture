@@ -54,7 +54,15 @@
                             <input class="search-modal__field" type="text" placeholder="Введите слово">
                             <button class="search-modal__submit">Искать</button>
                           </form>
-                          <div class="search-hint">123</div>
+                          <div class="search-hint">
+                            <div class="search-hint__wrap">
+                              <div class="search-hint__content"><a class="search-hint__link" href="javascript:void(0);">Lorempsumdolorsit ametconsectetur adipisicing elit,</a><a class="search-hint__link" href="javascript:void(0);">seddoeiusmodtemporincididunt ut labore et dolore magna aliqua. </a><a class="search-hint__link" href="javascript:void(0);">Utenimadminimveniam, </a><a class="search-hint__link" href="javascript:void(0);">quis nostrud exercitation ullamco laboris nisi ut </a><a class="search-hint__link" href="javascript:void(0);">aliquip ex ea commodo consequat. </a><a class="search-hint__link" href="javascript:void(0);">Duis aute irure dolor in reprehenderit in voluptate </a><a class="search-hint__link" href="javascript:void(0);">velit esse cillum dolore eu fugiat nulla pariatur. </a></div>
+                              <div class="search-hint__footer"><a class="banner-item__more banner-more search-hint__more" href="#"><span class="banner-more__text"><span>Все результаты</span><span>Все результаты</span></span>
+                                  <svg class="svg-sprite-icon icon-arrow-top banner-more__icon">
+                                    <use xlink:href="static/images/svg/symbol/sprite.svg#arrow-top"></use>
+                                  </svg></a></div>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -449,8 +457,10 @@
                 </div>
                 <div class="tarifs-item__info">
                   <div class="tarifs-list"><span class="tarifs-list__title">Проект <span class="design-info__desc--font">«Эконом»</span> включает в себя:</span>
-                    <p class="tarifs-list__item">консультации по подбору мебели и  аксессуаров  с учетом специфики  конкретного помещения;</p>
-                    <p class="tarifs-list__item">план расстановкимебели (вид сверху)   в помещении  с учетом габаритов мебели, рекомендуемых  норм по размещению мебели в заведениях.</p>
+                    <ul class="tarifs-list__wrap">
+                      <li class="tarifs-list__item">консультации по подбору мебели и  аксессуаров  с учетом специфики  конкретного помещения;</li>
+                      <li class="tarifs-list__item">план расстановкимебели (вид сверху)   в помещении  с учетом габаритов мебели, рекомендуемых  норм по размещению мебели в заведениях.</li>
+                    </ul>
                   </div>
                   <div class="tarifs-example">
                     <div class="tarifs-example__content"> <span class="tarifs-example__title">Примеры</span>
@@ -501,13 +511,18 @@
                 </div>
                 <div class="tarifs-item__info">
                   <div class="tarifs-list"><span class="tarifs-list__title">Дизайн-проект <span class="design-info__desc--font">«Норм»</span> включает в себя:</span>
-                    <p class="tarifs-list__item">Проведение необходимых замеров на объекте.</p><span class="tarifs-list__warn"><span class="tarifs-list__warn--text">!</span> При покупке продукции в компании «3 К Мебель» выезд специалиста для замера помещения включается в стоимость проекта.</span>
-                    <p class="tarifs-list__item">Разработка 2-х   вариантов архитектурно-планировочного  решения с расстановкой мебели на основании технологического решения по помещению</p>
-                    <p class="tarifs-list__item">3D-визуализацию  помещения и утвержденного варианта мебели на основании выбранной и окончательно утвержденной планировки</p>
+                    <ul class="tarifs-list__wrap">
+                      <li class="tarifs-list__item">Проведение необходимых замеров на объекте.</li>
+                      <li class="tarifs-list__warn"><span class="tarifs-list__warn--text">!</span> При покупке продукции в компании «3 К Мебель» выезд специалиста для замера помещения включается в стоимость проекта.</li>
+                      <li class="tarifs-list__item">Разработка 2-х   вариантов архитектурно-планировочного  решения с расстановкой мебели на основании технологического решения по помещению</li>
+                      <li class="tarifs-list__item">3D-визуализацию  помещения и утвержденного варианта мебели на основании выбранной и окончательно утвержденной планировки</li>
+                    </ul>
                   </div>
                   <div class="tarifs-list tarifs-list--pt"><span class="tarifs-list__title tarifs-list__title--fw"><span class="tarifs-list__title--font">Бесплатно</span> в виде бонуса при покупке продукции компания готова предоставить своим партнерам:</span>
-                    <p class="tarifs-list__item">Разработка 2-х   вариантов архитектурно-планировочного  решения с расстановкой мебели на основании технологического решения по помещению</p>
-                    <p class="tarifs-list__item">3D-визуализацию  помещения и утвержденного варианта мебели на основании выбранной и окончательно утвержденной планировки </p>
+                    <ul class="tarifs-list__wrap">
+                      <li class="tarifs-list__item">Разработка 2-х   вариантов архитектурно-планировочного  решения с расстановкой мебели на основании технологического решения по помещению</li>
+                      <li class="tarifs-list__item">3D-визуализацию  помещения и утвержденного варианта мебели на основании выбранной и окончательно утвержденной планировки </li>
+                    </ul>
                   </div>
                   <div class="tarifs-example">
                     <div class="tarifs-example__content"> <span class="tarifs-example__title">Примеры</span>
@@ -558,16 +573,21 @@
                 </div>
                 <div class="tarifs-item__info">
                   <div class="tarifs-list"><span class="tarifs-list__title">Дизайн-проект <span class="design-info__desc--font">«Стандарт»</span> включает в себя:</span>
-                    <p class="tarifs-list__item">Проведение необходимых замеров на объекте.</p><span class="tarifs-list__warn"><span class="tarifs-list__warn--text">!</span> При покупке продукции в компании «3 К Мебель» выезд специалиста для замера помещения включается в стоимость проекта.</span>
-                    <p class="tarifs-list__item">Разработка 3-х   вариантов архитектурно-планировочного  решения с расстановкой мебели на основании технологического решения по помещению</p>
-                    <p class="tarifs-list__item">Разработку планов потолка, стен, пола и перегородок с указаниями типов отделочных материалов, светильников и аксессуаров.</p>
-                    <p class="tarifs-list__item">Визуализацию концепции помещения на основании выбранной и окончательно утвержденной планировки. Прилагается  пояснительная записка, план помещений . В альбоме указываются материалы, используемые при строительстве перегородок, отделочные материалы. Дизайн помещений (перспективные изображения)  выполняются  в программе 3d MAX  </p>
+                    <ul class="tarifs-list__wrap">
+                      <li class="tarifs-list__item">Проведение необходимых замеров на объекте.</li>
+                      <li class="tarifs-list__warn"><span class="tarifs-list__warn--text">!</span> При покупке продукции в компании «3 К Мебель» выезд специалиста для замера помещения включается в стоимость проекта.</li>
+                      <li class="tarifs-list__item">Разработка 3-х   вариантов архитектурно-планировочного  решения с расстановкой мебели на основании технологического решения по помещению</li>
+                      <li class="tarifs-list__item">Разработку планов потолка, стен, пола и перегородок с указаниями типов отделочных материалов, светильников и аксессуаров.</li>
+                      <li class="tarifs-list__item">Визуализацию концепции помещения на основании выбранной и окончательно утвержденной планировки. Прилагается  пояснительная записка, план помещений . В альбоме указываются материалы, используемые при строительстве перегородок, отделочные материалы. Дизайн помещений (перспективные изображения)  выполняются  в программе 3d MAX  </li>
+                    </ul>
                   </div>
                   <div class="tarifs-item__subtitle">В качестве дополнительной опции компания может обеспечить  авторский надзор за ведением работ на объекте. </div>
                   <div class="tarifs-list tarifs-list--pt"><span class="tarifs-list__title tarifs-list__title--fw"><span class="tarifs-list__title--font">Бесплатно</span> в виде бонуса при покупке продукции компания готова предоставить своим партнерам:</span>
-                    <p class="tarifs-list__item"> аудит интерьера помещения с целью предложения оптимальных вариантов использования рабочего пространства,  возможного увеличения полезной площади и улучшения  эргономики помещения. </p>
-                    <p class="tarifs-list__item">консультации по подбору мебели, текстиля,  возможностей озеленения и других аксессуаров для данного помещения;</p>
-                    <p class="tarifs-list__item">план расстановки мебели.</p>
+                    <ul class="tarifs-list__wrap">
+                      <li class="tarifs-list__item"> аудит интерьера помещения с целью предложения оптимальных вариантов использования рабочего пространства,  возможного увеличения полезной площади и улучшения  эргономики помещения. </li>
+                      <li class="tarifs-list__item">консультации по подбору мебели, текстиля,  возможностей озеленения и других аксессуаров для данного помещения;</li>
+                      <li class="tarifs-list__item">план расстановки мебели.</li>
+                    </ul>
                   </div>
                   <div class="tarifs-example">
                     <div class="tarifs-example__content"> <span class="tarifs-example__title">Примеры</span>
